@@ -115,8 +115,9 @@ a:hover {
 
 @media (min-width: 1200px) {
   .navbar .navbar-nav {
-    margin-right: 1rem;
-    transform: translateX(-0.75rem);
+    margin-left: 1.35rem;
+    margin-right: 0.5rem;
+    transform: none;
   }
 }
 
@@ -1146,6 +1147,20 @@ html[data-course-theme="dark"] .dropdown-menu {
   padding: 0 clamp(1.1rem, 4vw, 3.2rem) 4rem;
 }
 
+.syllabus-home {
+  display: block !important;
+  width: 100%;
+}
+
+.syllabus-home > .dashboard-section,
+.syllabus-home > .course-disclaimer {
+  width: 100%;
+  max-width: none;
+  grid-column: 1 / -1;
+  clear: both;
+  box-sizing: border-box;
+}
+
 .dashboard-section {
   margin: 0 0 4.6rem;
 }
@@ -1590,6 +1605,17 @@ html[data-course-theme="dark"] .dropdown-menu {
 
   .quick-link-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .course-disclaimer {
+    display: block;
+  }
+
+  .course-disclaimer strong {
+    display: block;
+    margin-bottom: 0.45rem;
   }
 }
 
@@ -2708,17 +2734,22 @@ html[data-course-theme="dark"] .dropdown-menu {
 }
 
 .course-disclaimer {
-  display: grid;
-  grid-template-columns: 120px minmax(0, 1fr);
-  gap: 1.2rem;
-  margin: 0 0 1.5rem;
-  padding: 1.2rem 1.35rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  margin: -1.1rem 0 1.5rem;
+  padding: 1.15rem 1.4rem;
   border: 1px solid color-mix(in srgb, var(--course-gold) 42%, var(--course-line));
   border-radius: 15px;
   background: color-mix(in srgb, var(--course-gold) 8%, var(--course-paper));
+  box-sizing: border-box;
 }
 
 .course-disclaimer strong {
+  flex: 0 0 auto;
   color: var(--course-burgundy);
   font-size: 0.76rem;
   letter-spacing: 0.1em;
@@ -2726,6 +2757,8 @@ html[data-course-theme="dark"] .dropdown-menu {
 }
 
 .course-disclaimer p {
+  flex: 1 1 auto;
+  min-width: 0;
   margin: 0;
   color: var(--course-muted);
   font-size: 0.9rem;
