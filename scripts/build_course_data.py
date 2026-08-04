@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Generate static Quarto partials from course-data.yml.
+"""Generate complete Quarto course pages from course-data.yml.
 
-The home page is a syllabus-style course hub. Routine changes live in one YAML
-file while Quarto receives accessible, searchable, static HTML fragments.
+Routine changes live in one YAML file. The generator writes the homepage and
+lecture log as complete documents so Quarto receives one stable HTML block per
+page rather than a chain of nested includes.
 """
 from __future__ import annotations
 
@@ -60,11 +61,20 @@ def paragraphs_html(items: list[str] | None) -> str:
     return "".join(f"<p>{text(item)}</p>" for item in (items or []))
 
 
+def raw_html_block(content: str) -> str:
+    """Return one explicit Pandoc raw-HTML block."""
+    return f"```{{=html}}\n{content.strip()}\n```\n"
+
+
 def write(name: str, content: str) -> None:
-    """Write a Quarto include containing an explicit raw-HTML block."""
+    """Write a generated partial for inspection and troubleshooting."""
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    wrapped = f"```{{=html}}\n{content.strip()}\n```\n"
-    (OUT_DIR / name).write_text(wrapped, encoding="utf-8")
+    (OUT_DIR / name).write_text(raw_html_block(content), encoding="utf-8")
+
+
+def write_page(path: Path, front_matter: str, content: str) -> None:
+    """Write a complete Quarto page containing one raw-HTML body block."""
+    path.write_text(front_matter.strip() + "\n\n" + raw_html_block(content), encoding="utf-8")
 
 
 def build_hero(data: dict[str, Any]) -> str:
@@ -360,17 +370,72 @@ def main() -> None:
         for stale in OUT_DIR.glob(pattern):
             stale.unlink()
 
-    write("home-hero.qmd", build_hero(data))
-    write("course-summary.qmd", build_course_summary(data))
-    write("textbook.qmd", build_textbook(data))
-    write("lectures-preview.qmd", build_lectures_preview(data))
-    write("lectures-full.qmd", build_lectures_full(data))
-    write("assignments.qmd", build_assignments(data))
-    write("exams.qmd", build_exams(data))
-    write("grading.qmd", build_grading(data))
-    write("accommodations.qmd", build_accommodations(data))
-    write("disclaimer.qmd", build_disclaimer(data))
-    print(f"Generated syllabus-style course homepage in {OUT_DIR.relative_to(ROOT)}")
+    hero = build_hero(data)
+    summary = build_course_summary(data)
+    textbook = build_textbook(data)
+    lectures_preview = build_lectures_preview(data)
+    lectures_full = build_lectures_full(data)
+    assignments = build_assignments(data)
+    exams = build_exams(data)
+    grading = build_grading(data)
+    accommodations = build_accommodations(data)
+    disclaimer = build_disclaimer(data)
+
+    # Keep partials as readable diagnostics, but render the live pages from one
+    # raw HTML block so Pandoc cannot split the layout into unrelated columns.
+    write("home-hero.qmd", hero)
+    write("course-summary.qmd", summary)
+    write("textbook.qmd", textbook)
+    write("lectures-preview.qmd", lectures_preview)
+    write("lectures-full.qmd", lectures_full)
+    write("assignments.qmd", assignments)
+    write("exams.qmd", exams)
+    write("grading.qmd", grading)
+    write("accommodations.qmd", accommodations)
+    write("disclaimer.qmd", disclaimer)
+
+    homepage = "\n".join([
+        hero,
+        '<div class="dashboard-shell syllabus-home">',
+        summary,
+        textbook,
+        lectures_preview,
+        assignments,
+        exams,
+        grading,
+        accommodations,
+        disclaimer,
+        '</div>',
+    ])
+    homepage_front_matter = "\n".join([
+        "---",
+        'pagetitle: "Number Theory"',
+        "page-layout: full",
+        "toc: false",
+        "---",
+    ])
+    write_page(ROOT / "index.qmd", homepage_front_matter, homepage)
+
+    lectures_page = "\n".join([
+        '<div class="page-intro-shell">',
+        '<div class="section-kicker">What we covered</div>',
+        '<h1>Lectures</h1>',
+        '<p>The <a href="schedule.html">schedule</a> shows the semester plan. This page records what we actually covered after each class meeting, with links to the corresponding lecture notes.</p>',
+        '</div>',
+        '<div class="wide-content-shell">',
+        lectures_full,
+        '</div>',
+    ])
+    lectures_front_matter = "\n".join([
+        "---",
+        'pagetitle: "Lectures | Number Theory"',
+        'description: "A reverse-chronological record of what we covered in each lecture."',
+        "toc: false",
+        "page-layout: full",
+        "---",
+    ])
+    write_page(ROOT / "lectures.qmd", lectures_front_matter, lectures_page)
+    print("Generated complete homepage and lecture log from course-data.yml")
 
 
 if __name__ == "__main__":

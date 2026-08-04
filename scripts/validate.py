@@ -145,6 +145,17 @@ def validate_generator() -> None:
         fail(f"generator did not create: {', '.join(sorted(missing))}")
     if extras:
         fail(f"generator left unexpected files: {', '.join(sorted(extras))}")
+
+
+    for page_name in ("index.qmd", "lectures.qmd"):
+        page = (ROOT / page_name).read_text(encoding="utf-8")
+        if "{{< include" in page:
+            fail(f"{page_name} must not depend on nested include shortcodes")
+        if page.count("```{=html}") != 1:
+            fail(f"{page_name} must contain exactly one raw-HTML document block")
+    index_source = (ROOT / "index.qmd").read_text(encoding="utf-8")
+    if index_source.find('id="accommodations-and-resources"') > index_source.find('class="course-disclaimer"'):
+        fail("the disclaimer must follow Accommodations and resources")
     for path in (ROOT / "_generated").glob("*.qmd"):
         source = path.read_text(encoding="utf-8")
         if not source.startswith("```{=html}\n") or not source.rstrip().endswith("```"):
@@ -190,27 +201,6 @@ def validate_section_navigation() -> None:
             )
 
 
-def validate_include_wrappers() -> None:
-    """Prevent Quarto include shortcodes from being trapped in raw HTML blocks."""
-    for filename in ("index.qmd", "lectures.qmd"):
-        source = (ROOT / filename).read_text(encoding="utf-8")
-        if "{{< include" not in source:
-            fail(f"{filename} is missing its generated include shortcodes")
-        # A literal HTML wrapper around include shortcodes makes Pandoc treat
-        # the included raw-HTML fences as text. Fenced divs keep Markdown active.
-        first_include = source.find("{{< include")
-        prefix = source[:first_include]
-        if filename == "index.qmd" and '<div class="dashboard-shell' in source:
-            fail("index.qmd must use a fenced div for dashboard-shell, not a literal HTML div")
-        if filename == "lectures.qmd" and '<div class="wide-content-shell' in source:
-            fail("lectures.qmd must use a fenced div for wide-content-shell, not a literal HTML div")
-        if "::: {." not in source:
-            fail(f"{filename} must use Pandoc fenced div wrappers around included content")
-
-    for path in (ROOT / "_generated").glob("*.qmd"):
-        source = path.read_text(encoding="utf-8").strip()
-        if not (source.startswith("```{=html}") and source.endswith("```")):
-            fail(f"generated include is not an explicit raw-HTML block: {path.name}")
 
 def main() -> None:
     validate_yaml()
@@ -219,9 +209,8 @@ def main() -> None:
     validate_css()
     validate_javascript()
     validate_generator()
-    validate_include_wrappers()
     validate_section_navigation()
-    print("Validation passed: YAML, front matter, links, include wrappers, section navigation, CSS, JavaScript, and generated course files.")
+    print("Validation passed: YAML, front matter, links, section navigation, CSS, JavaScript, and generated course files.")
 
 
 if __name__ == "__main__":
