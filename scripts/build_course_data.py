@@ -61,8 +61,10 @@ def paragraphs_html(items: list[str] | None) -> str:
 
 
 def write(name: str, content: str) -> None:
+    """Write a Quarto include containing an explicit raw-HTML block."""
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    (OUT_DIR / name).write_text(content.rstrip() + "\n", encoding="utf-8")
+    wrapped = f"```{{=html}}\n{content.strip()}\n```\n"
+    (OUT_DIR / name).write_text(wrapped, encoding="utf-8")
 
 
 def build_hero(data: dict[str, Any]) -> str:
@@ -354,19 +356,20 @@ def main() -> None:
         raise KeyError(f"Missing required sections in course-data.yml: {', '.join(missing)}")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    for stale in OUT_DIR.glob("*.html"):
-        stale.unlink()
+    for pattern in ("*.html", "*.qmd"):
+        for stale in OUT_DIR.glob(pattern):
+            stale.unlink()
 
-    write("home-hero.html", build_hero(data))
-    write("course-summary.html", build_course_summary(data))
-    write("textbook.html", build_textbook(data))
-    write("lectures-preview.html", build_lectures_preview(data))
-    write("lectures-full.html", build_lectures_full(data))
-    write("assignments.html", build_assignments(data))
-    write("exams.html", build_exams(data))
-    write("grading.html", build_grading(data))
-    write("accommodations.html", build_accommodations(data))
-    write("disclaimer.html", build_disclaimer(data))
+    write("home-hero.qmd", build_hero(data))
+    write("course-summary.qmd", build_course_summary(data))
+    write("textbook.qmd", build_textbook(data))
+    write("lectures-preview.qmd", build_lectures_preview(data))
+    write("lectures-full.qmd", build_lectures_full(data))
+    write("assignments.qmd", build_assignments(data))
+    write("exams.qmd", build_exams(data))
+    write("grading.qmd", build_grading(data))
+    write("accommodations.qmd", build_accommodations(data))
+    write("disclaimer.qmd", build_disclaimer(data))
     print(f"Generated syllabus-style course homepage in {OUT_DIR.relative_to(ROOT)}")
 
 

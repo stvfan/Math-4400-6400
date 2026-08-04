@@ -52,9 +52,18 @@ def validate_front_matter() -> None:
         if end < 0:
             fail(f"unterminated YAML front matter in {path.relative_to(ROOT)}")
         try:
-            yaml.safe_load(text[4:end])
+            front_matter = yaml.safe_load(text[4:end]) or {}
         except Exception as exc:
             fail(f"invalid front matter in {path.relative_to(ROOT)}: {exc}")
+        if not isinstance(front_matter, dict):
+            fail(f"front matter must be a mapping in {path.relative_to(ROOT)}")
+        if "title" in front_matter and not isinstance(front_matter["title"], str):
+            fail(
+                f"front matter title must be a string in {path.relative_to(ROOT)}; "
+                "use pagetitle when only a browser-tab title is needed"
+            )
+        if "pagetitle" in front_matter and not isinstance(front_matter["pagetitle"], str):
+            fail(f"front matter pagetitle must be a string in {path.relative_to(ROOT)}")
 
 
 def resolve_qmd_link(source: Path, href: str) -> Path | None:
@@ -116,24 +125,28 @@ def validate_javascript() -> None:
 def validate_generator() -> None:
     subprocess.run([sys.executable, str(ROOT / "scripts/build_course_data.py")], cwd=ROOT, check=True)
     expected = {
-        "home-hero.html",
-        "course-summary.html",
-        "textbook.html",
-        "lectures-preview.html",
-        "lectures-full.html",
-        "assignments.html",
-        "exams.html",
-        "grading.html",
-        "accommodations.html",
-        "disclaimer.html",
+        "home-hero.qmd",
+        "course-summary.qmd",
+        "textbook.qmd",
+        "lectures-preview.qmd",
+        "lectures-full.qmd",
+        "assignments.qmd",
+        "exams.qmd",
+        "grading.qmd",
+        "accommodations.qmd",
+        "disclaimer.qmd",
     }
-    actual = {p.name for p in (ROOT / "_generated").glob("*.html")}
+    actual = {p.name for p in (ROOT / "_generated").glob("*.qmd")}
     missing = expected - actual
     extras = actual - expected
     if missing:
         fail(f"generator did not create: {', '.join(sorted(missing))}")
     if extras:
         fail(f"generator left unexpected files: {', '.join(sorted(extras))}")
+    for path in (ROOT / "_generated").glob("*.qmd"):
+        source = path.read_text(encoding="utf-8")
+        if not source.startswith("```{=html}\n") or not source.rstrip().endswith("```"):
+            fail(f"generated include is not wrapped as raw HTML: {path.relative_to(ROOT)}")
 
 
 
@@ -141,7 +154,7 @@ def validate_section_navigation() -> None:
     config = yaml.safe_load((ROOT / "_quarto.yml").read_text(encoding="utf-8"))
     links = config.get("website", {}).get("navbar", {}).get("left", [])
     generated = "\n".join(
-        path.read_text(encoding="utf-8") for path in (ROOT / "_generated").glob("*.html")
+        path.read_text(encoding="utf-8") for path in (ROOT / "_generated").glob("*.qmd")
     )
     section_titles = {
         section_id: re.sub(r"<[^>]+>", "", title).strip()
