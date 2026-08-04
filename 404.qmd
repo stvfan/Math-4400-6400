@@ -1,0 +1,19 @@
+---
+pagetitle: "Page not found | Number Theory"
+page-layout: full
+toc: false
+---
+
+::: {.error-page}
+<div class="eyebrow">Page not found</div>
+
+# 404 is composite. The link is broken.
+
+The requested page may have moved, or the address may contain a typo. Since
+
+$$404=4\cdot101,$$
+
+we can at least factor the error before returning to the course.
+
+[Return home](index.qmd){.course-button .course-button-primary}
+:::

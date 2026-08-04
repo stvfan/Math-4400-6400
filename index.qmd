@@ -1,0 +1,27 @@
+---
+pagetitle: "Number Theory"
+page-layout: full
+toc: false
+---
+
+{{< include _generated/home-hero.html >}}
+
+<div class="dashboard-shell syllabus-home">
+
+{{< include _generated/course-summary.html >}}
+
+{{< include _generated/textbook.html >}}
+
+{{< include _generated/lectures-preview.html >}}
+
+{{< include _generated/assignments.html >}}
+
+{{< include _generated/exams.html >}}
+
+{{< include _generated/grading.html >}}
+
+{{< include _generated/accommodations.html >}}
+
+{{< include _generated/disclaimer.html >}}
+
+</div>
