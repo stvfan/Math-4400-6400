@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 680" role="img" aria-labelledby="title desc">
+  <title id="title">Fundamentals of Number Theory by William J. LeVeque</title>
+  <desc id="desc">A purple and magenta book-cover illustration with abstract numerals and the complete book title.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f347d"/>
+      <stop offset="0.52" stop-color="#65408f"/>
+      <stop offset="1" stop-color="#34265d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#160d2d" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+  <rect width="480" height="680" rx="8" fill="url(#bg)"/>
+  <g fill="#bd2f72" opacity="0.80" font-family="Georgia, 'Times New Roman', serif" font-weight="700">
+    <text x="-18" y="106" font-size="150" transform="rotate(-7 0 0)">1</text>
+    <text x="92" y="93" font-size="152" transform="rotate(8 92 93)">2</text>
+    <text x="246" y="118" font-size="165" transform="rotate(-4 246 118)">3</text>
+    <text x="370" y="102" font-size="150" transform="rotate(7 370 102)">4</text>
+    <text x="-28" y="255" font-size="170" transform="rotate(6 -28 255)">5</text>
+    <text x="118" y="267" font-size="165" transform="rotate(-8 118 267)">6</text>
+    <text x="278" y="250" font-size="166" transform="rotate(5 278 250)">7</text>
+    <text x="-22" y="430" font-size="170" transform="rotate(-5 -22 430)">8</text>
+    <text x="125" y="419" font-size="164" transform="rotate(7 125 419)">9</text>
+    <text x="290" y="430" font-size="166" transform="rotate(-7 290 430)">0</text>
+    <text x="-15" y="612" font-size="168" transform="rotate(5 -15 612)">3</text>
+    <text x="138" y="600" font-size="170" transform="rotate(-5 138 600)">7</text>
+    <text x="300" y="624" font-size="170" transform="rotate(8 300 624)">2</text>
+  </g>
+  <rect x="38" y="128" width="404" height="386" rx="4" fill="#432a70" opacity="0.28"/>
+  <g fill="#fffdf7" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" filter="url(#shadow)">
+    <text x="240" y="225" font-size="48" font-weight="600">Fundamentals</text>
+    <text x="240" y="284" font-size="42" font-weight="600">of</text>
+    <text x="240" y="353" font-size="59" font-weight="600">Number</text>
+    <text x="240" y="421" font-size="59" font-weight="600">Theory</text>
+  </g>
+  <line x1="100" x2="380" y1="472" y2="472" stroke="#e7c9dd" stroke-width="1" opacity="0.75"/>
+  <text x="240" y="552" fill="#fffdf7" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="25">William J. LeVeque</text>
+  <text x="240" y="632" fill="#e9d5e3" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">DOVER BOOKS ON MATHEMATICS</text>
+</svg>
