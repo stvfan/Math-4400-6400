@@ -2865,3 +2865,35 @@ html[data-course-theme="dark"] .dropdown-menu {
     break-inside: avoid;
   }
 }
+
+/* ========================================================================== 
+   Version 2.6.4: robust full-width single-column homepage flow
+   ========================================================================== */
+
+/* The homepage is a vertical syllabus, never a multi-column Quarto article. */
+.syllabus-home {
+  display: block;
+  width: 100%;
+}
+
+.syllabus-home > .dashboard-section,
+.syllabus-home > .course-disclaimer {
+  width: 100%;
+  max-width: none;
+  grid-column: 1 / -1;
+  clear: both;
+}
+
+/* Keep the final disclaimer below the Resources section in every layout. */
+.syllabus-home > .course-disclaimer {
+  display: grid;
+  margin-top: 0;
+}
+
+/* Ensure full-layout pages are not constrained to Quarto's article body width. */
+body.quarto-light #quarto-document-content,
+body.quarto-dark #quarto-document-content,
+#quarto-document-content {
+  width: 100%;
+  max-width: none;
+}
