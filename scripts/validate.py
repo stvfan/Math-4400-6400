@@ -45,6 +45,8 @@ def validate_yaml() -> None:
 
 def validate_front_matter() -> None:
     for path in ROOT.rglob("*.qmd"):
+        if "_generated" in path.parts:
+            continue
         text = path.read_text(encoding="utf-8")
         if not text.startswith("---\n"):
             fail(f"missing YAML front matter in {path.relative_to(ROOT)}")
@@ -187,6 +189,29 @@ def validate_section_navigation() -> None:
                 f"{section_titles[section_id]!r} at #{section_id}; allowed labels: {sorted(allowed_labels)!r}"
             )
 
+
+def validate_include_wrappers() -> None:
+    """Prevent Quarto include shortcodes from being trapped in raw HTML blocks."""
+    for filename in ("index.qmd", "lectures.qmd"):
+        source = (ROOT / filename).read_text(encoding="utf-8")
+        if "{{< include" not in source:
+            fail(f"{filename} is missing its generated include shortcodes")
+        # A literal HTML wrapper around include shortcodes makes Pandoc treat
+        # the included raw-HTML fences as text. Fenced divs keep Markdown active.
+        first_include = source.find("{{< include")
+        prefix = source[:first_include]
+        if filename == "index.qmd" and '<div class="dashboard-shell' in source:
+            fail("index.qmd must use a fenced div for dashboard-shell, not a literal HTML div")
+        if filename == "lectures.qmd" and '<div class="wide-content-shell' in source:
+            fail("lectures.qmd must use a fenced div for wide-content-shell, not a literal HTML div")
+        if "::: {." not in source:
+            fail(f"{filename} must use Pandoc fenced div wrappers around included content")
+
+    for path in (ROOT / "_generated").glob("*.qmd"):
+        source = path.read_text(encoding="utf-8").strip()
+        if not (source.startswith("```{=html}") and source.endswith("```")):
+            fail(f"generated include is not an explicit raw-HTML block: {path.name}")
+
 def main() -> None:
     validate_yaml()
     validate_front_matter()
@@ -194,8 +219,9 @@ def main() -> None:
     validate_css()
     validate_javascript()
     validate_generator()
+    validate_include_wrappers()
     validate_section_navigation()
-    print("Validation passed: YAML, front matter, links, section navigation, CSS, JavaScript, and generated course files.")
+    print("Validation passed: YAML, front matter, links, include wrappers, section navigation, CSS, JavaScript, and generated course files.")
 
 
 if __name__ == "__main__":
