@@ -1,0 +1,8 @@
+<meta name="theme-color" content="#15263d">
+<script>
+  (() => {
+    const saved = localStorage.getItem("course-theme");
+    const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.dataset.courseTheme = saved || preferred;
+  })();
+</script>

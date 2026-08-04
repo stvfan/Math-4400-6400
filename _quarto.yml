@@ -1,0 +1,73 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: python scripts/build_course_data.py
+  render:
+  - '*.qmd'
+  - notes/*.qmd
+  - assignments/*.qmd
+  resources:
+  - assets
+  - _templates
+  - course-data.yml
+website:
+  title: Number Theory
+  description: A syllabus-style website template for an undergraduate number theory
+    course.
+  favicon: assets/favicon.svg
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+  search:
+    location: navbar
+    type: overlay
+    keyboard-shortcut: s
+  navbar:
+    logo: assets/logo.svg
+    logo-alt: Number Theory course home
+    title: Number Theory
+    pinned: true
+    collapse-below: xl
+    left:
+    - href: index.qmd#summary
+      text: Summary
+    - href: index.qmd#recommended-textbook
+      text: Textbook
+    - href: index.qmd#lectures
+      text: Lectures
+    - href: index.qmd#assignments
+      text: Assignments
+    - href: index.qmd#exams
+      text: Exams
+    - href: index.qmd#grading
+      text: Grading
+    - href: index.qmd#accommodations-and-resources
+      text: Resources
+  page-footer:
+    border: true
+    left: © 20XX [Instructor Name]
+    right:
+    - text: Resources
+      href: resources.qmd
+    - text: Built with Quarto
+      href: https://quarto.org/
+format:
+  html:
+    theme: cosmo
+    css: assets/styles.css
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    fig-responsive: true
+    include-in-header: _includes/head.html
+    include-after-body: _includes/after-body.html
+    grid:
+      sidebar-width: 280px
+      body-width: 900px
+      margin-width: 260px
+      gutter-width: 2rem
+execute:
+  freeze: auto

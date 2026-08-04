@@ -1,0 +1,129 @@
+---
+title: "1. Divisibility and the integer landscape"
+subtitle: "Language, examples, and the first proof patterns"
+description: "An introduction to divisibility, the division algorithm, and proof structure."
+toc: true
+number-sections: true
+---
+
+<div class="course-meta-grid">
+  <div class="course-meta-item"><strong>Meeting</strong><span>Lecture 1</span></div>
+  <div class="course-meta-item"><strong>Reading</strong><span>[Text §1]</span></div>
+  <div class="course-meta-item"><strong>Before class</strong><span>Review quantifiers</span></div>
+  <div class="course-meta-item"><strong>Key object</strong><span>Divisibility</span></div>
+</div>
+
+## Goals
+
+After this lecture, you should be able to:
+
+- translate divisibility notation into an equation;
+- distinguish a mathematical claim from supporting numerical evidence;
+- use the division algorithm to organize the integers;
+- write a short direct proof with clearly introduced variables.
+
+## A first question
+
+The numbers $84$ and $126$ have many common divisors. How can we describe all of them without checking every positive integer one at a time?
+
+::: {#def-divisibility}
+## Divisibility
+
+For integers $a$ and $b$, we say that **$a$ divides $b$**, and write $a\mid b$, when there exists an integer $k$ such that
+
+$$b=ak.$$
+
+If no such integer exists, we write $a\nmid b$.
+:::
+
+The definition is an existence statement. A proof that $a\mid b$ should therefore exhibit or construct an integer multiplier; a proof that $a\nmid b$ must rule out every possible integer multiplier.
+
+::: {.example}
+**Example.** Since $126=7\cdot 18$, we have $7\mid126$. Since $126$ is not an integer multiple of $8$, we have $8\nmid126$.
+:::
+
+## Elementary properties
+
+::: {#prop-divisibility-arithmetic}
+## Arithmetic of divisibility
+
+Let $a,b,c,m,n\in\mathbb Z$.
+
+1. If $a\mid b$ and $b\mid c$, then $a\mid c$.
+2. If $a\mid b$ and $a\mid c$, then $a\mid (mb+nc)$.
+3. If $a\mid b$ and $b\ne0$, then $|a|\le |b|$.
+:::
+
+::: {.proof}
+For the second statement, write $b=ar$ and $c=as$ for integers $r$ and $s$. Then
+
+$$mb+nc=m(ar)+n(as)=a(mr+ns).$$
+
+Because $mr+ns$ is an integer, the definition gives $a\mid(mb+nc)$. The other statements are proved in the same style.
+:::
+
+Notice the proof architecture: unpack the hypothesis, perform an algebraic step, verify that the new multiplier is an integer, and invoke the definition.
+
+## The division algorithm
+
+::: {#thm-division-algorithm}
+## Division algorithm
+
+For every integer $a$ and every positive integer $d$, there exist unique integers $q$ and $r$ such that
+
+$$a=dq+r,\qquad 0\le r<d.$$
+:::
+
+The remainder $r$ tells us which of the $d$ residue classes contains $a$. For example, every integer has exactly one of the forms
+
+$$3q,\qquad 3q+1,\qquad 3q+2.$$
+
+This simple classification is a powerful proof tool.
+
+::: {.example}
+**Example.** The square of every integer is congruent to $0$ or $1$ modulo $4$.
+
+Write an integer as $n=2q$ or $n=2q+1$. In the first case, $n^2=4q^2$. In the second,
+
+$$n^2=(2q+1)^2=4(q^2+q)+1.$$
+
+Thus every square leaves remainder $0$ or $1$ upon division by $4$.
+:::
+
+## Proof clinic: state the witness
+
+A common incomplete sentence is: “Clearly $6\mid n(n+1)(n+2)$.” A complete argument identifies why factors $2$ and $3$ occur and then uses coprimality.
+
+::: {#prop-three-consecutive}
+## Product of three consecutive integers
+
+For every integer $n$,
+
+$$6\mid n(n+1)(n+2).$$
+:::
+
+::: {.proof}
+Among three consecutive integers, exactly one is divisible by $3$. At least one of the three is even. Hence the product is divisible by both $2$ and $3$. Since $\gcd(2,3)=1$, it is divisible by $6$.
+:::
+
+## Exercises
+
+::: {.exercise}
+**Exercise 1.** Prove directly that if $a\mid b$ and $c\mid d$, then $ac\mid bd$.
+:::
+
+::: {.exercise}
+**Exercise 2.** Show that if $n$ is odd, then $8\mid(n^2-1)$.
+
+<details class="hint"><summary>Hint</summary>
+Factor $n^2-1=(n-1)(n+1)$ and study two consecutive even integers.
+</details>
+:::
+
+::: {.exercise}
+**Exercise 3.** Decide whether the converse of each statement in @prop-divisibility-arithmetic is true. Give a proof or a counterexample.
+:::
+
+## Looking ahead
+
+The division algorithm does more than classify integers by remainder. Repeating it produces the Euclidean algorithm, which computes greatest common divisors and constructs integer solutions to linear equations.

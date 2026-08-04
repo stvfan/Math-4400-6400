@@ -1,0 +1,98 @@
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const root = document.documentElement;
+    const navbarContainer = document.querySelector(".navbar .navbar-nav.ms-auto")
+      || document.querySelector(".navbar .navbar-container")
+      || document.querySelector(".navbar");
+
+    const updateToggle = (button) => {
+      const isDark = root.dataset.courseTheme === "dark";
+      button.textContent = isDark ? "☀" : "☾";
+      button.setAttribute("aria-label", isDark ? "Use light theme" : "Use dark theme");
+      button.setAttribute("title", isDark ? "Use light theme" : "Use dark theme");
+    };
+
+    if (navbarContainer && !document.querySelector(".course-theme-toggle")) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "course-theme-toggle";
+      updateToggle(button);
+      button.addEventListener("click", () => {
+        root.dataset.courseTheme = root.dataset.courseTheme === "dark" ? "light" : "dark";
+        localStorage.setItem("course-theme", root.dataset.courseTheme);
+        updateToggle(button);
+      });
+      navbarContainer.appendChild(button);
+    }
+
+
+
+    const homeSections = Array.from(document.querySelectorAll(".dashboard-section[id]"));
+    const sectionLinks = Array.from(document.querySelectorAll(".navbar a.nav-link[href*='#']"))
+      .filter((link) => {
+        try {
+          const url = new URL(link.href, window.location.href);
+          return homeSections.some((section) => `#${section.id}` === url.hash);
+        } catch (_error) {
+          return false;
+        }
+      });
+
+    if (homeSections.length && sectionLinks.length) {
+      let ticking = false;
+      const updateSectionNavigation = () => {
+        const offset = 120;
+        let current = homeSections[0].id;
+        homeSections.forEach((section) => {
+          if (section.getBoundingClientRect().top <= offset) current = section.id;
+        });
+        sectionLinks.forEach((link) => {
+          const isCurrent = new URL(link.href, window.location.href).hash === `#${current}`;
+          link.classList.toggle("active", isCurrent);
+          if (isCurrent) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
+        ticking = false;
+      };
+
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateSectionNavigation);
+          ticking = true;
+        }
+      }, { passive: true });
+      window.addEventListener("hashchange", updateSectionNavigation);
+      updateSectionNavigation();
+    }
+
+    const logSearch = document.querySelector("#class-log-search");
+    if (logSearch) {
+      const entries = Array.from(document.querySelectorAll("[data-log-entry]"));
+      const count = document.querySelector("#class-log-count");
+      const empty = document.querySelector(".class-log-empty");
+
+      const updateLog = () => {
+        const query = logSearch.value.trim().toLowerCase();
+        let visible = 0;
+        entries.forEach((entry) => {
+          const haystack = (entry.dataset.search || entry.textContent).toLowerCase();
+          const show = !query || haystack.includes(query);
+          entry.hidden = !show;
+          if (show) visible += 1;
+        });
+        if (count) count.textContent = `${visible} ${visible === 1 ? "lecture" : "lectures"}`;
+        if (empty) empty.hidden = visible !== 0;
+      };
+
+      logSearch.addEventListener("input", updateLog);
+      updateLog();
+    }
+
+    document.querySelectorAll(".js-print").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.print();
+      });
+    });
+  });
+</script>

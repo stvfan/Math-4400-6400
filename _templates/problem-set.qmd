@@ -1,0 +1,34 @@
+---
+title: "Problem Set N"
+subtitle: "Topics"
+description: "One-sentence assignment description."
+toc: false
+---
+
+<div class="assignment-header">
+  <div><small>Assigned</small><strong>[Date]</strong></div>
+  <div><small>Due</small><strong>[Date · Time]</strong></div>
+  <div><small>Submit</small><strong>[LMS / Location]</strong></div>
+</div>
+
+[Print or save as PDF](#){.course-button .course-button-secondary .js-print}
+
+## Instructions
+
+[Collaboration, formatting, permitted resources, and submission instructions.]
+
+<div class="problem">
+<span class="problem-number">1</span> **Problem title.** [Problem statement.]
+</div>
+
+<div class="problem">
+<span class="problem-number">2</span> **Problem title.** [Problem statement.]
+
+<details class="hint"><summary>Hint</summary>
+[Optional hint.]
+</details>
+</div>
+
+## Optional challenge
+
+[Challenge problem.]

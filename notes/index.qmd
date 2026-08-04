@@ -1,0 +1,45 @@
+---
+title: "Lecture notes"
+description: "Definitions, examples, proofs, and exercises organized by topic."
+toc: false
+---
+
+Lecture notes are kept separate from assignments so students can find course content without sorting through deadlines or submission information.
+
+:::: {.card-grid}
+::: {.lecture-card}
+<div class="card-number">01</div>
+
+<div><span class="topic-chip">Foundations</span><span class="topic-chip">Proofs</span></div>
+
+### Divisibility and the integer landscape
+
+Notation, the division algorithm, divisibility arguments, and first proof patterns.
+
+[Read Lecture 1](01-divisibility.qmd){.card-link}
+:::
+
+::: {.lecture-card}
+<div class="card-number">02</div>
+
+<div><span class="topic-chip">Algorithms</span><span class="topic-chip">gcd</span></div>
+
+### The Euclidean algorithm
+
+Greatest common divisors, Bézout coefficients, and modular inverses.
+
+[Read Lecture 2](02-euclidean-algorithm.qmd){.card-link}
+:::
+
+::: {.lecture-card}
+<div class="card-number">03</div>
+
+<div><span class="topic-chip">Template</span></div>
+
+### Your next lecture note
+
+Copy the lecture template, add the new file here, and link it from the schedule.
+
+<a class="card-link" href="../_templates/lecture.qmd">Download the source template</a>
+:::
+::::

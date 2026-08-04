@@ -1,0 +1,169 @@
+---
+title: "2. The Euclidean algorithm"
+subtitle: "Greatest common divisors, Bézout coefficients, and inverses"
+description: "A worked introduction to the Euclidean algorithm and Bézout's identity."
+toc: true
+number-sections: true
+---
+
+<div class="course-meta-grid">
+  <div class="course-meta-item"><strong>Meeting</strong><span>Lecture 2</span></div>
+  <div class="course-meta-item"><strong>Reading</strong><span>[Text §2]</span></div>
+  <div class="course-meta-item"><strong>Prerequisite</strong><span>Division algorithm</span></div>
+  <div class="course-meta-item"><strong>Key object</strong><span>$\gcd(a,b)$</span></div>
+</div>
+
+## Goals
+
+After this lecture, you should be able to:
+
+- execute the Euclidean algorithm efficiently;
+- justify why replacing $(a,b)$ by $(b,r)$ preserves the common divisors;
+- recover Bézout coefficients by back-substitution;
+- decide when a residue class has a multiplicative inverse.
+
+## Greatest common divisors
+
+::: {#def-gcd}
+## Greatest common divisor
+
+For integers $a$ and $b$, not both zero, the **greatest common divisor** $\gcd(a,b)$ is the unique positive integer $d$ such that
+
+1. $d\mid a$ and $d\mid b$;
+2. every common divisor of $a$ and $b$ divides $d$.
+:::
+
+The second condition is stronger and more useful than merely saying that $d$ is the largest common divisor.
+
+## The reduction step
+
+Suppose the division algorithm gives
+
+$$a=bq+r.$$
+
+A number divides both $a$ and $b$ exactly when it divides both $b$ and $r=a-bq$. Therefore
+
+$$\gcd(a,b)=\gcd(b,r).$$
+
+Repeating this replacement strictly decreases the positive remainder, so the process must stop.
+
+::: {#thm-euclidean-algorithm}
+## Euclidean algorithm
+
+Let $a\ge b>0$. Repeatedly divide with remainder:
+
+$$
+\begin{aligned}
+a&=bq_1+r_1,\\
+b&=r_1q_2+r_2,\\
+&\ \vdots\\
+r_{k-2}&=r_{k-1}q_k+r_k,\\
+r_{k-1}&=r_kq_{k+1}.
+\end{aligned}
+$$
+
+Then the last nonzero remainder is $\gcd(a,b)$.
+:::
+
+## Worked example
+
+Compute $\gcd(252,198)$:
+
+$$
+\begin{aligned}
+252&=198\cdot1+54,\\
+198&=54\cdot3+36,\\
+54&=36\cdot1+18,\\
+36&=18\cdot2.
+\end{aligned}
+$$
+
+Thus $\gcd(252,198)=18$.
+
+The calculation contains more information. Reading upward,
+
+$$
+\begin{aligned}
+18&=54-36\\
+  &=54-(198-3\cdot54)\\
+  &=4\cdot54-198\\
+  &=4(252-198)-198\\
+  &=4\cdot252-5\cdot198.
+\end{aligned}
+$$
+
+We have expressed the gcd as an integer linear combination.
+
+::: {#thm-bezout}
+## Bézout's identity
+
+For integers $a$ and $b$, not both zero, there exist integers $x$ and $y$ such that
+
+$$ax+by=\gcd(a,b).$$
+:::
+
+::: {.proof}
+The Euclidean algorithm terminates at the gcd. Each remainder is an integer linear combination of the two preceding numbers. Back-substitution therefore expresses the final nonzero remainder as an integer linear combination of the original inputs.
+:::
+
+## Consequences
+
+::: {#cor-linear-diophantine}
+## Linear Diophantine criterion
+
+The equation
+
+$$ax+by=c$$
+
+has an integer solution if and only if $\gcd(a,b)\mid c$.
+:::
+
+For modular arithmetic, Bézout's identity gives an especially useful test.
+
+::: {#cor-inverse-criterion}
+## Inverse criterion
+
+The congruence
+
+$$ax\equiv1\pmod n$$
+
+has a solution if and only if $\gcd(a,n)=1$.
+:::
+
+::: {.example}
+**Example.** To invert $17$ modulo $43$, run the Euclidean algorithm:
+
+$$43=2\cdot17+9,\quad 17=1\cdot9+8,\quad 9=1\cdot8+1.$$
+
+Back-substitution gives
+
+$$1=2\cdot43-5\cdot17.$$
+
+Therefore $-5$ is an inverse of $17$ modulo $43$, and the least nonnegative inverse is $38$.
+:::
+
+## Exercises
+
+::: {.exercise}
+**Exercise 1.** Compute $\gcd(414,662)$ and express it in the form $414x+662y$.
+:::
+
+::: {.exercise}
+**Exercise 2.** Determine all integers $c$ for which $84x+126y=c$ has an integer solution.
+:::
+
+::: {.exercise}
+**Exercise 3.** Find the inverse of $37$ modulo $101$ without trial and error.
+
+<details class="hint"><summary>Check after solving</summary>
+Multiply your proposed inverse by $37$ and reduce modulo $101$.
+</details>
+:::
+
+::: {.exercise}
+**Exercise 4.** Prove that $\gcd(a,b)=\gcd(a,a+b)$ for all integers $a,b$, not both zero.
+:::
+
+## Summary
+
+The Euclidean algorithm is simultaneously a computational procedure and a proof. It identifies the gcd, certifies it through a Bézout identity, and solves the inverse problem in modular arithmetic.

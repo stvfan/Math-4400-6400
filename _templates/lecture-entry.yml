@@ -1,0 +1,10 @@
+# Copy this block to the top of `lectures` in course-data.yml.
+- date: "September 12"
+  meeting: "Lecture 6"
+  title: "Lecture title"
+  summary: >-
+    One or two sentences describing what was actually covered.
+  topics: ["topic one", "topic two"]
+  links:
+    - label: "Notes"
+      href: "notes/03-your-topic.qmd"

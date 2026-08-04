@@ -1,0 +1,95 @@
+---
+title: "Syllabus"
+description: "Course goals, expectations, grading, and policies."
+toc: true
+---
+
+::: {.template-note}
+**Template note.** Replace bracketed text, official university language, and sample policies before publishing. Delete this box when the syllabus is final.
+:::
+
+<div class="course-meta-grid">
+  <div class="course-meta-item"><strong>Course</strong><span>MATH 3XX · Number Theory</span></div>
+  <div class="course-meta-item"><strong>Term</strong><span>Fall 20XX</span></div>
+  <div class="course-meta-item"><strong>Instructor</strong><span>[Instructor Name]</span></div>
+  <div class="course-meta-item"><strong>Contact</strong><span>email@institution.edu · [Office]</span></div>
+</div>
+
+## Course description
+
+Number theory is the study of the positive integers and the remarkable structures hidden inside them. Although its questions are often easy to state, many have resisted centuries of effort. This course introduces divisibility, congruences, prime numbers, Diophantine equations, quadratic residues, and selected classical applications. Throughout the course, we will emphasize proof writing, experimentation, mathematical communication, and the transition from examples to general theorems.
+
+## Learning objectives
+
+By the end of the course, students should be able to:
+
+1. use the Euclidean algorithm, Bézout's identity, and unique factorization fluently;
+2. solve linear congruences and systems of congruences;
+3. apply Fermat's little theorem, Euler's theorem, and related results;
+4. analyze classical Diophantine equations and quadratic residues;
+5. write clear proofs using direct, contrapositive, contradiction, and induction arguments;
+6. use computation to explore examples while distinguishing evidence from proof.
+
+## Prerequisites
+
+[State the formal prerequisites.] Students should be comfortable with algebraic manipulation, functions, sets, and basic proof techniques. Prior exposure to proof-based mathematics is helpful.
+
+## Recommended textbook
+
+W. J. LeVeque, *Fundamentals of Number Theory*.
+
+The book covers the standard topics clearly and is remarkably inexpensive. It is recommended but not required. Lecture notes, examples, and assignments will be posted on this website.
+
+## Homework
+
+Homework will be assigned every one or two weeks. Late homework will not normally be accepted, although early submission or an extension may be arranged in advance when circumstances require it. The lowest homework score will be dropped at the end of the term.
+
+Collaboration is encouraged, but every student must understand and write the final solutions independently. You should be able to explain every submitted argument in detail. Copying from another student, a textbook solution source, or an unauthorized website is not permitted.
+
+## Exams
+
+There are two in-class midterm examinations and a cumulative final examination. Exams are closed book and closed notes unless announced otherwise. No make-up examinations will be given except when required by university policy or arranged for a documented emergency.
+
+| Examination | Date | Time | Location |
+|---|---|---|---|
+| Midterm 1 | [Date] | [Time] | [Location] |
+| Midterm 2 | [Date] | [Time] | [Location] |
+| Final exam | [Date] | [Time] | [Location] |
+
+## Grading
+
+| Component | Weight |
+|---|---:|
+| Midterm 1 | 22.5% |
+| Midterm 2 | 22.5% |
+| Homework | 25% |
+| Final exam | 30% |
+
+[Insert the institution's grading scale and policy on rounding, incompletes, or pass/fail enrollment if needed.]
+
+## Attendance and participation
+
+Regular attendance is expected because class meetings will include examples, discussion, and proof development not reproduced verbatim in the posted notes. If you miss class, consult the [Lectures](lectures.qmd) record and obtain notes from a classmate before contacting the instructor with specific questions.
+
+## Communication
+
+Course announcements will appear on [the LMS / this website] and may also be sent by email. For mathematical questions that may help the class, use [discussion board or office hours]. For personal matters, email the instructor directly.
+
+## Accommodations and university resources
+
+Students who may require accommodations should contact the instructor as early as possible and work with the university office responsible for accessibility services. Appropriate documentation may be required under university policy.
+
+Replace the placeholders on the home page with official links for:
+
+- accessibility services;
+- academic support and tutoring;
+- counseling and wellbeing;
+- student care or dean-of-students support.
+
+## Academic integrity
+
+[Insert or link the institution's official academic-integrity policy.] When in doubt about whether a resource or form of collaboration is permitted, ask before using it.
+
+## Changes to the syllabus
+
+The course syllabus is a general plan for the course and is subject to change; deviations announced to the class by the instructor may be necessary.

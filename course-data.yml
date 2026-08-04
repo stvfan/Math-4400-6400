@@ -1,0 +1,190 @@
+# ================================================================
+# EDIT THIS FILE FOR ROUTINE COURSE UPDATES
+# ================================================================
+# After editing, run:
+#   python scripts/build_course_data.py
+# The GitHub Pages workflow runs this automatically when you push.
+
+course:
+  code: "MATH 3XX"
+  title: "Number Theory"
+  semester: "Fall 20XX"
+  instructor: "[Instructor Name]"
+  email: "email@institution.edu"
+  meetings: "[Days · Time]"
+  room: "[Building · Room]"
+  office_hours: "[Days · Time]"
+  office: "[Office or Zoom]"
+  quote: "God made the integers; all else is the work of man."
+  quote_attribution: "Leopold Kronecker"
+
+course_summary:
+  paragraphs:
+    - >-
+      Number theory is the study of the positive integers and the remarkable
+      structures hidden inside them. Although its questions are often easy to
+      state, many have resisted centuries of effort. This course introduces
+      divisibility, congruences, prime numbers, Diophantine equations,
+      quadratic residues, and selected classical applications.
+    - >-
+      Along the way, we will emphasize proof writing, experimentation,
+      mathematical communication, and the transition from examples to general
+      theorems.
+  syllabus_label: "View the course syllabus"
+  syllabus_href: "syllabus.qmd"
+
+textbook:
+  title: "Fundamentals of Number Theory"
+  author: "W. J. LeVeque"
+  note: >-
+    LeVeque's book covers the standard topics clearly and is remarkably
+    inexpensive. You do not need the book for this course, but it is an
+    excellent addition to any mathematical library.
+  purchase_label: "Purchase"
+  purchase_url: "https://www.amazon.com/dp/0486689069/"
+
+# Keep newest lectures first. Add one entry after each class meeting.
+# Attach the corresponding lecture notes using the links list.
+lectures:
+  - date: "September 10"
+    meeting: "Lecture 5"
+    title: "Bézout's identity and linear Diophantine equations"
+    summary: >-
+      We ran the extended Euclidean algorithm, interpreted its output as a
+      certificate, and classified the integer solutions of ax+by=c.
+    topics: ["gcd", "Bézout", "Diophantine equations"]
+    links:
+      - label: "Lecture notes"
+        href: "notes/02-euclidean-algorithm.qmd"
+  - date: "September 8"
+    meeting: "Lecture 4"
+    title: "The Euclidean algorithm"
+    summary: >-
+      We proved termination, computed several gcds, and compared the
+      subtraction and remainder versions of the algorithm.
+    topics: ["algorithm", "gcd", "remainders"]
+    links:
+      - label: "Lecture notes"
+        href: "notes/02-euclidean-algorithm.qmd"
+  - date: "September 5"
+    meeting: "Lecture 3"
+    title: "The division algorithm and proof design"
+    summary: >-
+      We used quotient-remainder representations to organize divisibility
+      arguments and discussed how examples can reveal the right statement.
+    topics: ["division algorithm", "proofs"]
+    links:
+      - label: "Lecture notes"
+        href: "notes/01-divisibility.qmd"
+  - date: "September 3"
+    meeting: "Lecture 2"
+    title: "Divisibility, quantifiers, and counterexamples"
+    summary: >-
+      We translated divisibility into equations, practiced negating quantified
+      statements, and found counterexamples to tempting claims.
+    topics: ["divisibility", "logic", "counterexamples"]
+    links:
+      - label: "Lecture notes"
+        href: "notes/01-divisibility.qmd"
+  - date: "August 29"
+    meeting: "Lecture 1"
+    title: "Why study the integers?"
+    summary: >-
+      We introduced the course, explored several elementary-looking open
+      questions, and discussed the difference between evidence and proof.
+    topics: ["course introduction", "conjectures"]
+    links:
+      - label: "Syllabus"
+        href: "syllabus.qmd"
+
+assignments:
+  policy:
+    - >-
+      Homework will be assigned every one or two weeks. Late homework will not
+      normally be accepted, although early submission or an extension may be
+      arranged in advance when circumstances require it. The lowest homework
+      score will be dropped at the end of the term.
+    - >-
+      Collaboration is encouraged, but every student must understand and write
+      the final solutions independently. You should be able to explain every
+      submitted argument in detail.
+  items:
+    - number: "HW 1"
+      title: "Divisibility and the Euclidean algorithm"
+      due: "Friday, September 12 · 5:00 PM"
+      status: "Assigned"
+      status_style: "due"
+      note: "Proof practice, gcd computations, and Bézout coefficients."
+      href: "assignments/problem-set-01.qmd"
+    - number: "HW 2"
+      title: "Prime factorization and congruences"
+      due: "[Due date and time]"
+      status: "Forthcoming"
+      status_style: "upcoming"
+      note: "Replace this entry when the assignment is ready."
+      href: "assignments/index.qmd"
+
+exams:
+  policy:
+    - >-
+      There are two in-class midterm examinations and a cumulative final
+      examination. Exams are closed book and closed notes unless announced
+      otherwise.
+    - >-
+      No make-up examinations will be given except when required by university
+      policy or arranged for a documented emergency.
+  items:
+    - title: "Midterm 1"
+      date: "[Date]"
+      time: "[Time]"
+      location: "[Location]"
+    - title: "Midterm 2"
+      date: "[Date]"
+      time: "[Time]"
+      location: "[Location]"
+    - title: "Final exam"
+      date: "[Date]"
+      time: "[Time]"
+      location: "[Location]"
+      note: "Cumulative"
+
+grading:
+  intro: "Final grades will be calculated from the following weighted components."
+  items:
+    - component: "Midterm 1"
+      weight: "22.5%"
+      note: "In-class examination"
+    - component: "Midterm 2"
+      weight: "22.5%"
+      note: "In-class examination"
+    - component: "Homework"
+      weight: "25%"
+      note: "Lowest homework score dropped"
+    - component: "Final exam"
+      weight: "30%"
+      note: "Cumulative examination"
+
+accommodations_resources:
+  accommodation_text: >-
+    Students who may require accommodations should contact the instructor as
+    early as possible and work with the university office responsible for
+    accessibility services. Appropriate documentation may be required under
+    university policy.
+  resources:
+    - label: "Accessibility services"
+      description: "Accommodation requests and access support"
+      href: "https://www.example.edu/accessibility"
+    - label: "Academic support"
+      description: "Tutoring, study skills, and learning assistance"
+      href: "https://www.example.edu/academic-support"
+    - label: "Counseling and wellbeing"
+      description: "Confidential mental-health and wellbeing support"
+      href: "https://www.example.edu/counseling"
+    - label: "Student care"
+      description: "Help navigating personal or academic difficulties"
+      href: "https://www.example.edu/student-care"
+
+disclaimer: >-
+  The course syllabus is a general plan for the course and is subject to
+  change; deviations announced to the class by the instructor may be
+  necessary.

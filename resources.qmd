@@ -1,0 +1,73 @@
+---
+title: "Resources"
+description: "Proof writing, notation, computational tools, and course support."
+toc: true
+---
+
+## Proof-writing checklist
+
+Before submitting a proof, ask:
+
+1. **What exactly is the claim?** Have all variables, domains, and quantifiers been stated?
+2. **Which definitions control the problem?** Can the hypotheses be rewritten in a useful algebraic form?
+3. **What is the decisive step?** Is it visible rather than hidden inside “clearly” or “obviously”?
+4. **Have edge cases been handled?** Check zero, negative values, small moduli, and equality cases when relevant.
+5. **Does the conclusion match the claim?** End by explicitly connecting the work to what was required.
+
+::: {.example}
+**Good closing sentence.** “Since $mr+ns\in\mathbb Z$, the equation $mb+nc=a(mr+ns)$ shows that $a\mid(mb+nc)$.”
+:::
+
+## Common notation
+
+| Notation | Meaning |
+|---|---|
+| $a\mid b$ | $a$ divides $b$ |
+| $a\nmid b$ | $a$ does not divide $b$ |
+| $\gcd(a,b)$ | greatest common divisor |
+| $a\equiv b\pmod n$ | $n\mid(a-b)$ |
+| $\varphi(n)$ | Euler's totient function |
+| $\mu(n)$ | Möbius function |
+| $\mathbb Z/n\mathbb Z$ | residue classes modulo $n$ |
+
+## Productive use of computation
+
+Computation is valuable for generating examples, testing conjectures, and finding counterexamples. It does not replace proof. A productive workflow is:
+
+1. calculate a small, deliberately chosen set of cases;
+2. record the pattern precisely;
+3. identify which features of the examples might be structural;
+4. attempt a proof;
+5. search actively for counterexamples to the strengthened claim.
+
+### SageMath example
+
+```python
+# Greatest common divisors and Bézout coefficients
+for a, b in [(252, 198), (2026, 748), (37, 101)]:
+    d, x, y = xgcd(a, b)
+    print(a, b, d, x, y, a*x + b*y)
+```
+
+### Plain Python example
+
+```python
+from math import gcd
+
+for n in range(2, 15):
+    residues = sorted({(a * a) % n for a in range(n)})
+    print(n, residues)
+```
+
+## Getting help
+
+A strong mathematical question includes the problem statement, the definitions or results you think are relevant, what you tried, and the precise point where your reasoning stopped. Bring such questions to [office hours], [discussion section], or [course forum].
+
+## Further reading
+
+- [Textbook or open textbook]
+- [Proof-writing reference]
+- [Computational number theory resource]
+- [Historical or expository reading]
+
+Replace these placeholders with resources aligned to the course and accessible to your students.

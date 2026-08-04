@@ -1,0 +1,60 @@
+---
+title: "N. Lecture title"
+subtitle: "A concise descriptive subtitle"
+description: "One-sentence page description for search results."
+toc: true
+number-sections: true
+---
+
+<div class="course-meta-grid">
+  <div class="course-meta-item"><strong>Meeting</strong><span>Lecture N</span></div>
+  <div class="course-meta-item"><strong>Reading</strong><span>[Text §N]</span></div>
+  <div class="course-meta-item"><strong>Prerequisite</strong><span>[Topic]</span></div>
+  <div class="course-meta-item"><strong>Key object</strong><span>[Object]</span></div>
+</div>
+
+## Goals
+
+After this lecture, you should be able to:
+
+- [goal one];
+- [goal two];
+- [goal three].
+
+## Motivating question
+
+[Begin with a concrete example or question.]
+
+::: {#def-example-id}
+## Definition title
+
+[Definition.]
+:::
+
+::: {#thm-example-id}
+## Theorem title
+
+[Theorem statement.]
+:::
+
+::: {.proof}
+[Proof.]
+:::
+
+::: {.example}
+**Example.** [Worked example.]
+:::
+
+## Exercises
+
+::: {.exercise}
+**Exercise 1.** [Exercise.]
+
+<details class="hint"><summary>Hint</summary>
+[Optional hint.]
+</details>
+:::
+
+## Summary
+
+[One-paragraph summary and transition to the next lecture.]

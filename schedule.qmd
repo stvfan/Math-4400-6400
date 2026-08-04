@@ -1,0 +1,39 @@
+---
+title: "Schedule"
+description: "The planned semester map of topics, readings, notes, and due dates."
+toc: false
+---
+
+::: {.template-note}
+**Template note.** This page is the plan; the [lectures page](lectures.qmd) records what actually happened. Replace topics and dates, then remove this box.
+:::
+
+
+::: {.schedule-table}
+| Week | Theme | Reading and notes | Work due |
+|---:|---|---|---|
+| 1 | Divisibility, quantifiers, and proof patterns | [Lecture 1](notes/01-divisibility.qmd) · [Text §1] | Diagnostic exercise |
+| 2 | Euclidean algorithm and Bézout's identity | [Lecture 2](notes/02-euclidean-algorithm.qmd) · [Text §2] | [Problem Set 1](assignments/problem-set-01.qmd) <span class="status-badge status-due">Due [date]</span> |
+| 3 | Prime numbers and unique factorization | [Text §3] · notes forthcoming | Problem Set 2 |
+| 4 | Congruences and residue classes | [Text §4] · notes forthcoming | Short quiz |
+| 5 | Linear congruences and the Chinese remainder theorem | [Text §5] · notes forthcoming | Problem Set 3 |
+| 6 | Fermat, Euler, and multiplicative order | [Text §6] · notes forthcoming | Problem Set 4 |
+| 7 | Arithmetic functions and Möbius inversion | [Text §7] · notes forthcoming | Midterm 1 review |
+| 8 | Midterm 1 and transition | Review packet | Midterm 1 |
+| 9 | Polynomial congruences and primitive roots | [Text §8] · notes forthcoming | Problem Set 5 |
+| 10 | Quadratic residues and Euler's criterion | [Text §9] · notes forthcoming | Problem Set 6 |
+| 11 | Quadratic reciprocity | [Text §10] · notes forthcoming | Midterm 2 review |
+| 12 | Midterm 2 and Diophantine equations | [Text §11] · notes forthcoming | Midterm 2 |
+| 13 | Sums of squares and continued fractions | Selected notes | Problem Set 7 |
+| 14 | Cryptography, open questions, and synthesis | Selected notes | Final review |
+:::
+
+## Planning legend
+
+<span class="status-badge status-upcoming">Upcoming</span> content has been announced but not completed.  
+<span class="status-badge status-due">Due</span> marks a submission deadline.  
+<span class="status-badge status-complete">Complete</span> may be used after a meeting or assignment has passed.
+
+## Calendar changes
+
+When the plan changes, update this page. After each meeting, add one reverse-chronological entry to the `lectures` section of `course-data.yml` and attach the corresponding lecture notes.

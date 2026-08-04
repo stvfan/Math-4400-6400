@@ -1,0 +1,55 @@
+---
+title: "Assignments"
+description: "Problem sets, due dates, submission instructions, and optional hints."
+toc: false
+---
+
+:::: {.next-class}
+<div class="next-class-date">Next deadline · [Date and time]</div>
+
+::: {.next-class-copy}
+### Problem Set 1
+
+Divisibility, the division algorithm, and proof-writing practice.
+:::
+
+[Open assignment](problem-set-01.qmd){.course-button .course-button-primary}
+::::
+
+:::: {.card-grid}
+::: {.assignment-card}
+<div class="card-number">PS 1</div>
+
+<div><span class="status-badge status-due">Due [date]</span></div>
+
+### Divisibility and Euclid
+
+A sample assignment demonstrating metadata, problem formatting, hints, and print styling.
+
+[View Problem Set 1](problem-set-01.qmd){.card-link}
+:::
+
+::: {.assignment-card}
+<div class="card-number">PS 2</div>
+
+<div><span class="status-badge status-upcoming">Forthcoming</span></div>
+
+### Prime factorization
+
+Duplicate the problem-set template and replace this card when the assignment is ready.
+
+<a class="card-link" href="../_templates/problem-set.qmd">Download the source template</a>
+:::
+
+::: {.assignment-card}
+<div class="card-number">Guide</div>
+
+<div><span class="topic-chip">Writing</span></div>
+
+### Submission checklist
+
+State claims precisely, show the decisive reasoning, and cite collaborators and permitted resources.
+
+[Read the checklist](../resources.qmd#proof-writing-checklist){.card-link}
+:::
+::::
