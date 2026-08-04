@@ -155,11 +155,9 @@ def build_textbook(data: dict[str, Any]) -> str:
 <section id="recommended-textbook" class="dashboard-section textbook-section" aria-labelledby="textbook-heading">
   {heading}
   <div class="textbook-card">
-    <div class="textbook-cover" aria-hidden="true">
-      <span>Fundamentals</span>
-      <strong>Number<br>Theory</strong>
-      <small>W. J. LeVeque</small>
-    </div>
+    <img class="textbook-cover"
+         src="{attr(book.get('cover_image', 'assets/leveque-fundamentals-cover.svg'))}"
+         alt="{attr(book.get('cover_alt', f"Cover of {book['title']} by {book['author']}"))}">
     <div class="textbook-copy">
       <span class="textbook-label">Recommended · not required</span>
       <h3>{text(book['title'])}</h3>
