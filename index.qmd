@@ -1,0 +1,27 @@
+---
+pagetitle: "Number Theory"
+page-layout: full
+toc: false
+---
+
+{{< include _generated/home-hero.qmd >}}
+
+<div class="dashboard-shell syllabus-home">
+
+{{< include _generated/course-summary.qmd >}}
+
+{{< include _generated/textbook.qmd >}}
+
+{{< include _generated/lectures-preview.qmd >}}
+
+{{< include _generated/assignments.qmd >}}
+
+{{< include _generated/exams.qmd >}}
+
+{{< include _generated/grading.qmd >}}
+
+{{< include _generated/accommodations.qmd >}}
+
+{{< include _generated/disclaimer.qmd >}}
+
+</div>
