@@ -4,24 +4,343 @@ page-layout: full
 toc: false
 ---
 
-{{< include _generated/home-hero.qmd >}}
+```{=html}
+<header class="course-header-hero" aria-labelledby="course-title">
+  <div class="course-header-title">
+    <div class="course-heading-block">
+      <div class="hero-course-line">
+        <span>MATH 3XX</span>
+        <span class="hero-dot" aria-hidden="true"></span>
+        <span>Fall 20XX</span>
+      </div>
+      <h1 id="course-title">Number Theory</h1>
+    </div>
+    <figure class="course-header-quote">
+      <blockquote>“God made the integers; all else is the work of man.”</blockquote>
+      <figcaption>— Leopold Kronecker</figcaption>
+    </figure>
+  </div>
+  <div class="course-header-facts" aria-label="Essential course information">
+    <div class="header-fact">
+      <span>Meetings</span>
+      <strong>[Days · Time]</strong>
+      <div class="header-fact-detail">[Building · Room]</div>
+    </div>
+    <div class="header-fact">
+      <span>Instructor</span>
+      <strong>[Instructor Name]</strong>
+      <div class="header-fact-detail"><a href="mailto:email@institution.edu">email@institution.edu</a></div>
+    </div>
+    <div class="header-fact">
+      <span>Office hours</span>
+      <strong>[Days · Time]</strong>
+      <div class="header-fact-detail">[Office or Zoom]</div>
+    </div>
+  </div>
+</header>
 
-::: {.dashboard-shell .syllabus-home}
+<div class="dashboard-shell syllabus-home">
 
-{{< include _generated/course-summary.qmd >}}
+<section id="summary" class="dashboard-section course-summary-section" aria-labelledby="summary-heading">
+  
+<div class="section-heading-row">
+  <div>
+    <div class="section-kicker">About the course</div>
+    <h2 id="summary-heading">Course summary</h2>
+  </div>
+  
+</div>
 
-{{< include _generated/textbook.qmd >}}
+  <div class="summary-card">
+    <div class="summary-copy"><p>Number theory is the study of the positive integers and the remarkable structures hidden inside them. Although its questions are often easy to state, many have resisted centuries of effort. This course introduces divisibility, congruences, prime numbers, Diophantine equations, quadratic residues, and selected classical applications.</p><p>Along the way, we will emphasize proof writing, experimentation, mathematical communication, and the transition from examples to general theorems.</p></div>
+    <div class="summary-action">
+      <a class="course-button course-button-primary" href="syllabus.html">View the course syllabus</a>
+    </div>
+  </div>
+</section>
 
-{{< include _generated/lectures-preview.qmd >}}
 
-{{< include _generated/assignments.qmd >}}
+<section id="recommended-textbook" class="dashboard-section textbook-section" aria-labelledby="textbook-heading">
+  
+<div class="section-heading-row">
+  <div>
+    <div class="section-kicker">Course materials</div>
+    <h2 id="textbook-heading">Recommended textbook</h2>
+  </div>
+  
+</div>
 
-{{< include _generated/exams.qmd >}}
+  <div class="textbook-card">
+    <div class="textbook-cover" aria-hidden="true">
+      <span>Fundamentals</span>
+      <strong>Number<br>Theory</strong>
+      <small>W. J. LeVeque</small>
+    </div>
+    <div class="textbook-copy">
+      <span class="textbook-label">Recommended · not required</span>
+      <h3>Fundamentals of Number Theory</h3>
+      <p class="textbook-author">W. J. LeVeque</p>
+      <p>LeVeque's book covers the standard topics clearly and is remarkably inexpensive. You do not need the book for this course, but it is an excellent addition to any mathematical library.</p>
+      <a class="course-button course-button-secondary" href="https://www.amazon.com/dp/0486689069/">Purchase</a>
+    </div>
+  </div>
+</section>
 
-{{< include _generated/grading.qmd >}}
 
-{{< include _generated/accommodations.qmd >}}
+<section id="lectures" class="dashboard-section lectures-home-section" aria-labelledby="lectures-heading">
+  
+<div class="section-heading-row">
+  <div>
+    <div class="section-kicker">Updated after each class</div>
+    <h2 id="lectures-heading">Lectures</h2>
+  </div>
+  <a class="section-text-link" href="lectures.html">View all lectures →</a>
+</div>
 
-{{< include _generated/disclaimer.qmd >}}
+  <div class="lecture-list">
+<article class="lecture-entry lecture-entry-compact" data-log-entry data-search="September 10 Lecture 5 Bézout&#x27;s identity and linear Diophantine equations We ran the extended Euclidean algorithm, interpreted its output as a certificate, and classified the integer solutions of ax+by=c. gcd Bézout Diophantine equations">
+  <div class="lecture-date">
+    <strong>September 10</strong>
+    <span>Lecture 5</span>
+  </div>
+  <div class="lecture-copy">
+    <h3>Bézout's identity and linear Diophantine equations</h3>
+    <p>We ran the extended Euclidean algorithm, interpreted its output as a certificate, and classified the integer solutions of ax+by=c.</p>
+  </div>
+  <div class="lecture-links"><a class="material-link" href="notes/02-euclidean-algorithm.html">Lecture notes</a></div>
+</article>
 
-:::
+<article class="lecture-entry lecture-entry-compact" data-log-entry data-search="September 8 Lecture 4 The Euclidean algorithm We proved termination, computed several gcds, and compared the subtraction and remainder versions of the algorithm. algorithm gcd remainders">
+  <div class="lecture-date">
+    <strong>September 8</strong>
+    <span>Lecture 4</span>
+  </div>
+  <div class="lecture-copy">
+    <h3>The Euclidean algorithm</h3>
+    <p>We proved termination, computed several gcds, and compared the subtraction and remainder versions of the algorithm.</p>
+  </div>
+  <div class="lecture-links"><a class="material-link" href="notes/02-euclidean-algorithm.html">Lecture notes</a></div>
+</article>
+
+<article class="lecture-entry lecture-entry-compact" data-log-entry data-search="September 5 Lecture 3 The division algorithm and proof design We used quotient-remainder representations to organize divisibility arguments and discussed how examples can reveal the right statement. division algorithm proofs">
+  <div class="lecture-date">
+    <strong>September 5</strong>
+    <span>Lecture 3</span>
+  </div>
+  <div class="lecture-copy">
+    <h3>The division algorithm and proof design</h3>
+    <p>We used quotient-remainder representations to organize divisibility arguments and discussed how examples can reveal the right statement.</p>
+  </div>
+  <div class="lecture-links"><a class="material-link" href="notes/01-divisibility.html">Lecture notes</a></div>
+</article>
+
+<article class="lecture-entry lecture-entry-compact" data-log-entry data-search="September 3 Lecture 2 Divisibility, quantifiers, and counterexamples We translated divisibility into equations, practiced negating quantified statements, and found counterexamples to tempting claims. divisibility logic counterexamples">
+  <div class="lecture-date">
+    <strong>September 3</strong>
+    <span>Lecture 2</span>
+  </div>
+  <div class="lecture-copy">
+    <h3>Divisibility, quantifiers, and counterexamples</h3>
+    <p>We translated divisibility into equations, practiced negating quantified statements, and found counterexamples to tempting claims.</p>
+  </div>
+  <div class="lecture-links"><a class="material-link" href="notes/01-divisibility.html">Lecture notes</a></div>
+</article>
+
+<article class="lecture-entry lecture-entry-compact" data-log-entry data-search="August 29 Lecture 1 Why study the integers? We introduced the course, explored several elementary-looking open questions, and discussed the difference between evidence and proof. course introduction conjectures">
+  <div class="lecture-date">
+    <strong>August 29</strong>
+    <span>Lecture 1</span>
+  </div>
+  <div class="lecture-copy">
+    <h3>Why study the integers?</h3>
+    <p>We introduced the course, explored several elementary-looking open questions, and discussed the difference between evidence and proof.</p>
+  </div>
+  <div class="lecture-links"><a class="material-link" href="syllabus.html">Syllabus</a></div>
+</article>
+</div>
+</section>
+
+
+<section id="assignments" class="dashboard-section assignments-home-section" aria-labelledby="assignments-heading">
+  
+<div class="section-heading-row">
+  <div>
+    <div class="section-kicker">Homework and due dates</div>
+    <h2 id="assignments-heading">Assignments</h2>
+  </div>
+  <a class="section-text-link" href="assignments/index.html">All assignments →</a>
+</div>
+
+  <div class="policy-card"><p>Homework will be assigned every one or two weeks. Late homework will not normally be accepted, although early submission or an extension may be arranged in advance when circumstances require it. The lowest homework score will be dropped at the end of the term.</p><p>Collaboration is encouraged, but every student must understand and write the final solutions independently. You should be able to explain every submitted argument in detail.</p></div>
+  <div class="assignment-list-home">
+<article class="assignment-row">
+  <div class="assignment-id">
+    <strong>HW 1</strong>
+    <span>Friday, September 12 · 5:00 PM</span>
+  </div>
+  <div class="assignment-copy">
+    <h3>Divisibility and the Euclidean algorithm</h3>
+    <p>Proof practice, gcd computations, and Bézout coefficients.</p>
+  </div>
+  <div class="assignment-actions">
+    <span class="status-badge status-due">Assigned</span>
+    <a class="material-link" href="assignments/problem-set-01.html">Open</a>
+  </div>
+</article>
+
+<article class="assignment-row">
+  <div class="assignment-id">
+    <strong>HW 2</strong>
+    <span>[Due date and time]</span>
+  </div>
+  <div class="assignment-copy">
+    <h3>Prime factorization and congruences</h3>
+    <p>Replace this entry when the assignment is ready.</p>
+  </div>
+  <div class="assignment-actions">
+    <span class="status-badge status-upcoming">Forthcoming</span>
+    <a class="material-link" href="assignments/index.html">Open</a>
+  </div>
+</article>
+</div>
+</section>
+
+
+<section id="exams" class="dashboard-section exams-home-section" aria-labelledby="exams-heading">
+  
+<div class="section-heading-row">
+  <div>
+    <div class="section-kicker">Assessment dates and policies</div>
+    <h2 id="exams-heading">Exams</h2>
+  </div>
+  
+</div>
+
+  <div class="policy-card"><p>There are two in-class midterm examinations and a cumulative final examination. Exams are closed book and closed notes unless announced otherwise.</p><p>No make-up examinations will be given except when required by university policy or arranged for a documented emergency.</p></div>
+  <div class="exam-grid">
+<article class="exam-card">
+  <div class="exam-card-topline">
+    <h3>Midterm 1</h3>
+    
+  </div>
+  <dl>
+    <div><dt>Date</dt><dd>[Date]</dd></div>
+    <div><dt>Time</dt><dd>[Time]</dd></div>
+    <div><dt>Location</dt><dd>[Location]</dd></div>
+  </dl>
+</article>
+
+<article class="exam-card">
+  <div class="exam-card-topline">
+    <h3>Midterm 2</h3>
+    
+  </div>
+  <dl>
+    <div><dt>Date</dt><dd>[Date]</dd></div>
+    <div><dt>Time</dt><dd>[Time]</dd></div>
+    <div><dt>Location</dt><dd>[Location]</dd></div>
+  </dl>
+</article>
+
+<article class="exam-card">
+  <div class="exam-card-topline">
+    <h3>Final exam</h3>
+    <span class="exam-note">Cumulative</span>
+  </div>
+  <dl>
+    <div><dt>Date</dt><dd>[Date]</dd></div>
+    <div><dt>Time</dt><dd>[Time]</dd></div>
+    <div><dt>Location</dt><dd>[Location]</dd></div>
+  </dl>
+</article>
+</div>
+</section>
+
+
+<section id="grading" class="dashboard-section grading-home-section" aria-labelledby="grading-heading">
+  
+<div class="section-heading-row">
+  <div>
+    <div class="section-kicker">How the final grade is calculated</div>
+    <h2 id="grading-heading">Grading</h2>
+  </div>
+  
+</div>
+
+  <div class="grading-card">
+    <p>Final grades will be calculated from the following weighted components.</p>
+    <div class="grading-list">
+<div class="grading-row">
+  <div><strong>Midterm 1</strong><span>In-class examination</span></div>
+  <b>22.5%</b>
+</div>
+
+<div class="grading-row">
+  <div><strong>Midterm 2</strong><span>In-class examination</span></div>
+  <b>22.5%</b>
+</div>
+
+<div class="grading-row">
+  <div><strong>Homework</strong><span>Lowest homework score dropped</span></div>
+  <b>25%</b>
+</div>
+
+<div class="grading-row">
+  <div><strong>Final exam</strong><span>Cumulative examination</span></div>
+  <b>30%</b>
+</div>
+</div>
+  </div>
+</section>
+
+
+<section id="accommodations-and-resources" class="dashboard-section accommodations-section" aria-labelledby="accommodations-heading">
+  
+<div class="section-heading-row">
+  <div>
+    <div class="section-kicker">Support and access</div>
+    <h2 id="accommodations-heading">Accommodations and resources</h2>
+  </div>
+  
+</div>
+
+  <div class="accommodations-grid">
+    <div class="accommodations-copy">
+      <h3>Special accommodations</h3>
+      <p>Students who may require accommodations should contact the instructor as early as possible and work with the university office responsible for accessibility services. Appropriate documentation may be required under university policy.</p>
+    </div>
+    <div class="university-resources">
+      <h3>University resources</h3>
+      <div>
+<a class="university-resource" href="https://www.example.edu/accessibility">
+  <span><strong>Accessibility services</strong><small>Accommodation requests and access support</small></span>
+  <b aria-hidden="true">→</b>
+</a>
+
+<a class="university-resource" href="https://www.example.edu/academic-support">
+  <span><strong>Academic support</strong><small>Tutoring, study skills, and learning assistance</small></span>
+  <b aria-hidden="true">→</b>
+</a>
+
+<a class="university-resource" href="https://www.example.edu/counseling">
+  <span><strong>Counseling and wellbeing</strong><small>Confidential mental-health and wellbeing support</small></span>
+  <b aria-hidden="true">→</b>
+</a>
+
+<a class="university-resource" href="https://www.example.edu/student-care">
+  <span><strong>Student care</strong><small>Help navigating personal or academic difficulties</small></span>
+  <b aria-hidden="true">→</b>
+</a>
+</div>
+    </div>
+  </div>
+</section>
+
+
+<aside class="course-disclaimer" aria-label="Course syllabus disclaimer">
+  <strong>Please note</strong>
+  <p>The course syllabus is a general plan for the course and is subject to change; deviations announced to the class by the instructor may be necessary.</p>
+</aside>
+
+</div>
+```

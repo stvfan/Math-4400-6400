@@ -47,8 +47,6 @@ website:
     border: true
     left: © 20XX [Instructor Name]
     right:
-    - text: Resources
-      href: resources.qmd
     - text: Built with Quarto
       href: https://quarto.org/
 format:
