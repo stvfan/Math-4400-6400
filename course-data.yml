@@ -107,19 +107,19 @@ assignments:
       submitted argument in detail.
   items:
     - number: "HW 1"
-      title: "Divisibility and the Euclidean algorithm"
-      due: "Friday, September 12 · 5:00 PM"
-      status: "Assigned"
-      status_style: "due"
-      note: "Proof practice, gcd computations, and Bézout coefficients."
-      href: "assignments/problem-set-01.qmd"
-    - number: "HW 2"
-      title: "Prime factorization and congruences"
-      due: "[Due date and time]"
+      title: ""
+      due: ""
       status: "Forthcoming"
-      status_style: "upcoming"
-      note: "Replace this entry when the assignment is ready."
-      href: "assignments/index.qmd"
+      status_style: "due"
+      note: ""
+      href: ""
+    # - number: "HW 2"
+    #   title: "Prime factorization and congruences"
+    #   due: "[Due date and time]"
+    #   status: "Assigned"
+    #   status_style: "upcoming"
+    #   note: "Replace this entry when the assignment is ready."
+    #   href: "assignments/index.qmd"
 
 exams:
   policy:
