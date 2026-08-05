@@ -12,6 +12,7 @@ toc: false
 </div>
 
 [Print or save as PDF](#){.course-button .course-button-secondary .js-print}
+[Download the solutions](Solutions 1.pdf)
 
 ::: {.template-note}
 This sample emphasizes proof writing. Adjust the length, point values, and permitted collaboration to fit the course.
