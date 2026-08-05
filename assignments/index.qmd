@@ -1,6 +1,6 @@
 ---
 title: "Assignments"
-description: "Problem sets, due dates, submission instructions, and optional hints."
+description: "Problem sets and due dates."
 toc: false
 ---
 
