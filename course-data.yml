@@ -46,16 +46,16 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
-  - date: "September 10"
-    meeting: "Lecture 5"
-    title: "Bézout's identity and linear Diophantine equations"
-    summary: >-
-      We ran the extended Euclidean algorithm, interpreted its output as a
-      certificate, and classified the integer solutions of ax+by=c.
-    topics: ["gcd", "Bézout", "Diophantine equations"]
-    links:
-      - label: "Lecture notes"
-        href: "notes/02-euclidean-algorithm.qmd"
+  # - date: "September 10"
+  #   meeting: "Lecture 5"
+  #   title: "Bézout's identity and linear Diophantine equations"
+  #   summary: >-
+  #     We ran the extended Euclidean algorithm, interpreted its output as a
+  #     certificate, and classified the integer solutions of ax+by=c.
+  #   topics: ["gcd", "Bézout", "Diophantine equations"]
+  #   links:
+  #     - label: "Lecture notes"
+  #       href: "notes/02-euclidean-algorithm.qmd"
   # - date: "September 8"
   #   meeting: "Lecture 4"
   #   title: "The Euclidean algorithm"
@@ -97,14 +97,18 @@ lectures:
 assignments:
   policy:
     - >-
-      Homework will be assigned every one or two weeks. Late homework will not
-      normally be accepted, although early submission or an extension may be
-      arranged in advance when circumstances require it. The lowest homework
-      score will be dropped at the end of the term.
+      There will be several written homework assignments for this course that are
+      designed to help reinforce your understanding of the material through exercises. 
+      Homework will be collected in class, once every week or two. You are responsible 
+      for keeping track of the due dates of these assignments. Late homework will not be 
+      accepted. The lowest homework score will be dropped at the end of the term.
     - >-
-      Collaboration is encouraged, but every student must understand and write
-      the final solutions independently. You should be able to explain every
-      submitted argument in detail.
+      Collaboration is allowed and in fact is very much encouraged. Feel free to work together and
+      share insights with each other. You may discuss homework problems and their solutions with
+      your classmates, but you must write your own final solutions independently and make sure you
+      understand them yourself and are able to explain your solutions to me if requested to do. <B>Copying</B> 
+      (from a textbook, another student, or a website) and <B> using AI tools</B>  are not allowed.
+    
   items:
     - number: "HW 1"
       title: ""
