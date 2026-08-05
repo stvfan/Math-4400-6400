@@ -165,7 +165,7 @@ toc: false
   
 <div class="section-heading-row">
   <div>
-    <div class="section-kicker">Homework</div>
+    <div class="section-kicker">Homework and due dates</div>
     <h2 id="assignments-heading">Assignments</h2>
   </div>
   <a class="section-text-link" href="assignments/index.html">All assignments →</a>
