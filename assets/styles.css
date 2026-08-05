@@ -2943,3 +2943,71 @@ body.quarto-dark #quarto-document-content,
     column-gap: 0.75rem;
   }
 }
+
+/* Problem-set action buttons: print, solutions, and navigation. */
+.assignment-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.assignment-page-actions p {
+  display: contents;
+}
+
+.solution-button {
+  background: var(--course-burgundy);
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--course-burgundy) 24%, transparent);
+}
+
+.solution-button:hover,
+.solution-button:focus {
+  background: var(--course-navy);
+}
+
+@media print {
+  .assignment-page-actions {
+    display: none !important;
+  }
+}
+
+
+/* Version 2.6.10: optional exam solutions buttons on the homepage. */
+.exam-card {
+  grid-template-rows: auto 1fr auto;
+}
+
+.exam-card-actions {
+  display: flex;
+  align-items: center;
+  padding-top: 0.9rem;
+  border-top: 1px solid color-mix(in srgb, var(--course-line) 72%, transparent);
+}
+
+.exam-solutions-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 42px;
+  padding: 0.62rem 1rem;
+  border: 1px solid var(--course-navy);
+  border-radius: 999px;
+  background: var(--course-navy);
+  color: #fff8ea !important;
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-decoration: none !important;
+  box-shadow: 0 10px 22px color-mix(in srgb, var(--course-navy) 18%, transparent);
+  transition: transform 150ms ease, background 150ms ease, border-color 150ms ease;
+}
+
+.exam-solutions-link:hover,
+.exam-solutions-link:focus-visible {
+  border-color: var(--course-burgundy);
+  background: var(--course-burgundy);
+  color: #fff8ea !important;
+  transform: translateY(-1px);
+}
