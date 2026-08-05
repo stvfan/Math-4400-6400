@@ -170,7 +170,7 @@ accommodations_resources:
     accessibility services. Appropriate documentation may be required under
     university policy.
   resources:
-    - label: "Well-being rescources"
+    - label: "Well-being Rescources"
       description: "UGA well-being support"
       href: "https://well-being.uga.edu"
     - label: "Student Care and Outreach"
@@ -179,13 +179,13 @@ accommodations_resources:
     - label: "University Health Center"
       description: "Confidential mental-health and well-being support"
       href: "https://healthcenter.uga.edu"
-    - label: "Counseling and psychiatric services"
+    - label: "Counseling and Psychiatric Services"
       description: "CAPS 24/7 crisis support at 706-542-2273"
       href: "https://caps.uga.educaps.uga.edu"
     - label: "Health Promotion/Fontaine Center"
       description: "Well-being, early intervention and prevention"
       href: "https://healthpromotion.uga.edu"
-    - label: "Accessibility and testing"
+    - label: "Accessibility and Testing"
       description: "On-campus accessibility and testing services"
       href: "https://accessibility.uga.edu"
 
