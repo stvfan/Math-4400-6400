@@ -16,10 +16,12 @@ Divisibility, the division algorithm, and proof-writing practice.
 [Open assignment](problem-set-01.qmd){.course-button .course-button-primary}
 ::::
 
+<!-- 
+
 :::: {.card-grid}
 ::: {.assignment-card}
 
-<!-- <div class="card-number">PS 1</div>
+ <div class="card-number">PS 1</div>
 
 <div><span class="status-badge status-due">Due [date]</span></div>
 
