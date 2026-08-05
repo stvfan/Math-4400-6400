@@ -174,7 +174,7 @@ accommodations_resources:
       description: "UGA well-being support"
       href: "https://well-being.uga.edu"
     - label: "Student Care and Outreach"
-      description: "Help navigating personal or academic difficulties"
+      description: "Navigating personal or academic difficulties"
       href: "https://sco.uga.edu"
     - label: "University Health Center"
       description: "Confidential mental-health and well-being support"
