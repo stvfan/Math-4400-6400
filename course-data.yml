@@ -31,7 +31,7 @@ course_summary:
       mathematical communication, and the transition from examples to general
       theorems.
   syllabus_label: "View the course syllabus"
-  syllabus_href: "syllabus.qmd"
+  syllabus_href: "Syllabus.pdf"
 
 textbook:
   title: "Fundamentals of Number Theory"
@@ -92,7 +92,7 @@ lectures:
     topics: ["course introduction", "review"]
     links:
       - label: "Syllabus"
-        href: ""
+        href: "Syllabus.pdf"
 
 assignments:
   policy:
