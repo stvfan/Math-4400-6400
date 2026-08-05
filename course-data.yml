@@ -175,19 +175,19 @@ accommodations_resources:
       href: "https://well-being.uga.edu"
     - label: "Student Care and Outreach"
       description: "Help navigating personal or academic difficulties"
-      href: "sco.uga.edu"
+      href: "https://sco.uga.edu"
     - label: "University Health Center"
       description: "Confidential mental-health and well-being support"
-      href: "healthcenter.uga.edu"
+      href: "https://healthcenter.uga.edu"
     - label: "Counseling and psychiatric services"
       description: "CAPS 24/7 crisis support at 706-542-2273"
-      href: "caps.uga.educaps.uga.edu"
+      href: "https://caps.uga.educaps.uga.edu"
     - label: "Health Promotion/Fontaine Center"
       description: "Well-being, early intervention and prevention"
       href: "https://healthpromotion.uga.edu"
     - label: "Accessibility and testing"
       description: "On-campus accessibility and testing services"
-      href: "accessibility.uga.edu"
+      href: "https://accessibility.uga.edu"
 
 disclaimer: >-
   The course syllabus is a general plan for the course and is subject to
