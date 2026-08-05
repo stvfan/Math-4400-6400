@@ -168,7 +168,7 @@ toc: false
     <div class="section-kicker">Homework and due dates</div>
     <h2 id="assignments-heading">Assignments</h2>
   </div>
-  <a class="section-text-link" href="assignments/index.html">All assignments →</a>
+  <a class="section-text-link" href="">All assignments →</a>
 </div>
 
   <div class="policy-card"><p>Homework will be assigned every one or two weeks. Late homework will not normally be accepted, although early submission or an extension may be arranged in advance when circumstances require it. The lowest homework score will be dropped at the end of the term.</p><p>Collaboration is encouraged, but every student must understand and write the final solutions independently. You should be able to explain every submitted argument in detail.</p></div>
