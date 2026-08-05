@@ -46,16 +46,16 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
-  # - date: "September 10"
-  #   meeting: "Lecture 5"
-  #   title: "Bézout's identity and linear Diophantine equations"
-  #   summary: >-
-  #     We ran the extended Euclidean algorithm, interpreted its output as a
-  #     certificate, and classified the integer solutions of ax+by=c.
-  #   topics: ["gcd", "Bézout", "Diophantine equations"]
-  #   links:
-  #     - label: "Lecture notes"
-  #       href: "notes/02-euclidean-algorithm.qmd"
+  - date: "September 10"
+    meeting: "Lecture 5"
+    title: "Bézout's identity and linear Diophantine equations"
+    summary: >-
+      We ran the extended Euclidean algorithm, interpreted its output as a
+      certificate, and classified the integer solutions of ax+by=c.
+    topics: ["gcd", "Bézout", "Diophantine equations"]
+    links:
+      - label: "Lecture notes"
+        href: "notes/02-euclidean-algorithm.qmd"
   # - date: "September 8"
   #   meeting: "Lecture 4"
   #   title: "The Euclidean algorithm"
