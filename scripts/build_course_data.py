@@ -242,7 +242,7 @@ def assignment_entry(item: dict[str, Any]) -> str:
 
 def build_assignments(data: dict[str, Any]) -> str:
     assignments = data["assignments"]
-    heading = section_heading("Homework and due dates", "Assignments", "assignments-heading", ("All assignments", ""))
+    heading = section_heading("Homework and due dates", "Assignments", "assignments-heading", ("All assignments", "assignments/index.qmd"))
     rows = "".join(assignment_entry(item) for item in assignments.get("items", []))
     return f"""
 <section id="assignments" class="dashboard-section assignments-home-section" aria-labelledby="assignments-heading">
@@ -255,6 +255,16 @@ def build_assignments(data: dict[str, Any]) -> str:
 
 def exam_card(item: dict[str, Any]) -> str:
     note = f'<span class="exam-note">{text(item.get("note"))}</span>' if item.get("note") else ""
+    solutions_href = item.get("solutions_href")
+    solutions_label = item.get("solutions_label", "View solutions")
+    solutions_action = ""
+    if solutions_href:
+        solutions_action = f"""
+  <div class="exam-card-actions">
+    <a class="exam-solutions-link" href="{attr(output_href(str(solutions_href)))}">
+      {text(solutions_label)}
+    </a>
+  </div>"""
     return f"""
 <article class="exam-card">
   <div class="exam-card-topline">
@@ -266,6 +276,7 @@ def exam_card(item: dict[str, Any]) -> str:
     <div><dt>Time</dt><dd>{text(item.get('time'))}</dd></div>
     <div><dt>Location</dt><dd>{text(item.get('location'))}</dd></div>
   </dl>
+  {solutions_action}
 </article>
 """
 

@@ -89,7 +89,7 @@ def validate_links() -> None:
     def walk(value: object) -> None:
         if isinstance(value, dict):
             for key, item in value.items():
-                if key == "href" and isinstance(item, str) and ".qmd" in item:
+                if (key == "href" or key.endswith("_href")) and isinstance(item, str) and ".qmd" in item:
                     clean = item.split("#", 1)[0]
                     target = (ROOT / clean).resolve()
                     if not target.exists():
