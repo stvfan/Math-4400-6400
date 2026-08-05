@@ -137,7 +137,7 @@ exams:
       date: "TBA"
       time: "TBA"
       location: "Boyd 302"
-      solutions_href: "Syllabus.pdf"
+      solutions_href: ""
       solutions_label: "View solutions"
       
     - title: "Midterm 2"
