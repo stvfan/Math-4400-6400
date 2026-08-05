@@ -104,7 +104,7 @@ assignments:
       Collaboration is encouraged, but you must write your own final solutions independently 
       and make sure that you understand and are able to explain every submitted argument if requested to do. 
       Keep in mind that by entering UGA, you have already agreed to abide by the UGA Honor code at
-      href: "https://honesty.uga.edu/Academic-Honesty-Policy/".
+      https://honesty.uga.edu/Academic-Honesty-Policy/.
       
   items:
     - number: "HW 1"
@@ -128,8 +128,9 @@ exams:
       There are two in-class midterm exams and a cumulative final
       exam. All exams are closed book and closed notes. The exam dates will be announced later. 
     - >-
-      Please keep in mind that no make-up exams will be given except when required by university
-      policy or arranged for a documented emergency.
+      Please keep in mind that no make-up exams will be given.
+      # except when required by university
+      # policy or arranged for a documented emergency.
   items:
     - title: "Midterm 1"
       date: "TBA"
