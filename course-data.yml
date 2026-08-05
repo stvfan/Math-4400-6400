@@ -23,13 +23,14 @@ course_summary:
     - >-
       Number theory is the study of the positive integers and the remarkable
       structures hidden inside them. Although its questions are often easy to
-      state, many have resisted centuries of effort. This course introduces
-      divisibility, congruences, prime numbers, Diophantine equations,
-      quadratic residues, and selected classical applications.
+      state, many have resisted centuries of effort. This course introduces the classical
+      theory of numbers, with particular attention paid to the pathbreaking accomplishments of the
+      18th and 19th centuries. Topics include divisibility, congruences, unique factorization, quadratic 
+      residues and quadratic reciprocity, Gaussian integers, prime numbers, arithmetic functions, and 
+      selected advanced topics and applications.
     - >-
-      Along the way, we will emphasize proof writing, experimentation,
-      mathematical communication, and the transition from examples to general
-      theorems.
+      Along the way, we will emphasize proof writing, mathematical communication, and the transition from 
+      examples to general theorems.
   syllabus_label: "View the course syllabus"
   syllabus_href: "Syllabus.pdf"
 
