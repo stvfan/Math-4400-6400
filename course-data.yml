@@ -128,24 +128,23 @@ exams:
   policy:
     - >-
       There are two in-class midterm examinations and a cumulative final
-      examination. Exams are closed book and closed notes unless announced
-      otherwise.
+      examination. Exams are closed book and closed notes. The exam dates will be announced later. 
     - >-
-      No make-up examinations will be given except when required by university
+      Please keep in mind that no make-up exams will be given except when required by university
       policy or arranged for a documented emergency.
   items:
     - title: "Midterm 1"
-      date: "[Date]"
-      time: "[Time]"
-      location: "[Location]"
+      date: "TBA"
+      time: "TBA"
+      location: "Boyd 302"
     - title: "Midterm 2"
-      date: "[Date]"
-      time: "[Time]"
-      location: "[Location]"
+      date: "TBA"
+      time: "TBA"
+      location: "Boyd 302"
     - title: "Final exam"
-      date: "[Date]"
-      time: "[Time]"
-      location: "[Location]"
+      date: "TBA"
+      time: "TBA"
+      location: "TBA"
       note: "Cumulative"
 
 grading:
