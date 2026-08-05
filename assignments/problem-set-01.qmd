@@ -11,8 +11,11 @@ toc: false
   <div><small>Submit</small><strong>[LMS / Location]</strong></div>
 </div>
 
+::: {.assignment-page-actions}
 [Print or save as PDF](#){.course-button .course-button-secondary .js-print}
-- [Download the solutions](Solutions 1.pdf)
+
+[View solutions](solutions/problem-set-01-solutions.qmd){.course-button .course-button-primary .solution-button}
+:::
 
 ::: {.template-note}
 This sample emphasizes proof writing. Adjust the length, point values, and permitted collaboration to fit the course.
