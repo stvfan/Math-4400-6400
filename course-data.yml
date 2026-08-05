@@ -150,7 +150,7 @@ exams:
 grading:
   intro: "Final grades will be calculated from the following weighted components."
   items:
-   - component: "Homework"
+    - component: "Homework"
       weight: "22%"
       note: "Lowest homework score dropped"
     - component: "Midterm 1"
