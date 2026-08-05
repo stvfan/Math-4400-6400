@@ -1,6 +1,6 @@
 ---
 title: "Assignments"
-description: "Problem sets and due dates."
+description: "Homework and due dates."
 toc: false
 ---
 
@@ -8,7 +8,7 @@ toc: false
 <div class="next-class-date">Next deadline · [Date and time]</div>
 
 ::: {.next-class-copy}
-### Problem Set 1
+### Homework 1
 
 Divisibility, the division algorithm, and proof-writing practice.
 :::
@@ -18,7 +18,8 @@ Divisibility, the division algorithm, and proof-writing practice.
 
 :::: {.card-grid}
 ::: {.assignment-card}
-<div class="card-number">PS 1</div>
+
+<!-- <div class="card-number">PS 1</div>
 
 <div><span class="status-badge status-due">Due [date]</span></div>
 
@@ -53,3 +54,4 @@ State claims precisely, show the decisive reasoning, and cite collaborators and 
 [Read the checklist](../resources.qmd#proof-writing-checklist){.card-link}
 :::
 ::::
+-->
