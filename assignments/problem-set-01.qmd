@@ -1,7 +1,7 @@
 ---
-title: "Problem Set 1"
+title: "Homework 1"
 subtitle: "Divisibility and the Euclidean algorithm"
-description: "A sample undergraduate number theory assignment."
+description: ""
 toc: false
 ---
 
