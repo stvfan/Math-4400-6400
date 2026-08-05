@@ -46,56 +46,53 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
-  - date: "September 10"
-    meeting: "Lecture 5"
-    title: "Bézout's identity and linear Diophantine equations"
-    summary: >-
-      We ran the extended Euclidean algorithm, interpreted its output as a
-      certificate, and classified the integer solutions of ax+by=c.
-    topics: ["gcd", "Bézout", "Diophantine equations"]
-    links:
-      - label: "Lecture notes"
-        href: "notes/02-euclidean-algorithm.qmd"
-  - date: "September 8"
-    meeting: "Lecture 4"
-    title: "The Euclidean algorithm"
-    summary: >-
-      We proved termination, computed several gcds, and compared the
-      subtraction and remainder versions of the algorithm.
-    topics: ["algorithm", "gcd", "remainders"]
-    links:
-      - label: "Lecture notes"
-        href: "notes/02-euclidean-algorithm.qmd"
-  - date: "September 5"
-    meeting: "Lecture 3"
-    title: "The division algorithm and proof design"
-    summary: >-
-      We used quotient-remainder representations to organize divisibility
-      arguments and discussed how examples can reveal the right statement.
-    topics: ["division algorithm", "proofs"]
-    links:
-      - label: "Lecture notes"
-        href: "notes/01-divisibility.qmd"
-  - date: "September 3"
-    meeting: "Lecture 2"
-    title: "Divisibility, quantifiers, and counterexamples"
-    summary: >-
-      We translated divisibility into equations, practiced negating quantified
-      statements, and found counterexamples to tempting claims.
-    topics: ["divisibility", "logic", "counterexamples"]
-    links:
-      - label: "Lecture notes"
-        href: "notes/01-divisibility.qmd"
-  - date: "August 29"
+  # - date: "September 10"
+  #   meeting: "Lecture 5"
+  #   title: "Bézout's identity and linear Diophantine equations"
+  #   summary: >-
+  #     We ran the extended Euclidean algorithm, interpreted its output as a
+  #     certificate, and classified the integer solutions of ax+by=c.
+  #   topics: ["gcd", "Bézout", "Diophantine equations"]
+  #   links:
+  #     - label: "Lecture notes"
+  #       href: "notes/02-euclidean-algorithm.qmd"
+  # - date: "September 8"
+  #   meeting: "Lecture 4"
+  #   title: "The Euclidean algorithm"
+  #   summary: >-
+  #     We proved termination, computed several gcds, and compared the
+  #     subtraction and remainder versions of the algorithm.
+  #   topics: ["algorithm", "gcd", "remainders"]
+  #   links:
+  #     - label: "Lecture notes"
+  #       href: "notes/02-euclidean-algorithm.qmd"
+  # - date: "September 5"
+  #   meeting: "Lecture 3"
+  #   title: "The division algorithm and proof design"
+  #   summary: >-
+  #     We used quotient-remainder representations to organize divisibility
+  #     arguments and discussed how examples can reveal the right statement.
+  #   topics: ["division algorithm", "proofs"]
+  #   links:
+  #     - label: "Lecture notes"
+  #       href: "notes/01-divisibility.qmd"
+  # - date: "September 3"
+  #   meeting: "Lecture 2"
+  #   title: "Divisibility, quantifiers, and counterexamples"
+  #   summary: >-
+      
+  #   topics: []
+  #   links:
+  #     - label: "Lecture notes"
+    #    href: ""
+  - date: "August 17"
     meeting: "Lecture 1"
-    title: "Why study the integers?"
+    title: "Introduction"
     summary: >-
-      We introduced the course, explored several elementary-looking open
-      questions, and discussed the difference between evidence and proof.
-    topics: ["course introduction", "conjectures"]
+    topics: ["course introduction", "review"]
     links:
       - label: "Syllabus"
-        href: "syllabus.qmd"
+        href: ""
 
 assignments:
   policy:
