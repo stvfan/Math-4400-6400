@@ -175,7 +175,7 @@ toc: false
   <div class="assignment-list-home">
 <article class="assignment-row">
   <div class="assignment-id">
-    <strong>HW 1</strong>
+    <strong>Homework 1</strong>
     <span>Friday, September 12 · 5:00 PM</span>
   </div>
   <div class="assignment-copy">
