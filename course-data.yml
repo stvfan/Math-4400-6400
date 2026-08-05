@@ -114,7 +114,7 @@ assignments:
       status: "Forthcoming"
       status_style: "due"
       note: ""
-      href: ""
+      href: "assignments/problem-set-01.qmd"
     # - number: "HW 2"
     #   title: "Prime factorization and congruences"
     #   due: "[Due date and time]"
