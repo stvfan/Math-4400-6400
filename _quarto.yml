@@ -45,7 +45,7 @@ website:
       text: Resources
   page-footer:
     border: true
-    left: © 20XX [Instructor Name]
+    left: © 2026 Steve Fan
     right:
     - text: Built with Quarto
       href: https://quarto.org/
