@@ -6,15 +6,15 @@
 # The GitHub Pages workflow runs this automatically when you push.
 
 course:
-  code: "MATH 3XX"
+  code: "MATH 4400/6400"
   title: "Number Theory"
-  semester: "Fall 20XX"
-  instructor: "[Instructor Name]"
-  email: "email@institution.edu"
-  meetings: "[Days · Time]"
-  room: "[Building · Room]"
-  office_hours: "[Days · Time]"
-  office: "[Office or Zoom]"
+  semester: "Fall 2026"
+  instructor: "Steve Fann"
+  email: "Steve.Fan@uga.edu"
+  meetings: "[MWF · 12:00PM–12:55PM]"
+  room: "[Boyd · 302]"
+  office_hours: "[MWF · 3pm–4pm]"
+  office: "[Boyd · 321C]"
   quote: "God made the integers; all else is the work of man."
   quote_attribution: "Leopold Kronecker"
 
