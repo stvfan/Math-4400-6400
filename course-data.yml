@@ -129,8 +129,9 @@ exams:
       exam. All exams are closed book and closed notes. The exam dates will be announced later. 
     - >-
       Please keep in mind that no make-up exams will be given.
-      
-      # except when required by university policy or arranged for a documented emergency.
+      <!-- 
+      except when required by university policy or arranged for a documented emergency.
+      -->
   items:
     - title: "Midterm 1"
       date: "TBA"
