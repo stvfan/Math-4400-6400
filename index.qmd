@@ -278,17 +278,17 @@ toc: false
 
 
 <div class="grading-row">
-  <div><strong>Midterm 1</strong><span>In-class examination</span></div>
+  <div><strong>Midterm 1</strong><span>In-class exam</span></div>
   <b>24%</b>
 </div>
 
 <div class="grading-row">
-  <div><strong>Midterm 2</strong><span>In-class examination</span></div>
+  <div><strong>Midterm 2</strong><span>In-class exam</span></div>
   <b>24%</b>
 </div>
 
 <div class="grading-row">
-  <div><strong>Final exam</strong><span>Cumulative examination</span></div>
+  <div><strong>Final exam</strong><span>Cumulative exam</span></div>
   <b>30%</b>
 </div>
 </div>
