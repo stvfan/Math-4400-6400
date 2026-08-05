@@ -14,7 +14,7 @@ toc: false
 ::: {.assignment-page-actions}
 [Print or save as PDF](#){.course-button .course-button-secondary .js-print}
 
-[View solutions](solutions/problem-set-01-solutions.qmd){.course-button .course-button-primary .solution-button}
+[View solutions](assignments/problem-set-01-solutions.qmd){.course-button .course-button-primary .solution-button}
 :::
 
 ::: {.template-note}
