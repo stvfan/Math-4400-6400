@@ -88,7 +88,7 @@ lectures:
     #    href: ""
   - date: "August 17"
     meeting: "Lecture 1"
-    title: "Introduction and review"
+    title: "Course introduction and review of fundamental arithmetic"
     summary: >-
     topics: ["course introduction", "review"]
     links:
