@@ -88,7 +88,7 @@ lectures:
     #    href: ""
   - date: "August 17"
     meeting: "Lecture 1"
-    title: "Course introduction and review of elementary arithmetic"
+    title: "Course introduction and review of unique factorization"
     summary: >-
     topics: ["course introduction", "review"]
     links:
