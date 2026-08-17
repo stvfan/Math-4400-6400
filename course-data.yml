@@ -92,8 +92,8 @@ lectures:
     summary: >-
     topics: ["course introduction", "review"]
     links:
-      - label: "Syllabus"
-        href: "Syllabus.pdf"
+      - label: "Notes"
+        href: "8_17_2026.pdf"
 
 assignments:
   policy:
