@@ -3011,3 +3011,39 @@ body.quarto-dark #quarto-document-content,
   color: #fff8ea !important;
   transform: translateY(-1px);
 }
+
+/* ========================================================================== 
+   Version 2.6.12: visible lecture topic tags
+   ========================================================================== */
+
+.lecture-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+  margin-top: 0.68rem;
+}
+
+.lecture-topic {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.55rem;
+  padding: 0.16rem 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--course-burgundy) 18%, var(--course-line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--course-burgundy) 4%, var(--course-paper));
+  color: var(--course-muted);
+  font-size: 0.75rem;
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+@media (max-width: 640px) {
+  .lecture-topics {
+    margin-top: 0.58rem;
+  }
+
+  .lecture-topic {
+    font-size: 0.73rem;
+  }
+}
+
