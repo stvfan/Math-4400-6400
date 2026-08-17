@@ -90,7 +90,7 @@ lectures:
     meeting: "Lecture 1"
     title: "Course introduction and review of unique factorization"
     summary: >-
-    topics: ["syllabus", "divisibility", "units", "primes and composites", "FTA", "division algorithm]
+    topics: ["syllabus", "divisibility", "units", "primes and composites", "FTA", "division algorithm"]
     links:
       - label: "Notes"
         href: "notes/8_17_2026.pdf"
