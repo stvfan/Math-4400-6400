@@ -172,13 +172,25 @@ def build_textbook(data: dict[str, Any]) -> str:
 
 def lecture_entry(item: dict[str, Any], compact: bool = False) -> str:
     compact_class = " lecture-entry-compact" if compact else ""
+    topics = item.get("topics", []) or []
+    topics_html = ""
+    if topics:
+        topic_tags = "".join(
+            f'<span class="lecture-topic">{text(topic)}</span>'
+            for topic in topics
+        )
+        topics_html = (
+            '<div class="lecture-topics" aria-label="Lecture topics">'
+            f'{topic_tags}</div>'
+        )
+
     search_text = " ".join(
         [
             str(item.get("date", "")),
             str(item.get("meeting", "")),
             str(item.get("title", "")),
             str(item.get("summary", "")),
-            " ".join(item.get("topics", [])),
+            " ".join(str(topic) for topic in topics),
         ]
     )
     return f"""
@@ -190,6 +202,7 @@ def lecture_entry(item: dict[str, Any], compact: bool = False) -> str:
   <div class="lecture-copy">
     <h3>{text(item.get('title'))}</h3>
     <p>{text(item.get('summary'))}</p>
+    {topics_html}
   </div>
   <div class="lecture-links">{links_html(item.get('links'))}</div>
 </article>
