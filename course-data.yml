@@ -77,7 +77,7 @@ lectures:
   #   links:
   #     - label: "Lecture notes"
   #       href: "notes/01-divisibility.qmd"
-   - date: "August 19"
+  - date: "August 19"
     meeting: "Lecture 2"
     title: "Review of unique factorization (cont.)"
     summary: >-
