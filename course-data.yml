@@ -77,15 +77,14 @@ lectures:
   #   links:
   #     - label: "Lecture notes"
   #       href: "notes/01-divisibility.qmd"
-  # - date: "September 3"
-  #   meeting: "Lecture 2"
-  #   title: "Divisibility, quantifiers, and counterexamples"
-  #   summary: >-
-      
-  #   topics: []
-  #   links:
-  #     - label: "Lecture notes"
-    #    href: ""
+   - date: "August 19"
+    meeting: "Lecture 2"
+    title: "Review of unique factorization (cont.)"
+    summary: >-
+    topics: []
+    links:
+      - label: ""
+        href: ""
   - date: "August 17"
     meeting: "Lecture 1"
     title: "Course introduction and review of unique factorization"
