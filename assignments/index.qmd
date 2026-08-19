@@ -10,10 +10,10 @@ toc: false
 ::: {.next-class-copy}
 ### Homework 1
 
-Divisibility, the division algorithm, and proof-writing practice.
+Divisibility, the division algorithm.
 :::
 
-[Open assignment](problem-set-01.qmd){.course-button .course-button-primary}
+[Open assignment](){.course-button .course-button-primary}
 ::::
 
 <!-- 
