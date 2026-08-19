@@ -79,7 +79,7 @@ lectures:
     meeting: "Lecture 2"
     title: "Review of unique factorization (cont.)"
     summary: >-
-    topics: ["FTA", "ideals", "gcd", "B&#233zout's Lemma", "Euclid's lemma"]
+    topics: ["FTA", "ideals", "gcd", "Bézout's Lemma", "Euclid's lemma"]
     links:
       - label: "Notes"
         href: "notes/8_19_2026.pdf"
