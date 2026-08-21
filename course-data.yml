@@ -59,7 +59,7 @@ lectures:
     meeting: "Lecture 3"
     title: "Review of unique factorization (finished), review of Euclidean algorithm and congruences"
     summary: >-
-    topics: ["FTA", "Euclidean algorithm", "congruences"]
+    topics: ["FTA", "UFD", "Euclidean algorithm", "congruences"]
     links:
       - label: "Notes"
         href: "notes/8_21_2026.pdf"
