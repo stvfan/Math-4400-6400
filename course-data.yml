@@ -47,34 +47,22 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
-  # - date: "September 10"
-  #   meeting: "Lecture 5"
-  #   title: "Bézout's identity and linear Diophantine equations"
-  #   summary: >-
-  #     We ran the extended Euclidean algorithm, interpreted its output as a
-  #     certificate, and classified the integer solutions of ax+by=c.
-  #   topics: ["gcd", "Bézout", "Diophantine equations"]
-  #   links:
-  #     - label: "Lecture notes"
-  #       href: "notes/02-euclidean-algorithm.qmd"
-  # - date: "September 8"
-  #   meeting: "Lecture 4"
-  #   title: "The Euclidean algorithm"
-  #   summary: >-
-  #     We proved termination, computed several gcds, and compared the
-  #     subtraction and remainder versions of the algorithm.
-  #   topics: ["algorithm", "gcd", "remainders"]
-  #   links:
-  #     - label: "Lecture notes"
-  #       href: "notes/02-euclidean-algorithm.qmd"
+  - date: "August 24"
+    meeting: "Lecture 4"
+    title: "Congruence equations"
+    summary: >-
+    topics: ["linear congrunce equations", "quadratic residues & nonresidues"]
+    links:
+      - label: "Notes"
+        href: "notes/8_21_2026.pdf"
   - date: "August 21"
     meeting: "Lecture 3"
-    title: "Review of unique factorization (cont.)"
+    title: "Review of unique factorization (finished), review of Euclidean algorithm and congruences"
     summary: >-
     topics: ["FTA", "Euclidean algorithm", "congruences"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/8_21_2026.pdf"
   - date: "August 19"
     meeting: "Lecture 2"
     title: "Review of unique factorization (cont.)"
