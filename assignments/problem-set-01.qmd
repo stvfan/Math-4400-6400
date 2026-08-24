@@ -112,7 +112,7 @@ $$\gcd(531,225)=\gcd(306,225)=\gcd(81,225)=\gcd(81,144)=\gcd(81,63)=9.$$
 ## Optional challenge 
 
 <div class="problem">
-<span class="problem-number">5</span> **Modulo powers of 2.**
+<span class="problem-number">9</span> **Modulo powers of 2.**
 
 (1) Show that the square of every odd integer is congruent to $1$ modulo $8$.
 
