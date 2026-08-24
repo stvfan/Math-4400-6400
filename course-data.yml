@@ -103,7 +103,7 @@ assignments:
       
   items:
     - number: "Homework 1"
-      title: 'Unique Factorization in $\mathbb{Z}$ and Congruences'
+      title: 'Unique Factorization in ℤ and Congruences'
       due: "Aug. 31, 12 p.m."
       status: "Assigned"
       status_style: "due"
