@@ -103,7 +103,7 @@ $$\gcd(m,n+km)=\gcd(m,n).$$
 
 This identity can be used to compute the greatest common divisors by successive subtraction until the numbers become manageable. For instance,
 $$\gcd(531,225)=\gcd(306,225)=\gcd(81,225)=\gcd(81,144)=\gcd(81,63)=9.$$
-The idea involved is the same as in Euclidean algorithm.
+The idea involved here is the same as in Euclidean algorithm.
 </div>
 
 <!-- <div class="problem">
