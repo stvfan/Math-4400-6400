@@ -29,7 +29,7 @@ For each problem, please write a complete argument, not only intermidiate calcul
 </div>
 
 <div class="problem">
-<span class="problem-number">2</span> **Division algorithm.** In this problem, we prove the division algorithm, which asserts that for any integers $a,b\in\mathbb{Z}$ with $b\ne0$, there exist unique integers $q,r\in\mathbb{Z}$ such that
+<span class="problem-number">2</span> **Division algorithm.** The division algorithm asserts that for any integers $a,b\in\mathbb{Z}$ with $b\ne0$, there exist unique integers $q,r\in\mathbb{Z}$ such that
 
 $$
 a=qb+r,\qquad 0\le r<|b|.
@@ -70,7 +70,7 @@ is an ideal of $\mathbb{Z}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">5</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its decimal digits is divisible by $3$.
+<span class="problem-number">5</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its base-10 decimal digits is divisible by $3$.
 
 <details class="hint"><summary>Hint</summary>
 Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
