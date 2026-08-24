@@ -47,14 +47,22 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
+  - date: "August 26"
+    meeting: "Lecture 5"
+    title: "Quadratic residues and nonresidues"
+    summary: >-
+    topics: ["quadratic congruence equations", "quadratic residues & nonresidues"]
+    links:
+      - label: "Notes"
+        href: ""
   - date: "August 24"
     meeting: "Lecture 4"
     title: "Euler's theorem and congruence equations"
     summary: >-
-    topics: ["residue classes", "Euler's totient function", "Euler's theorem", "Fermat's little theorem", "congruence equations", "quadratic residues & nonresidues"]
+    topics: ["residue classes", "Euler's totient function", "Euler's theorem", "Fermat's little theorem", "linear congruence equations"]
     links:
       - label: "Notes"
-        href: "notes/8_21_2026.pdf"
+        href: "notes/8_24_2026.pdf"
   - date: "August 21"
     meeting: "Lecture 3"
     title: "Review of unique factorization (finished), review of Euclidean algorithm and congruences"
