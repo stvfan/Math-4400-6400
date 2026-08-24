@@ -70,19 +70,7 @@ is an ideal of $\mathbb{Z}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">5</span> **Modulo powers of 2.**
-
-(1) Show that the square of every odd integer is congruent to $1$ modulo $8$.
-
-(2) Show by induction that for any odd integer $a$ and any integer $n\ge3$, we have
-
-$$
-a^{2^{n-2}}\equiv1\pmod{2^n}.
-$$
-</div>
-
-<div class="problem">
-<span class="problem-number">6</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its decimal digits is divisible by $3$.
+<span class="problem-number">5</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its decimal digits is divisible by $3$.
 
 <details class="hint"><summary>Hint</summary>
 Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
@@ -90,7 +78,7 @@ Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
 </div>
 
 <div class="problem">
-<span class="problem-number">7</span> **Euclidean algorithm.** 
+<span class="problem-number">6</span> **Euclidean algorithm.** 
 
 (1\) Use Euclidean algorithm to compute $\gcd(2026,748)$.
 
@@ -105,11 +93,11 @@ Solve $37x+101y=1$ to get a value of $x$. Then find the least nonnegative intege
 </div>
 
 <div class="problem">
-<span class="problem-number">8</span> **Linear equations.** Determine whether $84x+126y=30$ has an integer solution $(x,y)\in\mathbb{Z}^2$. If it does, find all integer solutions; if it does not, prove impossibility.
+<span class="problem-number">7</span> **Linear equations.** Determine whether $84x+126y=30$ has an integer solution $(x,y)\in\mathbb{Z}^2$. If it does, find all integer solutions; if it does not, prove impossibility.
 </div>
 
 <div class="problem">
-<span class="problem-number">9</span> **A structural gcd identity.** Let $m,n\in\mathbb{Z}$, not both equal to zero. Prove that for every integer $k$ we have
+<span class="problem-number">8</span> **A structural gcd identity.** Let $m,n\in\mathbb{Z}$, not both equal to zero. Prove that for every integer $k$ we have
 
 $$\gcd(m,n+km)=\gcd(m,n).$$
 
@@ -121,9 +109,19 @@ $$\gcd(531,225)=\gcd(306,225)=\gcd(81,225)=\gcd(81,144)=\gcd(81,63)=9.$$
 <span class="problem-number">11</span> **Exploration before proof.** Compute $\gcd(F_m,F_n)$ for several Fibonacci numbers and formulate a conjecture. Prove one nontrivial special case of your conjecture, clearly indicating which Fibonacci identities you use.
 </div> -->
 
-<!-- ## Optional challenge 
+## Optional challenge 
 
 <div class="problem">
+<span class="problem-number">5</span> **Modulo powers of 2.**
 
-</div>-->
+(1) Show that the square of every odd integer is congruent to $1$ modulo $8$.
+
+(2) Show by induction that for any odd integer $a$ and any integer $n\ge3$, we have
+
+$$
+a^{2^{n-2}}\equiv1\pmod{2^n}.
+$$
+</div>
+
+</div>
 
