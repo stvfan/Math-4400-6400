@@ -73,7 +73,7 @@ is an ideal of $\mathbb{Z}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">5</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its base-10 decimal digits is divisible by $3$. What can we say about divisibility by $11$?
+<span class="problem-number">5</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its base-10 decimal digits is divisible by $3$. What can you say about divisibility by $11$?
 
 <details class="hint"><summary>Hint</summary>
 Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
@@ -92,7 +92,7 @@ Substitute the remainders backwards.
 
 (3\) (multiplicative inverse) Given nonzero integers $a$ and $m$, a *multiplicative inverse* of $a$ modulo $m$ is an integer $x$ such that $ax\equiv 1\pmod m$. Such an inverse exists if and only if $\gcd(a,m)=1$. Find the least nonnegative multiplicative inverse of $37$ modulo $101$.
 <details class="hint"><summary>Hint</summary>
-Solve $37x+101y=1$ to get a value of $x$. Then find the least nonnegative integer congruent to $x$ modulo $101$ by adding a suitable integer multiple of $101$ to $x$.
+Start by solving $37x+101y=1$ to get a value of $x$. 
 </div>
 
 <div class="problem">
