@@ -41,7 +41,10 @@ $$
 x-1<m\le x\le n<x+1.
 $$
 
-(2\) Prove the existence part of the division algorithm by taking $q$ to be the greatest integer not exceeding $a/b$ when $b>0$ and the least integer no less than $a/b$ when $b<0$.
+(2\) Prove the existence part of the division algorithm.
+<details class="hint"><summary>Hint</summary>
+Take $q$ to be the greatest integer not exceeding $a/b$ when $b>0$ and the least integer no less than $a/b$ when $b<0$.
+</details>by 
 
 (3\) Prove the uniqueness part of the division algorithm: if there are $q_1,q_2,r_1,r_2\in\mathbb{Z}$ such that
 
@@ -70,7 +73,7 @@ is an ideal of $\mathbb{Z}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">5</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its base-10 decimal digits is divisible by $3$.
+<span class="problem-number">5</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its base-10 decimal digits is divisible by $3$. What can we say about divisibility by $11$?
 
 <details class="hint"><summary>Hint</summary>
 Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
