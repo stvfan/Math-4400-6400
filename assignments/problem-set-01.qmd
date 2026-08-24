@@ -1,6 +1,6 @@
 ---
 title: "Homework 1"
-subtitle: "Unique Factorization in \(Z\)"
+subtitle: "Unique Factorization in $\mathbb{Z}$"
 description: ""
 toc: false
 ---
