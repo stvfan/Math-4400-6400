@@ -8,7 +8,7 @@ toc: false
 <div class="assignment-header">
   <div><small>Assigned</small><strong>Aug. 23</strong></div>
   <div><small>Due</small><strong>Aug. 31 · 12 p.m.</strong></div>
-  <div><small>Submit</small><strong>[LMS / Location]</strong></div>
+  <div><small>Submit</small><strong>Boyd 302</strong></div>
 </div>
 
 ::: {.assignment-page-actions}
