@@ -92,14 +92,14 @@ Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
 <div class="problem">
 <span class="problem-number">7</span> **Euclidean algorithm.** 
 
-1. Use Euclidean algorithm to compute $\gcd(2026,748)$.
+(1). Use Euclidean algorithm to compute $\gcd(2026,748)$.
 
-2. Express the gcd as $2026x+748y$ for integers $x,y$. 
+(2). Express the gcd as $2026x+748y$ for integers $x,y$. 
 <details class="hint"><summary>Hint</summary>
 Substitute the remainders backwards.
 </details>
 
-3. (multiplicative inverse) Given nonzero integers $a$ and $m$, a *multiplicative inverse* of $a$ modulo $m$ is an integer $x$ such that $ax\equiv 1\pmod m$. Find the least nonnegative multiplicative inverse of $37$ modulo $101$.
+(3). (multiplicative inverse) Given nonzero integers $a$ and $m$, a *multiplicative inverse* of $a$ modulo $m$ is an integer $x$ such that $ax\equiv 1\pmod m$. Find the least nonnegative multiplicative inverse of $37$ modulo $101$.
 <details class="hint"><summary>Hint</summary>
 Solve $37x+101y=1$ to get a value of $x$. Then find the least nonnegative integer congruent to $x$ modulo $101$ by adding an integer multiple of $101$ to $x$.
 </div>
@@ -109,7 +109,7 @@ Solve $37x+101y=1$ to get a value of $x$. Then find the least nonnegative intege
 </div>
 
 <div class="problem">
-<span class="problem-number">10</span> **A structural gcd identity.** Let $m,n\in\mathbb{Z}$, not both equal to zero. Prove that for every integer $k$ we have
+<span class="problem-number">9</span> **A structural gcd identity.** Let $m,n\in\mathbb{Z}$, not both equal to zero. Prove that for every integer $k$ we have
 
 $$\gcd(m,n+km)=\gcd(m,n).$$
 
@@ -121,9 +121,9 @@ $$\gcd(531,225)=\gcd(306,225)=\gcd(81,225)=\gcd(81,144)=\gcd(81,63)=9.$$
 <span class="problem-number">11</span> **Exploration before proof.** Compute $\gcd(F_m,F_n)$ for several Fibonacci numbers and formulate a conjecture. Prove one nontrivial special case of your conjecture, clearly indicating which Fibonacci identities you use.
 </div> -->
 
-## Optional challenge
+<!-- ## Optional challenge 
 
 <div class="problem">
-<span class="problem-number">9</span> **Modular inverse.** Given nonzero integers $a$ and $m$, a \textit{multiplicative inverse} of $a$ modulo $m$ is an integer $x$ such that $ax\equiv 1\pmod m$. Find the least nonnegative multiplicative inverse of $37$ modulo $101$, and verify the answer by multiplication.
-</div>
+
+</div>-->
 
