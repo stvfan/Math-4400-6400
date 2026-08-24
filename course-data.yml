@@ -51,7 +51,7 @@ lectures:
     meeting: "Lecture 4"
     title: "Euler's theorem and congruence equations"
     summary: >-
-    topics: ["residue classes", "Euler's totient function", "Euler's theorem", "Fermat's little theorem", "congrunce equations", "quadratic residues & nonresidues"]
+    topics: ["residue classes", "Euler's totient function", "Euler's theorem", "Fermat's little theorem", "congruence equations", "quadratic residues & nonresidues"]
     links:
       - label: "Notes"
         href: "notes/8_21_2026.pdf"
@@ -94,7 +94,7 @@ assignments:
       
   items:
     - number: "Homework 1"
-      title: "Unique Factorization in $\mathbb{Z}$ and Congruences"
+      title: 'Unique Factorization in $\mathbb{Z}$ and Congruences'
       due: "Aug. 31, 12 p.m."
       status: "Assigned"
       status_style: "due"
@@ -158,7 +158,7 @@ accommodations_resources:
     accessibility services. Appropriate documentation may be required under
     university policy.
   resources:
-    - label: "Well-being Rescources"
+    - label: "Well-being Resources"
       description: "UGA well-being support"
       href: "https://well-being.uga.edu"
     - label: "Student Care and Outreach"
