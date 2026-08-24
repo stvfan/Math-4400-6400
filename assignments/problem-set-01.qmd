@@ -99,7 +99,7 @@ Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
 Substitute the remainders backwards.
 </details>
 
-3. (multiplicative inverse) Given nonzero integers $a$ and $m$, a *multiplicative inverse* of $a$ modulo $m$ is an integer $x$ such that $ax\equiv 1\pmod m$. Find the least nonnegative multiplicative inverse of $37$ modulo $101$, and verify the answer by multiplication.
+3. (multiplicative inverse) Given nonzero integers $a$ and $m$, a *multiplicative inverse* of $a$ modulo $m$ is an integer $x$ such that $ax\equiv 1\pmod m$. Find the least nonnegative multiplicative inverse of $37$ modulo $101$.
 <details class="hint"><summary>Hint</summary>
 Solve $37x+101y=1$ to get a value of $x$. Then find the least nonnegative integer congruent to $x$ modulo $101$ by adding an integer multiple of $101$ to $x$.
 </div>
