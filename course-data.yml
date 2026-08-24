@@ -52,7 +52,7 @@ lectures:
     meeting: "Lecture 5"
     title: "Quadratic residues and nonresidues"
     summary: >-
-    topics: ["quadratic congruence equations", "quadratic residues & nonresidues"]
+    topics: ["quadratic congruences", "quadratic residues & nonresidues"]
     links:
       - label: "Notes"
         href: ""
