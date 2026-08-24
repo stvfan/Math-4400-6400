@@ -104,7 +104,7 @@ Start by solving $37x+101y=1$ to get a value of $x$.
 
 $$\gcd(m,n+km)=\gcd(m,n).$$
 
-This identity can be used to compute the greatest common divisors by successive subtraction until the numbers become manageable. For instance,
+This identity can be used to compute the greatest common divisors via successive subtraction until the numbers become manageable. For instance,
 $$\gcd(531,225)=\gcd(306,225)=\gcd(81,225)=\gcd(81,144)=\gcd(81,63)=9.$$
 The idea involved here is the same as in Euclidean algorithm.
 </div>
