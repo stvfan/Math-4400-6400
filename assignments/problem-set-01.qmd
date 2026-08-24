@@ -44,7 +44,7 @@ $$
 (2\) Prove the existence part of the division algorithm.
 <details class="hint"><summary>Hint</summary>
 Take $q$ to be the greatest integer not exceeding $a/b$ when $b>0$ and the least integer no less than $a/b$ when $b<0$.
-</details>by 
+</details>
 
 (3\) Prove the uniqueness part of the division algorithm: if there are $q_1,q_2,r_1,r_2\in\mathbb{Z}$ such that
 
