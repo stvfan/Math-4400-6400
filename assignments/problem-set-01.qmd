@@ -1,13 +1,13 @@
 ---
 title: "Homework 1"
-subtitle: "Divisibility and the Euclidean algorithm"
+subtitle: "Unique Factorization in \(Z\)"
 description: ""
 toc: false
 ---
 
 <div class="assignment-header">
-  <div><small>Assigned</small><strong>[Date]</strong></div>
-  <div><small>Due</small><strong>[Date · Time]</strong></div>
+  <div><small>Assigned</small><strong>Aug. 23</strong></div>
+  <div><small>Due</small><strong>Aug. 31 · 12 p.m.</strong></div>
   <div><small>Submit</small><strong>[LMS / Location]</strong></div>
 </div>
 
@@ -17,9 +17,10 @@ toc: false
 [View solutions](){.course-button .course-button-primary .solution-button}
 :::
 
-::: {.template-note}
+<!-- ::: {.template-note}
 This sample emphasizes proof writing. Adjust the length, point values, and permitted collaboration to fit the course.
 :::
+-->
 
 ## Instructions
 
