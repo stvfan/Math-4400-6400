@@ -1,0 +1,120 @@
+---
+title: "Homework 1"
+subtitle: 'Unique Factorization in $\mathbb{Z}$'
+description: ""
+toc: false
+---
+
+<div class="assignment-header">
+  <div><small>Assigned</small><strong>Aug. 23</strong></div>
+  <div><small>Due</small><strong>Aug. 31 · 12 p.m.</strong></div>
+  <div><small>Submit</small><strong>Boyd 302</strong></div>
+</div>
+
+::: {.assignment-page-actions}
+[Print or save as PDF](#){.course-button .course-button-secondary .js-print}
+[View solutions](#){.course-button .course-button-primary .solution-button}
+:::
+
+<!-- ::: {.template-note}
+This sample emphasizes proof writing. Adjust the length, point values, and permitted collaboration to fit the course.
+::: -->
+
+## Instructions
+
+For each problem, please write complete arguments, not only calculations.
+
+<div class="problem">
+<span class="problem-number">1</span> **Divisibility is transitive.** Prove directly from the definition of divisibility that if $a\mid b$ and $b\mid c$, then $a\mid c$.
+</div>
+
+<div class="problem">
+<span class="problem-number">2</span> **Division algorithm.** In this problem, we prove the division algorithm, which asserts that for any integers $a,b\in\mathbb{Z}$ with $b\ne0$, there exist unique integers $q,r\in\mathbb{Z}$ such that
+
+$$
+a=qb+r,\qquad 0\le r<|b|.
+$$
+
+(1) Let $x$ be a real number. Denote by $m$ and $n$ the greatest integer not exceeding $x$ and the least integer no less than $x$, respectively. Show that
+
+$$
+x-1<m\le x\le n<x+1.
+$$
+
+(2) Prove the existence part of the division algorithm by taking $q$ to be the greatest integer not exceeding $a/b$ when $b>0$ and the least integer no less than $a/b$ when $b<0$.
+
+(3) Prove the uniqueness part of the division algorithm: if there are $q_1,q_2,r_1,r_2\in\mathbb{Z}$ such that
+
+$$
+\begin{aligned}
+a &= q_1b+r_1,\qquad 0\le r_1<|b|,\\
+a &= q_2b+r_2,\qquad 0\le r_2<|b|,
+\end{aligned}
+$$
+
+then $q_1=q_2$ and $r_1=r_2$.
+</div>
+
+<div class="problem">
+<span class="problem-number">3</span> **Definition of ideal.** Show that for any $a,b\in\mathbb{Z}$, the set
+
+$$
+I_{a,b}=\{ax+by:x,y\in\mathbb{Z}\}
+$$
+
+is an ideal of $\mathbb{Z}$.
+</div>
+
+<div class="problem">
+<span class="problem-number">4</span> **Multiplying congruences.** Use the definition of congruence to show that if $a_1\equiv b_1\pmod{m}$ and $a_2\equiv b_2\pmod{m}$, then $a_1a_2\equiv b_1b_2\pmod{m}$.
+</div>
+
+<div class="problem">
+<span class="problem-number">5</span> **Modulo powers of 2.**
+
+(1) Show that the square of every odd integer is congruent to $1$ modulo $8$.
+
+(2) Show by induction that for any odd integer $a$ and any integer $n\ge3$, we have
+
+$$
+a^{2^{n-2}}\equiv1\pmod{2^n}.
+$$
+</div>
+
+<div class="problem">
+<span class="problem-number">6</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its decimal digits is divisible by $3$.
+
+<details class="hint"><summary>Hint</summary>
+Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
+</details>
+</div>
+
+<div class="problem">
+<span class="problem-number">7</span> **Euclidean algorithm.** Compute $\gcd(2026,748)$ and express the gcd as $2026x+748y$ for integers $x,y$.
+</div>
+
+<div class="problem">
+<span class="problem-number">8</span> **Linear equations.** Determine whether $84x+126y=30$ has an integer solution. If it does, find all integer solutions; if it does not, prove impossibility.
+</div>
+
+<div class="problem">
+<span class="problem-number">9</span> **Modular inverse.** Find the least nonnegative inverse of $37$ modulo $101$, and verify the answer by multiplication.
+</div>
+
+<div class="problem">
+<span class="problem-number">10</span> **A structural gcd identity.** Prove that for every positive integer $n$,
+
+$$
+\gcd(n,n+1)=1.
+$$
+
+Then generalize: determine $\gcd(n,n+k)$ in terms of $n$ and $k$.
+</div>
+
+<div class="problem">
+<span class="problem-number">11</span> **Exploration before proof.** Compute $\gcd(F_m,F_n)$ for several Fibonacci numbers and formulate a conjecture. Prove one nontrivial special case of your conjecture, clearly indicating which Fibonacci identities you use.
+</div>
+
+## Optional challenge
+
+Prove that consecutive Fibonacci numbers are relatively prime using the Euclidean algorithm rather than a closed formula.
