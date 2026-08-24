@@ -4,35 +4,32 @@ description: "Homework and due dates."
 toc: false
 ---
 
-:::: {.next-class}
+<!-- :::: {.next-class}
 <div class="next-class-date">Next deadline · [Date and time]</div>
 
-::: {.next-class-copy}
+::: {.next-class-copy}-->
 ### Homework 1
 
-Divisibility, the division algorithm.
+Unique Factorization in $\mathhbb{Z}$.
 :::
 
 [Open assignment](){.course-button .course-button-primary}
 ::::
 
-<!-- 
 
 :::: {.card-grid}
 ::: {.assignment-card}
 
  <div class="card-number">PS 1</div>
 
-<div><span class="status-badge status-due">Due [date]</span></div>
+<!-- <div><span class="status-badge status-due">Due [date]</span></div>-->
 
-### Divisibility and Euclid
-
-A sample assignment demonstrating metadata, problem formatting, hints, and print styling.
+### Unique Factorization in $\mathbb{Z}$
 
 [View Problem Set 1](problem-set-01.qmd){.card-link}
 :::
 
-::: {.assignment-card}
+<!--::: {.assignment-card}
 <div class="card-number">PS 2</div>
 
 <div><span class="status-badge status-upcoming">Forthcoming</span></div>
