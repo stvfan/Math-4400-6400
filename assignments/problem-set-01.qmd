@@ -35,15 +35,15 @@ $$
 a=qb+r,\qquad 0\le r<|b|.
 $$
 
-1) Let $x$ be a real number. Denote by $m$ and $n$ the greatest integer not exceeding $x$ and the least integer no less than $x$, respectively. Show that
+(1\) Let $x$ be a real number. Denote by $m$ and $n$ the greatest integer not exceeding $x$ and the least integer no less than $x$, respectively. Show that
 
 $$
 x-1<m\le x\le n<x+1.
 $$
 
-2) Prove the existence part of the division algorithm by taking $q$ to be the greatest integer not exceeding $a/b$ when $b>0$ and the least integer no less than $a/b$ when $b<0$.
+(2\) Prove the existence part of the division algorithm by taking $q$ to be the greatest integer not exceeding $a/b$ when $b>0$ and the least integer no less than $a/b$ when $b<0$.
 
-3) Prove the uniqueness part of the division algorithm: if there are $q_1,q_2,r_1,r_2\in\mathbb{Z}$ such that
+(3\) Prove the uniqueness part of the division algorithm: if there are $q_1,q_2,r_1,r_2\in\mathbb{Z}$ such that
 
 $$
 \begin{aligned}
