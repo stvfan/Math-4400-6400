@@ -58,9 +58,9 @@ lectures:
         href: ""
   - date: "August 24"
     meeting: "Lecture 4"
-    title: "Euler's theorem and congruence equations"
+    title: "Euler's theorem and linear congruence equations"
     summary: >-
-    topics: ["residue classes", "Euler's totient function", "Euler's theorem", "Fermat's little theorem", "congruence equations"]
+    topics: ["residue classes", "Euler's totient function", "Euler's theorem", "Fermat's little theorem", "linear congruences"]
     links:
       - label: "Notes"
         href: "notes/8_24_2026.pdf"
