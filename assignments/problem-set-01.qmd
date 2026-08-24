@@ -1,6 +1,6 @@
 ---
 title: "Homework 1"
-subtitle: "Unique Factorization in $\mathbb{Z}$"
+subtitle: 'Unique Factorization in $\mathbb{Z}$'
 description: ""
 toc: false
 ---
@@ -13,58 +13,79 @@ toc: false
 
 ::: {.assignment-page-actions}
 [Print or save as PDF](#){.course-button .course-button-secondary .js-print}
-
-[View solutions](){.course-button .course-button-primary .solution-button}
+[View solutions](#){.course-button .course-button-primary .solution-button}
 :::
 
 <!-- ::: {.template-note}
 This sample emphasizes proof writing. Adjust the length, point values, and permitted collaboration to fit the course.
-:::
--->
+::: -->
 
 ## Instructions
 
-For each problem, please write complete arguments, not only calculations. Your 
+For each problem, please write complete arguments, not only calculations.
 
 <div class="problem">
-<span class="problem-number">1</span> **Divisibility is transivitive.** Prove directly from the definition of divisibility that if $a\mid b$ and $b\mid c$, then $a\mid c$.
+<span class="problem-number">1</span> **Divisibility is transitive.** Prove directly from the definition of divisibility that if $a\mid b$ and $b\mid c$, then $a\mid c$.
 </div>
 
 <div class="problem">
-<span class="problem-number">2</span> **Division algorithm.** In this problem, we prove the division algorithm which asserts that for any integers $a,b\in\mathbb{Z}$ with $b\ne0$, there exist unique integers $q,r\in\mathbb{Z}$ such that 
-$$a=qb+r,\qquad 0<=r<|q|.$$ 
+<span class="problem-number">2</span> **Division algorithm.** In this problem, we prove the division algorithm, which asserts that for any integers $a,b\in\mathbb{Z}$ with $b\ne0$, there exist unique integers $q,r\in\mathbb{Z}$ such that
 
-(1) Let $x$ be a real number. Denote by $m and $n$ the greatest integer not exceeding $x$ and the least integer no less than $x$, respectively. Show $x-1<m\le x\le n<x+1$.
+$$
+a=qb+r,\qquad 0\le r<|b|.
+$$
+
+(1) Let $x$ be a real number. Denote by $m$ and $n$ the greatest integer not exceeding $x$ and the least integer no less than $x$, respectively. Show that
+
+$$
+x-1<m\le x\le n<x+1.
+$$
 
 (2) Prove the existence part of the division algorithm by taking $q$ to be the greatest integer not exceeding $a/b$ when $b>0$ and the least integer no less than $a/b$ when $b<0$.
 
-(3) Prove the uniqueness part of the division algorithm: If there are $q_1,q_2,r_1,r_2\in\mathbb{Z}$ with such that 
-$$\begin{align}
-a &= q_1b + r_1,\qquad 0<=r_1<|q_1|,\\
-a &= q_2b + r_2, \qquad 0<=r_2<|q_2|,
-\end{align}$$
+(3) Prove the uniqueness part of the division algorithm: if there are $q_1,q_2,r_1,r_2\in\mathbb{Z}$ such that
+
+$$
+\begin{aligned}
+a &= q_1b+r_1,\qquad 0\le r_1<|b|,\\
+a &= q_2b+r_2,\qquad 0\le r_2<|b|,
+\end{aligned}
+$$
+
 then $q_1=q_2$ and $r_1=r_2$.
 </div>
 
 <div class="problem">
-<span class="problem-number">3</span> **Definition of ideal.** Show that for any $a,b\in\Z$, the set $I_{a,b}=\{ax+by:x,y\in\mathbb{Z}$ is an ideal of $\mathbb{Z}$.
+<span class="problem-number">3</span> **Definition of ideal.** Show that for any $a,b\in\mathbb{Z}$, the set
+
+$$
+I_{a,b}=\{ax+by:x,y\in\mathbb{Z}\}
+$$
+
+is an ideal of $\mathbb{Z}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">4</span> **Multiplying congruences.** Use the definition of congruennce to show that if $a_1\equiv b_1\pmod{m}$ and $a_2\equiv b_2\pmod{m}$, then $a_1a_2\equiv b_1b_2\pmod{m}$.
+<span class="problem-number">4</span> **Multiplying congruences.** Use the definition of congruence to show that if $a_1\equiv b_1\pmod{m}$ and $a_2\equiv b_2\pmod{m}$, then $a_1a_2\equiv b_1b_2\pmod{m}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">5</span> **Modulo powers of 2.** (1) Show that the square of every odd integer is congruent to $1$ modulo $8$. 
+<span class="problem-number">5</span> **Modulo powers of 2.**
 
-(2) Show by induction that for any odd integer $a$ and any integer $n>=3$, we have $a^{2^{n-2}}\equiv 1\pmod{2^{n}}$.
+(1) Show that the square of every odd integer is congruent to $1$ modulo $8$.
+
+(2) Show by induction that for any odd integer $a$ and any integer $n\ge3$, we have
+
+$$
+a^{2^{n-2}}\equiv1\pmod{2^n}.
+$$
 </div>
 
 <div class="problem">
 <span class="problem-number">6</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its decimal digits is divisible by $3$.
 
 <details class="hint"><summary>Hint</summary>
-Use $10\equiv1\pmod3$ and write the integer in base 10 decimal expansion.
+Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
 </details>
 </div>
 
@@ -83,7 +104,9 @@ Use $10\equiv1\pmod3$ and write the integer in base 10 decimal expansion.
 <div class="problem">
 <span class="problem-number">10</span> **A structural gcd identity.** Prove that for every positive integer $n$,
 
-$$\gcd(n,n+1)=1.$$
+$$
+\gcd(n,n+1)=1.
+$$
 
 Then generalize: determine $\gcd(n,n+k)$ in terms of $n$ and $k$.
 </div>
