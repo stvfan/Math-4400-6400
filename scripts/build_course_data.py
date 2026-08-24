@@ -255,7 +255,7 @@ def assignment_entry(item: dict[str, Any]) -> str:
 
 def build_assignments(data: dict[str, Any]) -> str:
     assignments = data["assignments"]
-    heading = section_heading("Homework and due dates", "Assignments", "assignments-heading", ("All assignments", ""))
+    heading = section_heading("Homework and due dates", "Assignments", "assignments-heading", ("All assignments", "assignments/index.qmd"))
     rows = "".join(assignment_entry(item) for item in assignments.get("items", []))
     return f"""
 <section id="assignments" class="dashboard-section assignments-home-section" aria-labelledby="assignments-heading">
