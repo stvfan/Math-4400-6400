@@ -63,7 +63,7 @@ lectures:
     topics: ["residue classes", "Euler's totient function", "Euler's theorem", "Fermat's little theorem", "congruence equations"]
     links:
       - label: "Notes"
-        href: "notes/8_21_2026.pdf"
+        href: "notes/8_24_2026.pdf"
   - date: "August 21"
     meeting: "Lecture 3"
     title: "Review of unique factorization (completed), review of Euclidean algorithm and congruences"
