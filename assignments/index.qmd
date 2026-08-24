@@ -4,53 +4,14 @@ description: "Homework and due dates."
 toc: false
 ---
 
-<!-- :::: {.next-class}
-<div class="next-class-date">Next deadline · [Date and time]</div>
-
-::: {.next-class-copy}-->
-### Homework 1
-
-Unique Factorization in $\mathhbb{Z}$.
-:::
-
-[Open assignment](){.course-button .course-button-primary}
-::::
-
-
 :::: {.card-grid}
 ::: {.assignment-card}
+<div class="card-number">Homework 1</div>
 
- <div class="card-number">PS 1</div>
+### Unique Factorization in $\mathbb{Z}$ and Congruences
 
-<!-- <div><span class="status-badge status-due">Due [date]</span></div>-->
+Due Aug. 31 at 12 p.m.
 
-### Unique Factorization in $\mathbb{Z}$
-
-[View Problem Set 1](problem-set-01.qmd){.card-link}
-:::
-
-<!--::: {.assignment-card}
-<div class="card-number">PS 2</div>
-
-<div><span class="status-badge status-upcoming">Forthcoming</span></div>
-
-### Prime factorization
-
-Duplicate the problem-set template and replace this card when the assignment is ready.
-
-<a class="card-link" href="../_templates/problem-set.qmd">Download the source template</a>
-:::
-
-::: {.assignment-card}
-<div class="card-number">Guide</div>
-
-<div><span class="topic-chip">Writing</span></div>
-
-### Submission checklist
-
-State claims precisely, show the decisive reasoning, and cite collaborators and permitted resources.
-
-[Read the checklist](../resources.qmd#proof-writing-checklist){.card-link}
+[View Homework 1](problem-set-01.qmd){.card-link}
 :::
 ::::
--->
