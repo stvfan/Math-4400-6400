@@ -22,7 +22,7 @@ This sample emphasizes proof writing. Adjust the length, point values, and permi
 
 ## Instructions
 
-For each problem, please write a complete argument, not only intermidiate calculations. Answers without justification may receive zero credit. Collaboration is encouraged, but you must write your own final solutions independently.
+For each problem, please write a complete argument, not only intermediate calculations. Answers without justification may receive zero credit. Collaboration is encouraged, but you must write your own final solutions independently.
 
 <div class="problem">
 <span class="problem-number">1</span> **Divisibility is transitive.** Prove directly from the definition of divisibility that if $a\mid b$ and $b\mid c$, then $a\mid c$.
