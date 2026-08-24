@@ -96,12 +96,14 @@ Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
 
 2. Express the gcd as $2026x+748y$ for integers $x,y$. 
 <details class="hint"><summary>Hint</summary>
-Read Euclidean algorithm backwards and substitute numbers 
+Read your solution in Part 1 backwards and substitute numbers successively.
 </details>
+
+3. (multiplicative inverse) Given nonzero integers $a$ and $m$, a \textit{multiplicative inverse} of $a$ modulo $m$ is an integer $x$ such that $ax\equiv 1\pmod m$. Find the least nonnegative multiplicative inverse of $37$ modulo $101$, and verify the answer by multiplication.
 </div>
 
 <div class="problem">
-<span class="problem-number">8</span> **Linear equations.** Show that $84x+126y=30$ has an integer solution. If it does, find all integer solutions; if it does not, prove impossibility.
+<span class="problem-number">8</span> **Linear equations.** Determine whether $84x+126y=30$ has an integer solution $(x,y)\in\mathbb{Z}^2$. If it does, find all integer solutions; if it does not, prove impossibility.
 </div>
 
 <div class="problem">
