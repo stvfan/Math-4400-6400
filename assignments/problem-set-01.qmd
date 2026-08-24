@@ -1,6 +1,6 @@
 ---
 title: "Homework 1"
-subtitle: 'Unique Factorization in $\mathbb{Z}$'
+subtitle: 'Unique Factorization in $\mathbb{Z}$ and Congruences'
 description: ""
 toc: false
 ---
