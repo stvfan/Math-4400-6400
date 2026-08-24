@@ -49,9 +49,9 @@ textbook:
 lectures:
   - date: "August 24"
     meeting: "Lecture 4"
-    title: "Congruence equations"
+    title: "Euler's theorem and congruence equations"
     summary: >-
-    topics: ["linear congrunce equations", "quadratic residues & nonresidues"]
+    topics: ["residue classes", "Euler's totient function", "Euler's theorem", "Fermat's little theorem", "congrunce equations", "quadratic residues & nonresidues"]
     links:
       - label: "Notes"
         href: "notes/8_21_2026.pdf"
