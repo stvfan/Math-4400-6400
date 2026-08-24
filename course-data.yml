@@ -49,7 +49,7 @@ textbook:
 lectures:
 
   - date: "August 26"
-    meeting: "Lecture 4"
+    meeting: "Lecture 5"
     title: "Quadratic residues and nonresidues"
     summary: >-
     topics: ["quadratic congruence equations", "quadratic residues & nonresidues"]
