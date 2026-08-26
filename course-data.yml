@@ -48,6 +48,15 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "August 28"
+    meeting: "Lecture 6"
+    title: "Euler's criterion and its applications"
+    summary: >-
+    topics: ["quadratic residues & nonresidues", "Euler's criterion", "Legrendre symbol"]
+    links:
+      - label: "Notes"
+        href: ""
+
   - date: "August 26"
     meeting: "Lecture 5"
     title: "Quadratic residues and nonresidues"
@@ -55,7 +64,7 @@ lectures:
     topics: ["quadratic congruences", "quadratic residues & nonresidues"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/8_26_2026.pdf"
   - date: "August 24"
     meeting: "Lecture 4"
     title: "Euler's theorem and linear congruence equations"
