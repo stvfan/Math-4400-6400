@@ -75,7 +75,7 @@ lectures:
         href: "notes/8_24_2026.pdf"
   - date: "August 21"
     meeting: "Lecture 3"
-    title: "Review of unique factorization (completed), review of Euclidean algorithm and congruences"
+    title: "Review of unique factorization (complete), review of Euclidean algorithm and congruences"
     summary: >-
     topics: ["FTA", "UFD", "Euclidean domain", "Euclidean algorithm", "congruences"]
     links:
