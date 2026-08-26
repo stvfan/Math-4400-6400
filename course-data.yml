@@ -61,7 +61,7 @@ lectures:
     meeting: "Lecture 5"
     title: "Quadratic residues and nonresidues"
     summary: >-
-    topics: ["quadratic congruences", "quadratic residues & nonresidues"]
+    topics: ["polynomial congruences", "Lagrange's theorem", "quadratic congruences", "quadratic residues & nonresidues"]
     links:
       - label: "Notes"
         href: "notes/8_26_2026.pdf"
