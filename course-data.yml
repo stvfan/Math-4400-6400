@@ -60,7 +60,7 @@ lectures:
     meeting: "Lecture 6"
     title: "Euler's criterion and its applications"
     summary: >-
-    topics: ["quadratic residues & nonresidues", "Euler's criterion", "Legrendre symbol", "$-1 \\pmod{p}$"]
+    topics: ["quadratic residues & nonresidues", "Euler's criterion", "Legrendre symbol", "$$-1 \\pmod{p}$$"]
     links:
       - label: "Notes"
         href: "notes/8_28_2026.pdf"
