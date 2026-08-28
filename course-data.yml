@@ -47,15 +47,23 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
+  - date: "August 31"
+    meeting: "Lecture 7"
+    title: "Gauss's lemma and the law of quadratic reciprocity"
+    summary: >-
+    topics: ["Wilson's theorem", "Gauss's lemma", "quadratic reciprocity"]
+    links:
+      - label: "Notes"
+        href: ""
 
   - date: "August 28"
     meeting: "Lecture 6"
     title: "Euler's criterion and its applications"
     summary: >-
-    topics: ["quadratic residues & nonresidues", "Euler's criterion", "Legrendre symbol", "Wilson's theorem"]
+    topics: ["quadratic residues & nonresidues", "Euler's criterion", "Legrendre symbol"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/8_28_2026.pdf"
 
   - date: "August 26"
     meeting: "Lecture 5"
