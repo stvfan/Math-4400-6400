@@ -73,7 +73,7 @@ is an ideal of $\mathbb{Z}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">5</span> **A divisibility test.** Prove that an integer is divisible by $3$ if and only if the sum of its base-10 decimal digits is divisible by $3$. What can you say about divisibility by $11$?
+<span class="problem-number">5</span> **A divisibility test.** Prove that a nonzero integer is divisible by $3$ if and only if the sum of its base-10 decimal digits is divisible by $3$. What can you say about divisibility by $11$?
 
 <details class="hint"><summary>Hint</summary>
 Use $10\equiv1\pmod3$ and write the integer in its base-10 expansion.
