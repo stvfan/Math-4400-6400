@@ -13,7 +13,7 @@ toc: false
 
 ::: {.assignment-page-actions}
 [Print or save as PDF](#){.course-button .course-button-secondary .js-print}
-[View solutions]("assignments/HW1 Solutions.pdf"){.course-button .course-button-primary .solution-button}
+[View solutions](assignments/HW1 Solutions.pdf){.course-button .course-button-primary .solution-button}
 :::
 
 <!-- ::: {.template-note}
