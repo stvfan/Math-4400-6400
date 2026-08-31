@@ -133,7 +133,7 @@ assignments:
       due: "Aug. 31, 12 p.m."
       status: "Closed"
       status_style: "due"
-      note: "Solutions"
+      note: ""
       href: "assignments/problem-set-01.qmd"
     # - number: "HW 2"
     #   title: "Prime factorization and congruences"
