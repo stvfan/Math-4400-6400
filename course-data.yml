@@ -111,20 +111,20 @@ lectures:
         href: "notes/8_21_2026.pdf"
         
    - date: "August 19"
-    meeting: "Lecture 2"
-    title: "Review of unique factorization (cont.)"
-    summary: >-
-    topics: ["FTA", "ideals", "PID", "gcd", "Bézout's lemma", "Euclid's lemma"]
-    links:
+     meeting: "Lecture 2"
+     title: "Review of unique factorization (cont.)"
+     summary: >-
+     topics: ["FTA", "ideals", "PID", "gcd", "Bézout's lemma", "Euclid's lemma"]
+     links:
       - label: "Notes"
         href: "notes/8_19_2026.pdf"
         
    - date: "August 17"
-    meeting: "Lecture 1"
-    title: "Course introduction and review of unique factorization"
-    summary: >-
-    topics: ["syllabus", "divisibility", "units", "primes and composites", "FTA", "division algorithm"]
-    links:
+     meeting: "Lecture 1"
+     title: "Course introduction and review of unique factorization"
+     summary: >-
+     topics: ["syllabus", "divisibility", "units", "primes and composites", "FTA", "division algorithm"]
+     links:
       - label: "Notes"
         href: "notes/8_17_2026.pdf"
 
