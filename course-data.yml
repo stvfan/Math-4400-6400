@@ -58,7 +58,7 @@ lectures:
 
   - date: "September 2"
     meeting: "Lecture 8"
-    title: "Gauss's lemma and the law of quadratic reciprocity"
+    title: "Gauss's lemma (cont.)"
     summary: >-
     topics: ["Gauss's lemma", "2 modulo p"]
     links:
