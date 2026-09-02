@@ -51,7 +51,7 @@ lectures:
     meeting: "Lecture 9"
     title: "The law of quadratic reciprocity"
     summary: >-
-    topics: ["quadratic reciprocity","lattice points"]
+    topics: ["quadratic reciprocity","counting lattice points"]
     links:
       - label: "Notes"
         href: ""
