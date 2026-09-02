@@ -91,6 +91,7 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_26_2026.pdf"
+        
   - date: "August 24"
     meeting: "Lecture 4"
     title: "Euler's theorem and linear congruence equations"
@@ -99,6 +100,7 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_24_2026.pdf"
+        
   - date: "August 21"
     meeting: "Lecture 3"
     title: "Review of unique factorization (complete), review of Euclidean algorithm and congruences"
