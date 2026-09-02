@@ -65,7 +65,7 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/9_2_2026.pdf"
-
+  
   - date: "August 31"
     meeting: "Lecture 7"
     title: "Gauss's lemma"
@@ -74,7 +74,6 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_31_2026.pdf"
-
   - date: "August 28"
     meeting: "Lecture 6"
     title: "Euler's criterion and its applications"
@@ -83,7 +82,7 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_28_2026.pdf"
-
+        
   - date: "August 26"
     meeting: "Lecture 5"
     title: "Quadratic residues and nonresidues"
