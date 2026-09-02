@@ -159,15 +159,15 @@ exams:
 
   items:
     - title: "Midterm 1"
-      date: "TBA"
-      time: "TBA"
+      date: "October 9"
+      time: "12:00 p.m.–12:55 p.m."
       location: "Boyd 302"
       solutions_href: ""
       solutions_label: "View solutions"
 
     - title: "Midterm 2"
-      date: "TBA"
-      time: "TBA"
+      date: "November 13"
+      time: "12:00 p.m.–12:55 p.m."
       location: "Boyd 302"
       
     - title: "Final exam"
