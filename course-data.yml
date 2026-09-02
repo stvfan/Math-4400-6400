@@ -47,6 +47,7 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
+
   - date: "September 4"
     meeting: "Lecture 9"
     title: "The law of quadratic reciprocity"
