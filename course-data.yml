@@ -169,10 +169,11 @@ exams:
       date: "TBA"
       time: "TBA"
       location: "Boyd 302"
+      
     - title: "Final exam"
-      date: "TBA"
-      time: "TBA"
-      location: "TBA"
+      date: "December 7"
+      time: "12 p.m.–3:00 p.m."
+      location: "Boyd 302"
       note: "Cumulative"
 grading:
   intro: "Final grades will be calculated from the following weighted components."
