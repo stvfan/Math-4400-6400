@@ -4,7 +4,6 @@
 # After editing, run:
 #   python scripts/build_course_data.py
 # The GitHub Pages workflow runs this automatically when you push.
-
 course:
   code: "MATH 4400/6400"
   title: "Number Theory"
@@ -17,23 +16,21 @@ course:
   office: "Boyd · 321C"
   quote: "God made the integers; all else is the work of man."
   quote_attribution: "Leopold Kronecker"
-
 course_summary:
   paragraphs:
     - >-
-      Number theory is the study of the integers (and related arithmetic objects) and the remarkable structures hidden inside them. 
+      Number theory is the study of the integers (and related arithmetic objects) and the remarkable structures hidden inside them.
       It is one of the oldest and most beautiful branches of mathematics. Although its questions are often easy to
-      state, many have resisted centuries of effort.  
-    - >- 
-      This course invites you on a journey into the classical theory of numbers, with particular attention paid to the pathbreaking accomplishments of 
-      the 18th and 19th centuries. Topics include divisibility, congruences, unique factorization, quadratic residues and quadratic 
+      state, many have resisted centuries of effort.
+    - >-
+      This course invites you on a journey into the classical theory of numbers, with particular attention paid to the pathbreaking accomplishments of
+      the 18th and 19th centuries. Topics include divisibility, congruences, unique factorization, quadratic residues and quadratic
       reciprocity, Gaussian integers, prime numbers, arithmetic functions, and selected advanced topics and applications.
     - >-
-      Along the way, we will emphasize proof writing, mathematical communication, and the transition from 
+      Along the way, we will emphasize proof writing, mathematical communication, and the transition from
       examples to general theorems.
   syllabus_label: "View the course syllabus"
   syllabus_href: "Syllabus.pdf"
-
 textbook:
   title: "Fundamentals of Number Theory"
   author: "W. J. LeVeque"
@@ -43,7 +40,6 @@ textbook:
     excellent addition to any mathematical library.
   purchase_label: "Purchase"
   purchase_url: "https://www.amazon.com/dp/0486689069/"
-
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
@@ -56,7 +52,6 @@ lectures:
     links:
       - label: "Notes"
         href: ""
-
   - date: "September 2"
     meeting: "Lecture 8"
     title: "Gauss's lemma (cont.)"
@@ -65,7 +60,7 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/9_2_2026.pdf"
-  
+
   - date: "August 31"
     meeting: "Lecture 7"
     title: "Gauss's lemma"
@@ -74,7 +69,6 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_31_2026.pdf"
-        
   - date: "August 28"
     meeting: "Lecture 6"
     title: "Euler's criterion and its applications"
@@ -83,7 +77,6 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_28_2026.pdf"
-        
   - date: "August 26"
     meeting: "Lecture 5"
     title: "Quadratic residues and nonresidues"
@@ -92,7 +85,7 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_26_2026.pdf"
-        
+
   - date: "August 24"
     meeting: "Lecture 4"
     title: "Euler's theorem and linear congruence equations"
@@ -101,7 +94,7 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_24_2026.pdf"
-        
+
   - date: "August 21"
     meeting: "Lecture 3"
     title: "Review of unique factorization (complete), review of Euclidean algorithm and congruences"
@@ -110,37 +103,36 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_21_2026.pdf"
-        
-   - date: "August 19"
-     meeting: "Lecture 2"
-     title: "Review of unique factorization (cont.)"
-     summary: >-
-     topics: ["FTA", "ideals", "PID", "gcd", "Bézout's lemma", "Euclid's lemma"]
-     links:
+
+  - date: "August 19"
+    meeting: "Lecture 2"
+    title: "Review of unique factorization (cont.)"
+    summary: >-
+    topics: ["FTA", "ideals", "PID", "gcd", "Bézout's lemma", "Euclid's lemma"]
+    links:
       - label: "Notes"
         href: "notes/8_19_2026.pdf"
-        
-   - date: "August 17"
-     meeting: "Lecture 1"
-     title: "Course introduction and review of unique factorization"
-     summary: >-
-     topics: ["syllabus", "divisibility", "units", "primes and composites", "FTA", "division algorithm"]
-     links:
+
+  - date: "August 17"
+    meeting: "Lecture 1"
+    title: "Course introduction and review of unique factorization"
+    summary: >-
+    topics: ["syllabus", "divisibility", "units", "primes and composites", "FTA", "division algorithm"]
+    links:
       - label: "Notes"
         href: "notes/8_17_2026.pdf"
-
 assignments:
   policy:
     - >-
-      Homework will be collected in class, once every week or two. You are responsible 
-      for keeping track of the due dates of these assignments. Late homework will not be 
+      Homework will be collected in class, once every week or two. You are responsible
+      for keeping track of the due dates of these assignments. Late homework will not be
       accepted. The lowest homework score will be dropped at the end of the term.
     - >-
-      Collaboration is encouraged, but you must write your own final solutions independently 
-      and make sure that you understand and are able to explain every submitted argument if requested to do. 
+      Collaboration is encouraged, but you must write your own final solutions independently
+      and make sure that you understand and are able to explain every submitted argument if requested to do.
       Keep in mind that by entering UGA, you have already agreed to abide by the UGA Honor code described at
        https://honesty.uga.edu/Academic-Honesty-Policy/.
-      
+
   items:
     - number: "Homework 1"
       title: 'Unique Factorization in ℤ and Congruences'
@@ -156,16 +148,15 @@ assignments:
     #   status_style: "upcoming"
     #   note: "Replace this entry when the assignment is ready."
     #   href: "assignments/index.qmd"
-
 exams:
   policy:
     - >-
       There are two in-class midterm exams and a cumulative final
-      exam. All exams are closed book and closed notes. The exam dates will be announced later. 
+      exam. All exams are closed book and closed notes. The exam dates will be announced later.
     - >-
-      Please keep in mind that no make-ups will be given, except when required by UGA policy or arranged for a documented 
+      Please keep in mind that no make-ups will be given, except when required by UGA policy or arranged for a documented
       emergency.
-     
+
   items:
     - title: "Midterm 1"
       date: "TBA"
@@ -173,7 +164,7 @@ exams:
       location: "Boyd 302"
       solutions_href: ""
       solutions_label: "View solutions"
-      
+
     - title: "Midterm 2"
       date: "TBA"
       time: "TBA"
@@ -183,7 +174,6 @@ exams:
       time: "TBA"
       location: "TBA"
       note: "Cumulative"
-
 grading:
   intro: "Final grades will be calculated from the following weighted components."
   items:
@@ -199,7 +189,6 @@ grading:
     - component: "Final exam"
       weight: "30%"
       note: "Cumulative examination"
-
 accommodations_resources:
   accommodation_text: >-
     Students who may require accommodations should contact the instructor as
@@ -225,7 +214,6 @@ accommodations_resources:
     - label: "Accessibility and Testing"
       description: "On-campus accessibility and testing services"
       href: "https://accessibility.uga.edu"
-
 disclaimer: >-
   The course syllabus is a general plan for the course and is subject to
   change; deviations announced to the class by the instructor may be
