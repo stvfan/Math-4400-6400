@@ -107,7 +107,8 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_21_2026.pdf"
-  - date: "August 19"
+        
+   - date: "August 19"
     meeting: "Lecture 2"
     title: "Review of unique factorization (cont.)"
     summary: >-
@@ -115,7 +116,8 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_19_2026.pdf"
-  - date: "August 17"
+        
+   - date: "August 17"
     meeting: "Lecture 1"
     title: "Course introduction and review of unique factorization"
     summary: >-
