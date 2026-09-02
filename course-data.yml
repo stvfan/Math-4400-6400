@@ -47,14 +47,23 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
+  - date: "September 4"
+    meeting: "Lecture 9"
+    title: "The law of quadratic reciprocity"
+    summary: >-
+    topics: ["quadratic reciprocity","lattice points"]
+    links:
+      - label: "Notes"
+        href: ""
+
   - date: "September 2"
     meeting: "Lecture 8"
     title: "Gauss's lemma and the law of quadratic reciprocity"
     summary: >-
-    topics: ["Gauss's lemma", "quadratic reciprocity"]
+    topics: ["Gauss's lemma", "2 modulo p"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/9_2_2026.pdf"
 
   - date: "August 31"
     meeting: "Lecture 7"
