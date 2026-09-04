@@ -44,6 +44,16 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+
+  - date: "September 9"
+    meeting: "Lecture 10"
+    title: "Quadratic reciprocity and its applications"
+    summary: >-
+    topics: ["quadratic reciprocity","Jacobi symbol","sum of two squares"]
+    links:
+      - label: "Notes"
+        href: "notes/9_4_2026.pdf"
+        
   - date: "September 4"
     meeting: "Lecture 9"
     title: "The law of quadratic reciprocity"
@@ -51,7 +61,7 @@ lectures:
     topics: ["quadratic reciprocity","counting lattice points"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/9_4_2026.pdf"
   - date: "September 2"
     meeting: "Lecture 8"
     title: "Gauss's lemma (cont.)"
