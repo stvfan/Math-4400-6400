@@ -442,7 +442,7 @@ def main() -> None:
         '<div class="page-intro-shell">',
         '<div class="section-kicker">What we covered</div>',
         '<h1>Lectures</h1>',
-        '<p>The <a href="schedule.html">schedule</a> shows the semester plan. This page records what we actually covered after each class meeting, with links to the corresponding lecture notes.</p>',
+        '<p>This page records what we actually covered after each class meeting, with links to the corresponding lecture notes.</p>',
         '</div>',
         '<div class="wide-content-shell">',
         lectures_full,
