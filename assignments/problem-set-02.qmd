@@ -1,0 +1,190 @@
+---
+title: "Homework 1"
+subtitle: 'Euler's theorem & quadratic residues and nonresidues'
+description: ""
+toc: false
+---
+
+<div class="assignment-header">
+  <div><small>Assigned</small><strong>Sept. 9</strong></div>
+  <div><small>Due</small><strong>Sept. 23 · 12 p.m.</strong></div>
+  <div><small>Submit</small><strong>Boyd 302</strong></div>
+</div>
+
+::: {.assignment-page-actions}
+[Print or save as PDF](#){.course-button .course-button-secondary .js-print}
+[View solutions](HW1 Solutions.pdf){.course-button .course-button-primary .solution-button}
+:::
+
+## Instructions
+
+For each problem, please write a complete argument, not only intermediate calculations. Answers without justification may receive zero credit. Collaboration is encouraged, but you must write your own final solutions independently.
+
+<div class="problem">
+<span class="problem-number">1</span> **Fermat's little theorem.** Fermat's little theorem asserts that for any prime $p$ and any $a\in\mathbb{Z}$, we have $a^{p}\equiv a\pmod{p}$. In class we deduced this result from Euler's theorem. Here we give a direct proof.
+
+(1\) Consider the binomial coefficient
+$$
+\binom{p}{k}=\frac{p!}{k!(p-k)!},\qquad 1\le k\le p-1.
+$$
+Prove that $p$ divides $\displaystyle\binom{p}{k}$ for every $1\le k\le p-1$.
+
+(2\) Show that for any $x,y\in\mathbb{Z}$,
+$$
+(x+y)^p\equiv x^p+y^p\pmod{p}.
+$$
+Then use this and induction to show that for any $x_1,...,x_n\in\mathbb{Z}$,
+$$
+\bigg(\sum_{i=1}^{n}x_i\bigg)^p\equiv \sum_{i=1}^{n}x_i^p\pmod{p}.
+$$
+
+(3/) Deduce Fermat's little theorem.
+</div>
+
+<div class="problem">
+<span class="problem-number">2</span> **Euler's theorem.** Let $\phi(m)$ be the Euler totient function, which, for every positive integer $m$, counts the number of positive integers $n\le m$ with $\gcd(n,m)=1$. In class we proved Euler's theorem that if $\gcd(a,m)=1$, then $a^{\phi(m)}\equiv1\pmod{m}$.
+
+(1\) Show that if $p^a$ is a prime power, then $\phi(p^a)=p^{a-1}(p-1)$. This is a natural generalization of $\phi(p)=p-1$ discussed in class.
+
+(2\) Compute the following residues. For each part, your final answer should be a nonnegative integer less than the given modulus.
+
+ (a\) $18^{20}\pmod{25}$
+ (b\) $3^{2026} \pmod{49}$
+ (c\) $4^{137}8^{93}\pmod{121}$
+
+(3\) Euler's theorem can also be stated in the form
+$$
+\bar{a}\equiv a^{\phi(m)-1}\pmod{m},
+$$
+where $\bar{a}$ is the least positive multiplicative inverse of $a\pmod{m}$, meaning that it is the least positive integer satisfying $a\bar{a}\equiv 1\pmod{m}$. Use this to find the least positive multiplicative inverse of $17\pmod{125}$.
+
+(4\) For a positive integer $m$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, where $p_1,...,p_k$ are distinct primes and $m_1,...,m_k$ are positive integers, define the **Carmichael function** $\lambda(m)$ as the least common multiple of $\phi(p_1^{m_1}),\ldots,\phi(p_k^{m_k})$, namely, the least positive integer divisible by each of these numbers, with the convention that $\lambda(1)=1$. Show that if $\gcd(a,m)=1$, then
+$$
+a^{\lambda(m)}\equiv 1\pmod{m}.
+$$
+For comparison, when $m=15$, we have $\phi(15)=8$ and $\lambda(15)=4$. So the above becomes $a^4\equiv 1\pmod{15}$, while Euler's theorem gives  the weaker conclusion $a^8\equiv 1\pmod{15}$.
+</div>
+
+<div class="problem">
+<span class="problem-number">3</span> **Lagrange's theorem.** Recall that $\mathbb{Z}[x]$ denotes the ring of polynomials with integer coefficients. For any nonzero $m\in\mathbb{Z}$, we may extend the congruence relation modulo $m$ to $\mathbb{Z}[x]$ by defining $f(x)\equiv g(x)\pmod{m}$ if $m$ divides every coefficient of $f(x)-g(x)$. It is easy to check that $\equiv$ is an equivalence relation on $\mathbb{Z}[x]$.
+
+(1\) Let $a\in\mathbb{Z}$ and $f(x)\in\mathbb{Z}[x]$. Show that $f(a)\equiv0\pmod{m}$ if and only if there is some  $g(x)\in\mathbb{Z}[x]$ such that
+$$
+f(x)\equiv(x-a)g(x)\pmod{m}.
+$$
+
+(2\) Prove Lagrange's theorem that if $p$ is prime and
+$$
+f(x)=a_nx^n+\cdots+a_1x+a_0\in\mathbb{Z}[x],
+$$
+where $n\ge0$ and $p\nmid a_n$, then $f(x)\equiv0\pmod{p}$ has at most $n$ roots.
+
+</div>
+
+<div class="problem">
+<span class="problem-number">4</span> **Euler's criterion.** Euler's criterion states that if $p>2$ is prime and $a\in\mathbb{Z}$ with $p\nmid a$, then
+$$
+\left(\frac{a}{p}\right)\equiv a^{\frac{p-1}{2}}\pmod{p}.
+$$
+We proved this in class based on Lagrange's theorem. The purpose of this problem is to obtain a different proof. Consider the set $A=\{1,\ldots,p-1\}$.
+
+(1\) Show that when $a$ N $p$, $A$ can be partitioned into $\displaystyle\frac{p-1}{2}$ pairs of distinct numbers, such that each pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$, and that when $a$ R $p$, $A$ can be partitioned into $\displaystyle\frac{p-1}{2}$ pairs of distinct numbers, such that one pair is of the form $\{x_0,p-x_0\}$ and every other pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$.
+
+(2\) Prove, by multiplying the numbers $1,\ldots,p-1$ in two ways and reducing the product modulo $p$, that
+$$
+(p-1)!\equiv -\left(\frac{a}{p}\right)a^{\frac{p-1}{2}}\pmod{p}.
+$$
+
+(3\) Deduce Wilson's theorem that $(p-1)!\equiv-1\pmod{p}$ and then Euler's criterion.
+</div>
+
+<div class="problem">
+<span class="problem-number">5</span> **Gauss's lemma.** Use Gauss's lemma to show that $-3$ R $p$ if $p\equiv 1\pmod{6}$ and $-3$ N $p$ if $p\equiv 5\pmod{6}$.
+
+</div>
+
+<div class="problem">
+<span class="problem-number">6</span> **Quadratic reciprocity.** Evaluate the following Legendre symbols.
+
+(1\) $\displaystyle\left(\frac{17}{41}\right)$
+
+(2\) $\displaystyle\left(\frac{15}{43}\right)$
+
+(3\) $\displaystyle\left(\frac{280}{293}\right)$
+</div>
+
+<div class="problem">
+<span class="problem-number">7</span> **Jacobi symbol.** For any $a\in\mathbb{Z}$ and any positive odd integer $n$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, define the **Jacobi symbol**
+$$
+\left(\frac{a}{n}\right)=\left(\frac{a}{p_1}\right)^{m_1}\cdots~ \left(\frac{a}{p_k}\right)^{m_k}
+$$
+with the convention that $\displaystyle\left(\frac{a}{1}\right)=1$. It is understood that each $\displaystyle\left(\frac{a}{p_i}\right)$ on the right-hand side is a Legendre symbol. In particular, the Jacobi symbol agrees with the Legendre symbol when $n$ is a prime. Verify the following properties for the Jacobi symbol.
+
+(1\) (Periodicity) For any positive odd integer $n$ and any $a,b\in\Z$ such that $a\equiv b\pmod{n}$,
+$$
+\left(\frac{a}{n}\right)=\left(\frac{b}{n}\right).
+$$
+
+(2\) (Complete multiplicativity) For any positive odd integers $m,n$ and any $a,b\in\Z$,
+\begin{align*}
+\left(\frac{ab}{n}\right)=\left(\frac{a}{n}\right)\left(\frac{b}{n}\right),\\
+\left(\frac{a}{mn}\right)=\left(\frac{a}{m}\right)\left(\frac{a}{n}\right).
+\end{align*}
+
+(3\) ($-1$ modulo $n$) For any positive odd integer $n$,
+$$
+\left(\frac{-1}{n}\right)=(-1)^{\frac{n-1}{2}}.
+$$
+
+(4\) ($2$ modulo $n$) For any positive odd integer $n$,
+$$
+\left(\frac{2}{n}\right)=(-1)^{\frac{n^2-1}{8}}.
+$$
+
+(5\) (Quadratic reciprocity) For any positive odd integers $m,n$ with $\gcd(m,n)=1$,
+$$
+\left(\frac{m}{n}\right)\left(\frac{n}{m}\right)=(-1)^{\frac{m-1}{2}\cdot\frac{n-1}{2}}=\begin{cases}
+-1, & \text{if } m,n \equiv 3\pmod{4}, \\
+1,  & \text{otherwise}.
+\end{cases}
+$$
+
+These properties usually make evaluation of Legendre symbols a lot easier. For instance,
+$$
+\left(\frac{15}{43}\right)=-\left(\frac{43}{15}\right)=-\left(\frac{43}{5}\right)\left(\frac{43}{3}\right)=-\left(\frac{3}{5}\right)\left(\frac{1}{3}\right)=-\left(\frac{5}{3}\right)=-\left(\frac{2}{3}\right)=1.
+$$
+</div>
+
+<div class="problem">
+<span class="problem-number">8</span> **Sum of two squares.** Determine which of the following integers can be expressed as a sum of two squares. For each one that can, find such a representation.
+
+(1\) 605
+
+(2\) 2026
+
+(3\) 6174
+
+</div>
+
+<div class="problem">
+<span class="problem-number">9</span> **Quadratic congruence equations.** Solve the quadratic congruence $x^2+x+3\equiv0\pmod{15}$.Solve the quadratic congruence $x^2+x+3\equiv0\pmod{15}$.
+</div>
+
+## Optional challenge
+
+<div class="problem">
+<span class="problem-number">10</span> **Half factorials modulo $p$.** Let $p>2$ be prime.
+
+(1\) Prove
+ $$
+ \left[\left(\frac{p-1}{2}\right)!\right]^2\equiv (-1)^{\frac{p+1}{2}}\pmod{p}.
+ $$
+
+(2\) Show that if $p\equiv 3\pmod{4}$, then
+$$
+\left(\frac{p-1}{2}\right)!\equiv (-1)^{n}\pmod{p},
+$$
+where $n$ is the number of positive integers $n<p/2$ that are quadratic nonresidues modulo $p$.
+</div>
+
+</div>
