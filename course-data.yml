@@ -44,21 +44,20 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
-
   - date: "September 9"
     meeting: "Lecture 10"
     title: "Quadratic reciprocity and its applications"
     summary: >-
-    topics: ["quadratic reciprocity","Jacobi symbol","sum of two squares"]
+    topics: ["quadratic reciprocity", "Jacobi symbol", "sum of two squares"]
     links:
       - label: "Notes"
         href: "notes/9_4_2026.pdf"
-        
+
   - date: "September 4"
     meeting: "Lecture 9"
     title: "The law of quadratic reciprocity"
     summary: >-
-    topics: ["quadratic reciprocity","counting lattice points"]
+    topics: ["quadratic reciprocity", "counting lattice points"]
     links:
       - label: "Notes"
         href: "notes/9_4_2026.pdf"
@@ -131,7 +130,6 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_17_2026.pdf"
-        
 assignments:
   policy:
     - >-
@@ -153,14 +151,13 @@ assignments:
       note: ""
       href: "assignments/problem-set-01.qmd"
     - number: "Homework 2"
-      title: 'Euler's theorem and quadratic residues & nonresidues'
+      title: "Euler's theorem, quadratic residues, and quadratic reciprocity"
       due: "Sept. 23, 12 p.m."
       status: "Assigned"
       status_style: "due"
       note: ""
       href: "assignments/problem-set-02.qmd"
-
-exams:    
+exams:
   policy:
     - >-
       There are two in-class midterm exams and a cumulative final
@@ -181,7 +178,6 @@ exams:
       date: "November 13"
       time: "12:00 p.m.–12:55 p.m."
       location: "Boyd 302"
-      
     - title: "Final exam"
       date: "December 7"
       time: "12:00 p.m.–3:00 p.m."
