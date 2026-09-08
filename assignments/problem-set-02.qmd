@@ -117,9 +117,9 @@ $$
 </div>
 
 <div class="problem">
-<span class="problem-number">7</span> **Jacobi symbol.**  For any $a\in\mathbb{Z}$ and any positive odd integer $n$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, define the *Jacobi symbol*
+<span class="problem-number">7</span> **Jacobi symbol.**  For any $a\in\mathbb{Z}$ and any positive odd integer $n=p_1\cdots p_k$, where $p_1,\ldots,p_k$ are odd primes, define the \textit{Jacobi symbol} 
 $$
-\left(\frac{a}{n}\right)=\left(\frac{a}{p_1}\right)^{m_1}\cdots~ \left(\frac{a}{p_k}\right)^{m_k}
+\left(\frac{a}{n}\right)=\left(\frac{a}{p_1}\right)\cdots \left(\frac{a}{p_k}\right)
 $$
 with the convention that $\left(\frac{a}{1}\right)=1$. It is understood that each $\left(\frac{a}{p_i}\right)$ on the right-hand side is a Legendre symbol. In particular, the Jacobi symbol agrees with the Legendre symbol when $n$ is a prime. Verify the following properties for the Jacobi symbol.
 
