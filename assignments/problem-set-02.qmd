@@ -1,6 +1,6 @@
 ---
 title: "Homework 2"
-subtitle: "Euler's theorem, quadratic residues, and quadratic reciprocity"
+subtitle: "Euler's theorem & quadratic residues and nonresidues"
 description: ""
 toc: false
 ---
@@ -13,7 +13,6 @@ toc: false
 
 ::: {.assignment-page-actions}
 [Print or save as PDF](#){.course-button .course-button-secondary .js-print}
-[View solutions](#){.course-button .course-button-primary .solution-button}
 :::
 
 ## Instructions
@@ -60,7 +59,7 @@ $$
 $$
 where $\bar{a}$ is the least positive multiplicative inverse of $a\pmod{m}$, meaning that it is the least positive integer satisfying $a\bar{a}\equiv 1\pmod{m}$. Use this to find the least positive multiplicative inverse of $17\pmod{125}$.
 
-(4\) For a positive integer $m$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, where $p_1,...,p_k$ are distinct primes and $m_1,...,m_k$ are positive integers, define the *Carmichael function* $\lambda(m)$ as the least common multiple of $\phi(p_1^{m_1}),\ldots,\phi(p_k^{m_k})$, namely, the least positive integer divisible by each of these numbers, with the convention that $\lambda(1)=1$. Show that if $\gcd(a,m)=1$, then
+(4\) For a positive integer $m$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, where $p_1,...,p_k$ are distinct primes and $m_1,...,m_k$ are positive integers, define the **Carmichael function** $\lambda(m)$ as the least common multiple of $\phi(p_1^{m_1}),\ldots,\phi(p_k^{m_k})$, namely, the least positive integer divisible by each of these numbers, with the convention that $\lambda(1)=1$. Show that if $\gcd(a,m)=1$, then
 $$
 a^{\lambda(m)}\equiv 1\pmod{m}.
 $$
@@ -114,7 +113,7 @@ $$
 </div>
 
 <div class="problem">
-<span class="problem-number">7</span> **Jacobi symbol.** For any $a\in\mathbb{Z}$ and any positive odd integer $n$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, define the *Jacobi symbol*
+<span class="problem-number">7</span> **Jacobi symbol.** For any $a\in\mathbb{Z}$ and any positive odd integer $n$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, define the **Jacobi symbol**
 $$
 \left(\frac{a}{n}\right)=\left(\frac{a}{p_1}\right)^{m_1}\cdots~ \left(\frac{a}{p_k}\right)^{m_k}
 $$
