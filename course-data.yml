@@ -130,6 +130,7 @@ lectures:
     links:
       - label: "Notes"
         href: "notes/8_17_2026.pdf"
+        
 assignments:
   policy:
     - >-
@@ -157,6 +158,7 @@ assignments:
       status_style: "due"
       note: ""
       href: "assignments/problem-set-02.qmd"
+      
 exams:
   policy:
     - >-
