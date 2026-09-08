@@ -80,6 +80,9 @@ $$
 f(x)=a_nx^n+\cdots+a_1x+a_0\in\mathbb{Z}[x],
 $$
 where $n\ge0$ and $p\nmid a_n$, then $f(x)\equiv0\pmod{p}$ has at most $n$ roots.
+<details class="hint"><summary>Hint</summary>
+Induction on $n$ or proof by contradiction.
+</details>
 </div>
 
 <div class="problem">
