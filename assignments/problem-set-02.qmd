@@ -168,10 +168,14 @@ $$
 <span class="problem-number">9</span> **Quadratic congruence equations.**  Solve the quadratic congruence $x^2+x+3\equiv0\pmod{15}$.
 </div>
 
+<div class="problem">
+<span class="problem-number">10</span> **Sum of three squares.**  Show that no integer of the form $4^a(8b+7)$, where $a,b\ge0$ are integers, can be expressed as a sum of three squares. 
+</div>
+
 ## Optional challenge
 
 <div class="problem">
-<span class="problem-number">10</span> **Half factorials modulo $p$.**  Let $p>2$ be prime.
+<span class="problem-number">11</span> **Half factorials modulo $p$.**  Let $p>2$ be prime.
 
 (1\) Prove
 $$
