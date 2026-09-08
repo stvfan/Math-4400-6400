@@ -20,7 +20,7 @@ toc: false
 For each problem, please write a complete argument, not only intermediate calculations. Answers without justification may receive zero credit. Collaboration is encouraged, but you must write your own final solutions independently.
 
 <div class="problem">
-<span class="problem-number">1</span> **Fermat's little theorem.** Fermat's little theorem asserts that for any prime $p$ and any $a\in\mathbb{Z}$, we have $a^{p}\equiv a\pmod{p}$. In class we deduced this result from Euler's theorem. Here we give a direct proof.
+<span class="problem-number">1</span> **Fermat's little theorem.**  Fermat's little theorem asserts that for any prime $p$ and any $a\in\mathbb{Z}$, we have $a^{p}\equiv a\pmod{p}$. In class we deduced this result from Euler's theorem. Here we give a direct proof.
 
 (1\) Consider the binomial coefficient
 $$
@@ -41,7 +41,7 @@ $$
 </div>
 
 <div class="problem">
-<span class="problem-number">2</span> **Euler's theorem.** Let $\phi(m)$ be the Euler totient function, which, for every positive integer $m$, counts the number of positive integers $n\le m$ with $\gcd(n,m)=1$. In class we proved Euler's theorem that if $\gcd(a,m)=1$, then $a^{\phi(m)}\equiv1\pmod{m}$.
+<span class="problem-number">2</span> **Euler's theorem.**  Let $\phi(m)$ be the Euler totient function, which, for every positive integer $m$, counts the number of positive integers $n\le m$ with $\gcd(n,m)=1$. In class we proved Euler's theorem that if $\gcd(a,m)=1$, then $a^{\phi(m)}\equiv1\pmod{m}$.
 
 (1\) Show that if $p^a$ is a prime power, then $\phi(p^a)=p^{a-1}(p-1)$. This is a natural generalization of $\phi(p)=p-1$ discussed in class.
 
@@ -67,7 +67,7 @@ For comparison, when $m=15$, we have $\phi(15)=8$ and $\lambda(15)=4$. So the ab
 </div>
 
 <div class="problem">
-<span class="problem-number">3</span> **Lagrange's theorem.** Recall that $\mathbb{Z}[x]$ denotes the ring of polynomials with integer coefficients. For any nonzero $m\in\mathbb{Z}$, we may extend the congruence relation modulo $m$ to $\mathbb{Z}[x]$ by defining $f(x)\equiv g(x)\pmod{m}$ if $m$ divides every coefficient of $f(x)-g(x)$. It is easy to check that $\equiv$ is an equivalence relation on $\mathbb{Z}[x]$.
+<span class="problem-number">3</span> **Lagrange's theorem.**  Recall that $\mathbb{Z}[x]$ denotes the ring of polynomials with integer coefficients. For any nonzero $m\in\mathbb{Z}$, we may extend the congruence relation modulo $m$ to $\mathbb{Z}[x]$ by defining $f(x)\equiv g(x)\pmod{m}$ if $m$ divides every coefficient of $f(x)-g(x)$. It is easy to check that $\equiv$ is an equivalence relation on $\mathbb{Z}[x]$.
 
 (1\) Let $a\in\mathbb{Z}$ and $f(x)\in\mathbb{Z}[x]$. Show that $f(a)\equiv0\pmod{m}$ if and only if there is some $g(x)\in\mathbb{Z}[x]$ such that
 $$
@@ -82,7 +82,7 @@ where $n\ge0$ and $p\nmid a_n$, then $f(x)\equiv0\pmod{p}$ has at most $n$ roots
 </div>
 
 <div class="problem">
-<span class="problem-number">4</span> **Euler's criterion.** Euler's criterion states that if $p>2$ is prime and $a\in\mathbb{Z}$ with $p\nmid a$, then
+<span class="problem-number">4</span> **Euler's criterion.**  Euler's criterion states that if $p>2$ is prime and $a\in\mathbb{Z}$ with $p\nmid a$, then
 $$
 \left(\frac{a}{p}\right)\equiv a^{\frac{p-1}{2}}\pmod{p}.
 $$
@@ -99,11 +99,11 @@ $$
 </div>
 
 <div class="problem">
-<span class="problem-number">5</span> **Gauss's lemma.** Use Gauss's lemma to show that $-3$ R $p$ if $p\equiv 1\pmod{6}$ and $-3$ N $p$ if $p\equiv 5\pmod{6}$.
+<span class="problem-number">5</span> **Gauss's lemma.**  Use Gauss's lemma to show that $-3$ R $p$ if $p\equiv 1\pmod{6}$ and $-3$ N $p$ if $p\equiv 5\pmod{6}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">6</span> **Quadratic reciprocity.** Evaluate the following Legendre symbols.
+<span class="problem-number">6</span> **Quadratic reciprocity.**  Evaluate the following Legendre symbols.
 
 (1\) $\displaystyle\left(\frac{17}{41}\right)$
 
@@ -113,7 +113,7 @@ $$
 </div>
 
 <div class="problem">
-<span class="problem-number">7</span> **Jacobi symbol.** For any $a\in\mathbb{Z}$ and any positive odd integer $n$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, define the *Jacobi symbol*
+<span class="problem-number">7</span> **Jacobi symbol.**  For any $a\in\mathbb{Z}$ and any positive odd integer $n$ with prime factorization $n=p_1^{m_1}\cdots p_k^{m_k}$, define the *Jacobi symbol*
 $$
 \left(\frac{a}{n}\right)=\left(\frac{a}{p_1}\right)^{m_1}\cdots~ \left(\frac{a}{p_k}\right)^{m_k}
 $$
@@ -154,7 +154,7 @@ $$
 </div>
 
 <div class="problem">
-<span class="problem-number">8</span> **Sum of two squares.** Determine which of the following integers can be expressed as a sum of two squares. For each one that can, find such a representation.
+<span class="problem-number">8</span> **Sum of two squares.**  Determine which of the following integers can be expressed as a sum of two squares. For each one that can, find such a representation.
 
 (1\) 605
 
@@ -164,13 +164,13 @@ $$
 </div>
 
 <div class="problem">
-<span class="problem-number">9</span> **Quadratic congruence equations.** Solve the quadratic congruence $x^2+x+3\equiv0\pmod{15}$.
+<span class="problem-number">9</span> **Quadratic congruence equations.**  Solve the quadratic congruence $x^2+x+3\equiv0\pmod{15}$.
 </div>
 
 ## Optional challenge
 
 <div class="problem">
-<span class="problem-number">10</span> **Half factorials modulo $p$.** Let $p>2$ be prime.
+<span class="problem-number">10</span> **Half factorials modulo $p$.**  Let $p>2$ be prime.
 
 (1\) Prove
 $$
