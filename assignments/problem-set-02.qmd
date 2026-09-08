@@ -1,6 +1,6 @@
 ---
-title: "Homework 1"
-subtitle: 'Euler's theorem and quadratic residues & nonresidues'
+title: "Homework 2"
+subtitle: "Euler's theorem & quadratic residues and nonresidues"
 description: ""
 toc: false
 ---
@@ -13,7 +13,6 @@ toc: false
 
 ::: {.assignment-page-actions}
 [Print or save as PDF](#){.course-button .course-button-secondary .js-print}
-[View solutions](HW1 Solutions.pdf){.course-button .course-button-primary .solution-button}
 :::
 
 ## Instructions
@@ -38,7 +37,7 @@ $$
 \bigg(\sum_{i=1}^{n}x_i\bigg)^p\equiv \sum_{i=1}^{n}x_i^p\pmod{p}.
 $$
 
-(3/) Deduce Fermat's little theorem.
+(3\) Deduce Fermat's little theorem.
 </div>
 
 <div class="problem">
@@ -48,9 +47,11 @@ $$
 
 (2\) Compute the following residues. For each part, your final answer should be a nonnegative integer less than the given modulus.
 
- (a\) $18^{20}\pmod{25}$
- (b\) $3^{2026} \pmod{49}$
- (c\) $4^{137}8^{93}\pmod{121}$
+(a\) $18^{20}\pmod{25}$
+
+(b\) $3^{2026} \pmod{49}$
+
+(c\) $4^{137}8^{93}\pmod{121}$
 
 (3\) Euler's theorem can also be stated in the form
 $$
@@ -62,13 +63,13 @@ where $\bar{a}$ is the least positive multiplicative inverse of $a\pmod{m}$, mea
 $$
 a^{\lambda(m)}\equiv 1\pmod{m}.
 $$
-For comparison, when $m=15$, we have $\phi(15)=8$ and $\lambda(15)=4$. So the above becomes $a^4\equiv 1\pmod{15}$, while Euler's theorem gives  the weaker conclusion $a^8\equiv 1\pmod{15}$.
+For comparison, when $m=15$, we have $\phi(15)=8$ and $\lambda(15)=4$. So the above becomes $a^4\equiv 1\pmod{15}$, while Euler's theorem gives the weaker conclusion $a^8\equiv 1\pmod{15}$.
 </div>
 
 <div class="problem">
 <span class="problem-number">3</span> **Lagrange's theorem.** Recall that $\mathbb{Z}[x]$ denotes the ring of polynomials with integer coefficients. For any nonzero $m\in\mathbb{Z}$, we may extend the congruence relation modulo $m$ to $\mathbb{Z}[x]$ by defining $f(x)\equiv g(x)\pmod{m}$ if $m$ divides every coefficient of $f(x)-g(x)$. It is easy to check that $\equiv$ is an equivalence relation on $\mathbb{Z}[x]$.
 
-(1\) Let $a\in\mathbb{Z}$ and $f(x)\in\mathbb{Z}[x]$. Show that $f(a)\equiv0\pmod{m}$ if and only if there is some  $g(x)\in\mathbb{Z}[x]$ such that
+(1\) Let $a\in\mathbb{Z}$ and $f(x)\in\mathbb{Z}[x]$. Show that $f(a)\equiv0\pmod{m}$ if and only if there is some $g(x)\in\mathbb{Z}[x]$ such that
 $$
 f(x)\equiv(x-a)g(x)\pmod{m}.
 $$
@@ -78,7 +79,6 @@ $$
 f(x)=a_nx^n+\cdots+a_1x+a_0\in\mathbb{Z}[x],
 $$
 where $n\ge0$ and $p\nmid a_n$, then $f(x)\equiv0\pmod{p}$ has at most $n$ roots.
-
 </div>
 
 <div class="problem">
@@ -100,7 +100,6 @@ $$
 
 <div class="problem">
 <span class="problem-number">5</span> **Gauss's lemma.** Use Gauss's lemma to show that $-3$ R $p$ if $p\equiv 1\pmod{6}$ and $-3$ N $p$ if $p\equiv 5\pmod{6}$.
-
 </div>
 
 <div class="problem">
@@ -120,15 +119,15 @@ $$
 $$
 with the convention that $\displaystyle\left(\frac{a}{1}\right)=1$. It is understood that each $\displaystyle\left(\frac{a}{p_i}\right)$ on the right-hand side is a Legendre symbol. In particular, the Jacobi symbol agrees with the Legendre symbol when $n$ is a prime. Verify the following properties for the Jacobi symbol.
 
-(1\) (Periodicity) For any positive odd integer $n$ and any $a,b\in\Z$ such that $a\equiv b\pmod{n}$,
+(1\) (Periodicity) For any positive odd integer $n$ and any $a,b\in\mathbb{Z}$ such that $a\equiv b\pmod{n}$,
 $$
 \left(\frac{a}{n}\right)=\left(\frac{b}{n}\right).
 $$
 
-(2\) (Complete multiplicativity) For any positive odd integers $m,n$ and any $a,b\in\Z$,
+(2\) (Complete multiplicativity) For any positive odd integers $m,n$ and any $a,b\in\mathbb{Z}$,
 \begin{align*}
-\left(\frac{ab}{n}\right)=\left(\frac{a}{n}\right)\left(\frac{b}{n}\right),\\
-\left(\frac{a}{mn}\right)=\left(\frac{a}{m}\right)\left(\frac{a}{n}\right).
+\left(\frac{ab}{n}\right)&=\left(\frac{a}{n}\right)\left(\frac{b}{n}\right),\\
+\left(\frac{a}{mn}\right)&=\left(\frac{a}{m}\right)\left(\frac{a}{n}\right).
 \end{align*}
 
 (3\) ($-1$ modulo $n$) For any positive odd integer $n$,
@@ -148,7 +147,6 @@ $$
 1,  & \text{otherwise}.
 \end{cases}
 $$
-
 These properties usually make evaluation of Legendre symbols a lot easier. For instance,
 $$
 \left(\frac{15}{43}\right)=-\left(\frac{43}{15}\right)=-\left(\frac{43}{5}\right)\left(\frac{43}{3}\right)=-\left(\frac{3}{5}\right)\left(\frac{1}{3}\right)=-\left(\frac{5}{3}\right)=-\left(\frac{2}{3}\right)=1.
@@ -163,11 +161,10 @@ $$
 (2\) 2026
 
 (3\) 6174
-
 </div>
 
 <div class="problem">
-<span class="problem-number">9</span> **Quadratic congruence equations.** Solve the quadratic congruence $x^2+x+3\equiv0\pmod{15}$.Solve the quadratic congruence $x^2+x+3\equiv0\pmod{15}$.
+<span class="problem-number">9</span> **Quadratic congruence equations.** Solve the quadratic congruence $x^2+x+3\equiv0\pmod{15}$.
 </div>
 
 ## Optional challenge
@@ -176,15 +173,13 @@ $$
 <span class="problem-number">10</span> **Half factorials modulo $p$.** Let $p>2$ be prime.
 
 (1\) Prove
- $$
- \left[\left(\frac{p-1}{2}\right)!\right]^2\equiv (-1)^{\frac{p+1}{2}}\pmod{p}.
- $$
+$$
+\left[\left(\frac{p-1}{2}\right)!\right]^2\equiv (-1)^{\frac{p+1}{2}}\pmod{p}.
+$$
 
 (2\) Show that if $p\equiv 3\pmod{4}$, then
 $$
 \left(\frac{p-1}{2}\right)!\equiv (-1)^{n}\pmod{p},
 $$
 where $n$ is the number of positive integers $n<p/2$ that are quadratic nonresidues modulo $p$.
-</div>
-
 </div>
