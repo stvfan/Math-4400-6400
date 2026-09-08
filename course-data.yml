@@ -154,10 +154,10 @@ assignments:
     - number: "Homework 2"
       title: "Euler's theorem, quadratic residues, and quadratic reciprocity"
       due: "Sept. 23, 12 p.m."
-      status: "Assigned"
+      status: "Forthcoming"
       status_style: "due"
       note: ""
-      href: "assignments/problem-set-02.qmd"
+      href: ""
       
 exams:
   policy:
