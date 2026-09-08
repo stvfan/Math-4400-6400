@@ -151,14 +151,13 @@ assignments:
       status_style: "due"
       note: ""
       href: "assignments/problem-set-01.qmd"
-    # - number: "HW 2"
-    #   title: "Prime factorization and congruences"
-    #   due: "[Due date and time]"
-    #   status: "Assigned"
-    #   status_style: "upcoming"
-    #   note: "Replace this entry when the assignment is ready."
-    #   href: "assignments/index.qmd"
-exams:
+    - number: "Homework 2"
+      title: 'Unique Factorization in ℤ and Congruences'
+      due: "Sept. 23, 12 p.m."
+      status: "Assigned"
+      status_style: "due"
+      note: ""
+      href: "assignments/problem-set-02.qmd"
   policy:
     - >-
       There are two in-class midterm exams and a cumulative final
