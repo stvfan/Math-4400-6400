@@ -1,6 +1,6 @@
 ---
 title: "Homework 2"
-subtitle: "Euler's theorem and quadratic residues & nonresidues"
+subtitle: "Euler's theorem, quadratic residues, and quadratic reciprocity"
 description: ""
 toc: false
 ---
