@@ -118,9 +118,9 @@ The idea involved here is the same as in Euclidean algorithm.
 <div class="problem">
 <span class="problem-number">9</span> **Modulo powers of 2.**
 
-(1) Show that the square of every odd integer is congruent to $1$ modulo $8$.
+(1\) Show that the square of every odd integer is congruent to $1$ modulo $8$.
 
-(2) Show by induction that for any odd integer $a$ and any integer $n\ge3$, we have
+(2\) Show by induction that for any odd integer $a$ and any integer $n\ge3$, we have
 
 $$
 a^{2^{n-2}}\equiv1\pmod{2^n}.
