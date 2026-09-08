@@ -234,7 +234,17 @@ def build_lectures_full(data: dict[str, Any]) -> str:
 """
 
 
-def assignment_entry(item: dict[str, Any]) -> str:
+def assignment_href(item: dict[str, Any], *, from_index: bool = False) -> str:
+    href = str(item.get("href", "#"))
+    # course-data.yml stores assignment links relative to the project root,
+    # e.g. assignments/problem-set-02.qmd.  On assignments/index.qmd the
+    # same target must be relative to the assignments/ directory instead.
+    if from_index and href.startswith("assignments/"):
+        href = href[len("assignments/"):]
+    return output_href(href)
+
+
+def assignment_entry(item: dict[str, Any], *, from_index: bool = False) -> str:
     return f"""
 <article class="assignment-row">
   <div class="assignment-id">
@@ -247,7 +257,7 @@ def assignment_entry(item: dict[str, Any]) -> str:
   </div>
   <div class="assignment-actions">
     <span class="status-badge status-{attr(item.get('status_style', 'upcoming'))}">{text(item.get('status'))}</span>
-    <a class="material-link" href="{attr(output_href(str(item.get('href', '#'))))}">Open</a>
+    <a class="material-link" href="{attr(assignment_href(item, from_index=from_index))}">Open</a>
   </div>
 </article>
 """
@@ -263,6 +273,27 @@ def build_assignments(data: dict[str, Any]) -> str:
   <div class="policy-card">{paragraphs_html(assignments.get('policy'))}</div>
   <div class="assignment-list-home">{rows}</div>
 </section>
+"""
+
+
+def build_assignments_full(data: dict[str, Any]) -> str:
+    assignments = data["assignments"]
+    rows = "".join(
+        assignment_entry(item, from_index=True)
+        for item in assignments.get("items", [])
+    )
+    if not rows:
+        rows = '<p class="assignments-empty">No assignments have been posted yet.</p>'
+    return f"""
+<div class="page-intro-shell">
+  <div class="section-kicker">Homework and due dates</div>
+  <h1>Assignments</h1>
+  <p>Assignments posted for the course are listed below. Open an assignment to view the problems and any released solutions.</p>
+</div>
+<div class="wide-content-shell">
+  <div class="policy-card">{paragraphs_html(assignments.get('policy'))}</div>
+  <div class="assignment-list-home assignment-list-full">{rows}</div>
+</div>
 """
 
 
@@ -398,6 +429,7 @@ def main() -> None:
     lectures_preview = build_lectures_preview(data)
     lectures_full = build_lectures_full(data)
     assignments = build_assignments(data)
+    assignments_full = build_assignments_full(data)
     exams = build_exams(data)
     grading = build_grading(data)
     accommodations = build_accommodations(data)
@@ -442,7 +474,7 @@ def main() -> None:
         '<div class="page-intro-shell">',
         '<div class="section-kicker">What we covered</div>',
         '<h1>Lectures</h1>',
-        '<p>This page records what we actually covered after each class meeting, with links to the corresponding lecture notes.</p>',
+        '<p>The <a href="schedule.html">schedule</a> shows the semester plan. This page records what we actually covered after each class meeting, with links to the corresponding lecture notes.</p>',
         '</div>',
         '<div class="wide-content-shell">',
         lectures_full,
@@ -457,7 +489,17 @@ def main() -> None:
         "---",
     ])
     write_page(ROOT / "lectures.qmd", lectures_front_matter, lectures_page)
-    print("Generated complete homepage and lecture log from course-data.yml")
+
+    assignments_front_matter = "\n".join([
+        "---",
+        'pagetitle: "Assignments | Number Theory"',
+        'description: "Homework assignments and due dates."',
+        "toc: false",
+        "page-layout: full",
+        "---",
+    ])
+    write_page(ROOT / "assignments" / "index.qmd", assignments_front_matter, assignments_full)
+    print("Generated complete homepage, lecture log, and assignments index from course-data.yml")
 
 
 if __name__ == "__main__":
