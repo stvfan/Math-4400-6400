@@ -89,7 +89,7 @@ $$
 $$
 We proved this in class based on Lagrange's theorem. The purpose of this problem is to obtain a different proof. Consider the set $A=\{1,\ldots,p-1\}$.
 
-(1\) Show that when $a$ N $p$, $A$ can be partitioned into $\displaystyle\frac{p-1}{2}$ pairs of distinct numbers, such that each pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$, and that when $a$ R $p$, $A$ can be partitioned into $\displaystyle\frac{p-1}{2}$ pairs of distinct numbers, such that one pair is of the form $\{x_0,p-x_0\}$ and every other pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$.
+(1\) Show that when $a$ N $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that each pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$, and that when $a$ R $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that one pair is of the form $\{x_0,p-x_0\}$ and every other pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$.
 
 (2\) Prove, by multiplying the numbers $1,\ldots,p-1$ in two ways and reducing the product modulo $p$, that
 $$
@@ -118,7 +118,7 @@ $$
 $$
 \left(\frac{a}{n}\right)=\left(\frac{a}{p_1}\right)^{m_1}\cdots~ \left(\frac{a}{p_k}\right)^{m_k}
 $$
-with the convention that $\displaystyle\left(\frac{a}{1}\right)=1$. It is understood that each $\displaystyle\left(\frac{a}{p_i}\right)$ on the right-hand side is a Legendre symbol. In particular, the Jacobi symbol agrees with the Legendre symbol when $n$ is a prime. Verify the following properties for the Jacobi symbol.
+with the convention that $\left(\frac{a}{1}\right)=1$. It is understood that each $\left(\frac{a}{p_i}\right)$ on the right-hand side is a Legendre symbol. In particular, the Jacobi symbol agrees with the Legendre symbol when $n$ is a prime. Verify the following properties for the Jacobi symbol.
 
 (1\) (Periodicity) For any positive odd integer $n$ and any $a,b\in\mathbb{Z}$ such that $a\equiv b\pmod{n}$,
 $$
