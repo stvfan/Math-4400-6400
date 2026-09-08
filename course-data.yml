@@ -152,7 +152,7 @@ assignments:
       note: ""
       href: "assignments/problem-set-01.qmd"
     - number: "Homework 2"
-      title: 'Unique Factorization in ℤ and Congruences'
+      title: 'Euler's theorem and quadratic residues & nonresidues'
       due: "Sept. 23, 12 p.m."
       status: "Assigned"
       status_style: "due"
