@@ -6,7 +6,7 @@ toc: false
 ---
 
 <div class="assignment-header">
-  <div><small>Assigned</small><strong>Sept. 9</strong></div>
+  <div><small>Assigned</small><strong>Sept. 8</strong></div>
   <div><small>Due</small><strong>Sept. 23 · 12 p.m.</strong></div>
   <div><small>Submit</small><strong>Boyd 302</strong></div>
 </div>
