@@ -33,7 +33,7 @@ Prove that $p$ divides $\displaystyle\binom{p}{k}$ for every $1\le k\le p-1$.
 $$
 (x+y)^p\equiv x^p+y^p\pmod{p}.
 $$
-Then use this and induction to show that for any $x_1,...,x_n\in\mathbb{Z}$,
+Then use this and induction to show that for any $x_1,\ldots,x_n\in\mathbb{Z}$,
 $$
 \bigg(\sum_{i=1}^{n}x_i\bigg)^p\equiv \sum_{i=1}^{n}x_i^p\pmod{p}.
 $$
