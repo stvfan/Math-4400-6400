@@ -60,7 +60,7 @@ $$
 $$
 where $\bar{a}$ is the least positive multiplicative inverse of $a\pmod{m}$, meaning that it is the least positive integer satisfying $a\bar{a}\equiv 1\pmod{m}$. Use this to find the least positive multiplicative inverse of $17\pmod{125}$.
 
-(4\) For a positive integer $m$ with prime factorization $m=p_1^{n_1}\cdots p_k^{n_k}$, where $p_1,...,p_k$ are distinct primes and $n_1,...,n_k$ are positive integers, the \textit{Carmichael function} $\lambda(m)$ is defined as the least common multiple of $\phi(p_1^{n_1}),\ldots,\phi(p_k^{n_k})$, namely, the least positive integer divisible by each of these numbers, with the convention that $\lambda(1)=1$. Show that $\lambda(m)\mid\phi(m)$ and that if $\gcd(a,m)=1$, then
+(4\) For a positive integer $m$ with prime factorization $m=p_1^{n_1}\cdots p_k^{n_k}$, where $p_1,...,p_k$ are distinct primes and $n_1,...,n_k$ are positive integers, the *Carmichael function* $\lambda(m)$ is defined as the least common multiple of $\phi(p_1^{n_1}),\ldots,\phi(p_k^{n_k})$, namely, the least positive integer divisible by each of these numbers, with the convention that $\lambda(1)=1$. Show that $\lambda(m)\mid\phi(m)$ and that if $\gcd(a,m)=1$, then
 $$
 a^{\lambda(m)}\equiv 1\pmod{m}.
 $$
