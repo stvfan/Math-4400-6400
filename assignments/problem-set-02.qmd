@@ -44,7 +44,7 @@ $$
 <div class="problem">
 <span class="problem-number">2</span> **Euler's theorem.**  Let $\phi(m)$ be the Euler totient function, which, for every positive integer $m$, counts the number of positive integers $n\le m$ with $\gcd(n,m)=1$. In class we proved Euler's theorem that if $\gcd(a,m)=1$, then $a^{\phi(m)}\equiv1\pmod{m}$.
 
-(1\) Show that if $p^a$ is a prime power, then $\phi(p^a)=p^{a-1}(p-1)$. This is a natural generalization of $\phi(p)=p-1$ discussed in class.
+(1\) Show that if $p^k$ is a prime power, then $\phi(p^k)=p^{k-1}(p-1)$. This is a natural generalization of $\phi(p)=p-1$ discussed in class.
 
 (2\) Compute the following residues. For each part, your final answer should be a nonnegative integer less than the given modulus.
 
