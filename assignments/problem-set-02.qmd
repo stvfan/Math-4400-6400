@@ -117,7 +117,7 @@ $$
 </div>
 
 <div class="problem">
-<span class="problem-number">7</span> **Jacobi symbol.**  For any $a\in\mathbb{Z}$ and any positive odd integer $n=p_1\cdots p_k$, where $p_1,\ldots,p_k$ are odd primes, define the \textit{Jacobi symbol} 
+<span class="problem-number">7</span> **Jacobi symbol.**  For any $a\in\mathbb{Z}$ and any positive odd integer $n=p_1\cdots p_k$, where $p_1,\ldots,p_k$ are odd primes, define the *Jacobi symbol*
 $$
 \left(\frac{a}{n}\right)=\left(\frac{a}{p_1}\right)\cdots \left(\frac{a}{p_k}\right)
 $$
