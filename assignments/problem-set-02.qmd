@@ -151,7 +151,7 @@ $$
 1,  & \text{otherwise}.
 \end{cases}
 $$
-These properties usually make evaluation of Legendre symbols a lot easier. For instance,
+Thus the Jacobi symbol retains all the key properties of the Legendre symbol. These properties often make evaluation of Legendre symbols a lot easier. For instance, 
 $$
 \left(\frac{15}{43}\right)=-\left(\frac{43}{15}\right)=-\left(\frac{43}{5}\right)\left(\frac{43}{3}\right)=-\left(\frac{3}{5}\right)\left(\frac{1}{3}\right)=-\left(\frac{5}{3}\right)=-\left(\frac{2}{3}\right)=1.
 $$
