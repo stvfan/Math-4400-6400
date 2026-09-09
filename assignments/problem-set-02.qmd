@@ -134,12 +134,12 @@ $$
 \left(\frac{a}{mn}\right)&=\left(\frac{a}{m}\right)\left(\frac{a}{n}\right).
 \end{align*}
 
-(3\) ($-1$ modulo $n$) For any positive odd integer $n$,
+(3\) ($-1$ mod $n$) For any positive odd integer $n$,
 $$
 \left(\frac{-1}{n}\right)=(-1)^{\frac{n-1}{2}}.
 $$
 
-(4\) ($2$ modulo $n$) For any positive odd integer $n$,
+(4\) ($2$ mod $n$) For any positive odd integer $n$,
 $$
 \left(\frac{2}{n}\right)=(-1)^{\frac{n^2-1}{8}}.
 $$
@@ -178,7 +178,7 @@ $$
 ## Optional challenge
 
 <div class="problem">
-<span class="problem-number">11</span> **Half factorials modulo $p$.**  Let $p>2$ be prime.
+<span class="problem-number">11</span> **Half factorials mod $p$.**  Let $p>2$ be prime.
 
 (1\) Prove
 $$
