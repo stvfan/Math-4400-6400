@@ -44,14 +44,24 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+
+  - date: "September 11"
+    meeting: "Lecture 11"
+    title: "Sum of two squares"
+    summary: >-
+    topics: ["sum of two squares"]
+    links:
+      - label: "Notes"
+        href: ""
+
   - date: "September 9"
     meeting: "Lecture 10"
-    title: "Quadratic reciprocity and its applications"
+    title: "Proof of quadratic reciprocity"
     summary: >-
     topics: ["quadratic reciprocity", "Jacobi symbol", "sum of two squares"]
     links:
       - label: "Notes"
-        href: "notes/9_4_2026.pdf"
+        href: "notes/9_9_2026.pdf"
 
   - date: "September 4"
     meeting: "Lecture 9"
