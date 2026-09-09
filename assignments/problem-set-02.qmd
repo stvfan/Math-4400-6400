@@ -121,7 +121,7 @@ $$
 $$
 \left(\frac{a}{n}\right)=\left(\frac{a}{p_1}\right)\cdots \left(\frac{a}{p_k}\right)
 $$
-with the convention that $\left(\frac{a}{1}\right)=1$. It is understood that each $\big(\frac{a}{p_i}\big)$ on the right-hand side is a Legendre symbol. In particular, the Jacobi symbol agrees with the Legendre symbol when $n$ is a prime. Verify the following properties for the Jacobi symbol.
+with the convention that $\left(\frac{a}{1}\right)=1$. It is understood that each $(\frac{a}{p_i})$ on the right-hand side is a Legendre symbol. In particular, the Jacobi symbol agrees with the Legendre symbol when $n$ is a prime. Verify the following properties for the Jacobi symbol.
 
 (1\) (Periodicity) For any positive odd integer $n$ and any $a,b\in\mathbb{Z}$ such that $a\equiv b\pmod{n}$,
 $$
