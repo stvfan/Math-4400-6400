@@ -189,5 +189,5 @@ $$
 $$
 \left(\frac{p-1}{2}\right)!\equiv (-1)^{n}\pmod{p},
 $$
-where $n$ is the number of positive integers $n<p/2$ that are quadratic nonresidues modulo $p$.
+where $n$ is the number of positive integers $m<p/2$ that are quadratic nonresidues modulo $p$.
 </div>
