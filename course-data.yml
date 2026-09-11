@@ -43,6 +43,14 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
+  - date: "September 14"
+    meeting: "Lecture 12"
+    title: "Gaussian integers"
+    summary: >-
+    topics: ["Gaussian integers"]
+    links:
+      - label: "Notes"
+        href: ""
 
 
   - date: "September 11"
@@ -52,7 +60,7 @@ lectures:
     topics: ["sum of two squares"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/9_11_2026.pdf"
 
   - date: "September 9"
     meeting: "Lecture 10"
