@@ -43,6 +43,16 @@ textbook:
 # Keep newest lectures first. Add one entry after each class meeting.
 # Attach the corresponding lecture notes using the links list.
 lectures:
+
+  - date: "September 14"
+    meeting: "Lecture 12"
+    title: "Arithmetic in ℤ[√d] (cont.)"
+    summary: >-
+    topics: ["unique factorization","Gaussian integers"]
+    links:
+      - label: "Notes"
+        href: ""
+        
   - date: "September 14"
     meeting: "Lecture 12"
     title: "Proof of the sum of two squares theorem (complete), arithmetic in ℤ[√d]"
@@ -50,7 +60,7 @@ lectures:
     topics: ["The ring ℤ[√d]","Gaussian integers","divisibility", "units", "primes and composites","norm", "unique factorization"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/9_14_2026.pdf"
 
 
   - date: "September 11"
