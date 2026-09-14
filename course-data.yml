@@ -47,7 +47,7 @@ lectures:
     meeting: "Lecture 12"
     title: "Proof of the sum of two squares theorem (complete), arithmetic in ℤ[√d]"
     summary: >-
-    topics: ["quadratic integers","Gaussian integers","divisibility", "units", "primes and composites","norm", "unique factorization"]
+    topics: ["Gaussian integers","divisibility", "units", "primes and composites","norm", "unique factorization"]
     links:
       - label: "Notes"
         href: ""
