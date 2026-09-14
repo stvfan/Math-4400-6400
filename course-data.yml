@@ -44,7 +44,7 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
-  - date: "September 14"
+  - date: "September 16"
     meeting: "Lecture 12"
     title: "Arithmetic in ℤ[√d] (cont.)"
     summary: >-
