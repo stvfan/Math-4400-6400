@@ -45,7 +45,7 @@ textbook:
 lectures:
 
   - date: "September 16"
-    meeting: "Lecture 12"
+    meeting: "Lecture 13"
     title: "Arithmetic in ℤ[√d] (cont.)"
     summary: >-
     topics: ["unique factorization","Gaussian integers"]
