@@ -23,11 +23,11 @@ For each problem, please write a complete argument, not only intermediate calcul
 <div class="problem">
 <span class="problem-number">1</span> **Fermat's little theorem.**  Fermat's little theorem asserts that for any prime $p$ and any $a\in\mathbb{Z}$, we have $a^{p}\equiv a\pmod{p}$. In class we deduced this result from Euler's theorem. Here we give a direct proof.
 
-(1\) Consider the binomial coefficient
+(1\) Consider the binomial coefficients
 $$
-\binom{p}{k}=\frac{p!}{k!(p-k)!},\qquad 1\le k\le p-1.
+\binom{p}{k}=\frac{p!}{k!(p-k)!},\qquad 1\le k\le p-1,
 $$
-Prove that $p$ divides $\displaystyle\binom{p}{k}$ for every $1\le k\le p-1$.
+which are all positive integers. Prove that $p$ divides $\displaystyle\binom{p}{k}$ for every $1\le k\le p-1$.
 
 (2\) Show that for any $x,y\in\mathbb{Z}$,
 $$
