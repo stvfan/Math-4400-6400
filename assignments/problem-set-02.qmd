@@ -69,7 +69,7 @@ a^{\lambda(m)}\equiv 1\pmod{m}.
 $$
 For comparison, when $m=15$, we have $\phi(15)=8$ and $\lambda(15)=4$. So the above becomes $a^4\equiv 1\pmod{15}$, while Euler's theorem gives the weaker conclusion $a^8\equiv 1\pmod{15}$.
 <details class="hint"><summary>Hint</summary>
-If $\gcd(m,n)=1$, then $$a\equiv b \pmod{m},a\equiv b \pmod{n}\iff a\equiv b \pmod{mn}.$$
+You may use the fact that if $\gcd(m,n)=1$, then $$a\equiv b \pmod{m},~a\equiv b \pmod{n}\iff a\equiv b \pmod{mn}.$$
 </details>
 </div>
 
