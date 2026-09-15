@@ -208,6 +208,10 @@ repeatedly to get a representation $v=x_v^2+y_v^2$. As a result, $n=(ux_v)^2+(uy
 <span class="problem-number">10</span> **Sum of three squares.**  Show that no integer of the form $4^a(8b+7)$, where $a,b\ge0$ are integers, can be expressed as a sum of three squares. 
 </div>
 
+<details class="hint"><summary>Hint</summary>
+Prove the case $a=0$ first by examining the possible residues of a sum of three squares modulo 8. Then reduce the general case to this special case.
+</details>
+
 ## Optional challenge
 
 <div class="problem">
