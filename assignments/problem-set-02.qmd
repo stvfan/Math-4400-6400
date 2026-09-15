@@ -103,6 +103,12 @@ We proved this in class based on Lagrange's theorem. The purpose of this problem
 
 (1\) Show that when $a$ N $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that each pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$, and that when $a$ R $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that one pair is of the form $\{x_0,p-x_0\}$ satisfying $x_0^2\equiv a\pmod{p}$ and every other pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$.
 
+<details class="hint"><summary>Hint</summary>
+Use the theorem on linear congruences to show that the function $f:A\to A$ defined by $x f(x)\equiv a\pmod{p}$ is well-defined and bijective. This function allows us to pair each $x$ with $f(x)$ except when $a$ R $p$, there is a unique $x_0\in A$ such that $f(x_0)=x_0$.
+</details>
+
+
+
 (2\) Prove, by multiplying the numbers $1,\ldots,p-1$ in two ways and reducing the product modulo $p$, that
 $$
 (p-1)!\equiv -\left(\frac{a}{p}\right)a^{\frac{p-1}{2}}\pmod{p}.
@@ -184,6 +190,7 @@ $$
 To find a representation of $n$ as a sum of two squares, it is convenient to write it as $n=u^2v$, where $v$ is not divisible by any square greater than 1. For each prime $p\mid v$, find a representation $p=x_p^2+y_p^2$ and then use the formula 
 $$(a^2+b^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$$
 repeatedly to get a representation $v=x_v^2+y_v^2$. As a result, $n=(ux_v)^2+(uy_v)^2$.
+</details>
 
 (1\) 605
 
