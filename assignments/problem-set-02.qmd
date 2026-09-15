@@ -222,10 +222,6 @@ $$
 \left[\left(\frac{p-1}{2}\right)!\right]^2\equiv (-1)^{\frac{p+1}{2}}\pmod{p}.
 $$
 
-<details class="hint"><summary>Hint</summary>
-Wilson's theorem.
-</details>
-
 (2\) Show that if $p\equiv 3\pmod{4}$, then
 $$
 \left(\frac{p-1}{2}\right)!\equiv (-1)^{n}\pmod{p},
