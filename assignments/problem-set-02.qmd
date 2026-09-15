@@ -209,7 +209,7 @@ repeatedly to get a representation $v=x_v^2+y_v^2$. As a result, $n=(ux_v)^2+(uy
 </div>
 
 <details class="hint"><summary>Hint</summary>
-Prove the case $a=0$ first by examining the possible residues of a sum of three squares modulo 8. Then reduce the general case to this special case.
+Prove the case $a=0$ first by examining the possible residues of a sum of three squares modulo 8. Then reduce the general case to this special case, which you may argue by contradiction.
 </details>
 
 ## Optional challenge
