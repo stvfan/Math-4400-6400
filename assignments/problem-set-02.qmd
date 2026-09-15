@@ -52,7 +52,7 @@ $$
 
 (b\) $3^{2026} \pmod{49}$
 <details class="hint"><summary>Hint</summary>
-You may find $3^5=3^4\cdot 3=81\cdot3\equiv -17\cdot3\equiv -51 \equiv -2\pmod{49}$ useful.
+You may find $3^5=3^4\cdot 3=81\cdot3\equiv 32\cdot3\equiv 96 \equiv -2\pmod{49}$ useful.
 </details>
 
 (c\) $4^{137}8^{93}\pmod{121}$
