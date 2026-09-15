@@ -158,6 +158,12 @@ $$
 \left(\frac{2}{n}\right)=(-1)^{\frac{n^2-1}{8}}.
 $$
 
+<details class="hint"><summary>Hint</summary>
+You may first consider proving by induction that
+$$\frac{(a_1a_2\cdots a_k)^2-1}{8}\equiv\sum_{i=1}^{k}\frac{a_i^2-1}{8}\pmod{2}$$
+for any odd integers $a_1,\ldots,a_k$.
+</details>
+
 (5\) (Quadratic reciprocity) For any positive odd integers $m,n$ with $\gcd(m,n)=1$,
 $$
 \left(\frac{m}{n}\right)\left(\frac{n}{m}\right)=(-1)^{\frac{m-1}{2}\cdot\frac{n-1}{2}}=\begin{cases}
