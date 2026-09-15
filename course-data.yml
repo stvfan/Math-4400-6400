@@ -46,7 +46,7 @@ lectures:
 
   - date: "September 16"
     meeting: "Lecture 13"
-    title: "Existence of prime factorizations"
+    title: "Existence of prime factorizations in ℤ[√d]"
     summary: >-
     topics: ["unique factorization","Gaussian integers"]
     links:
