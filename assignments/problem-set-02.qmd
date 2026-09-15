@@ -180,6 +180,11 @@ $$
 <div class="problem">
 <span class="problem-number">8</span> **Sum of two squares.**  Determine which of the following integers can be expressed as a sum of two squares. For each one that can, find such a representation.
 
+<details class="hint"><summary>Hint</summary>
+To find a representation of $n$ as a sum of two squares, it is convenient to write it as $n=u^2v$, where $v$ is not divisible by any square greater than 1. For each prime $p\mid v$, find a representation $p=x_p^2+y_p^2$ and then use the formula 
+$$(a^2+b^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$$
+repeatedly to get a representation $v=x_v^2+y_v^2$. As a result, $n=(ux_v)^2+(uy_v)^2$.
+
 (1\) 605
 
 (2\) 2026
