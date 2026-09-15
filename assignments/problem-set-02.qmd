@@ -56,6 +56,9 @@ You may find $3^5=3^4\cdot 3=81\cdot3\equiv -17\cdot3\equiv -51 \equiv -2\pmod{4
 </details>
 
 (c\) $4^{137}8^{93}\pmod{121}$
+<details class="hint"><summary>Hint</summary>
+$4^{137}8^{93}=2^{553}$.
+</details>
 
 (3\) Euler's theorem can also be stated in the form
 $$
