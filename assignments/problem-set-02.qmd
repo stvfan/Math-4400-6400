@@ -104,7 +104,8 @@ We proved this in class based on Lagrange's theorem. The purpose of this problem
 (1\) Show that when $a$ N $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that each pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$, and that when $a$ R $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that one pair is of the form $\{x_0,p-x_0\}$ satisfying $x_0^2\equiv a\pmod{p}$ and every other pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$.
 
 <details class="hint"><summary>Hint</summary>
-Use the theorem on linear congruences to show that the function $f:A\to A$ defined by $x f(x)\equiv a\pmod{p}$ is well-defined and bijective. 
+Use the theorem on linear congruences to show that the function $f:A\to A$ defined by 
+$$x f(x)\equiv a\pmod{p}$$ is well-defined and bijective. 
 </details>
 
 
