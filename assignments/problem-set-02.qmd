@@ -101,7 +101,7 @@ $$
 $$
 We proved this in class based on Lagrange's theorem. The purpose of this problem is to obtain a different proof. Consider the set $A=\{1,\ldots,p-1\}$.
 
-(1\) Show that when $a$ N $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that each pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$, and that when $a$ R $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that one pair is of the form $\{x_0,p-x_0\}$ and every other pair $\{x,y\}$ satisfies $x_0^2\equiv a\pmod{p}$ and $xy\equiv a\pmod{p}$.
+(1\) Show that when $a$ N $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that each pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$, and that when $a$ R $p$, $A$ can be partitioned into $\frac{p-1}{2}$ pairs of distinct numbers, such that one pair is of the form $\{x_0,p-x_0\}$ satisfying $x_0^2\equiv a\pmod{p}$ and every other pair $\{x,y\}$ satisfies $xy\equiv a\pmod{p}$.
 
 (2\) Prove, by multiplying the numbers $1,\ldots,p-1$ in two ways and reducing the product modulo $p$, that
 $$
