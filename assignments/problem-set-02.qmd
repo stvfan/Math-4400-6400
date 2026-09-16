@@ -102,7 +102,7 @@ Strong induction on $n$ or proof by contradiction. If $f(a)\equiv 0\pmod{p}$, th
 $$
 f(x)\equiv(x-a)g(x)\pmod{p}.
 $$
-What can we say about the leading coefficient and degree of $g(x)$? If $b$ is another root of the congruence $f(x)\equiv 0\pmod{p}$, how is it related to $g(x)$ in view of Euclid's lemma?
+What can you say about the leading coefficient and degree of $g(x)$? If $b$ is another root of the congruence $f(x)\equiv 0\pmod{p}$, how is it related to $g(x)$ in view of Euclid's lemma?
 </details>
 </div>
 
