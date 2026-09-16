@@ -86,8 +86,10 @@ $$
 
 <details class="hint"><summary>Hint</summary>
 For the necessity part, you may start with $f(x)\equiv f(x)-f(a)\pmod{m}$ and take advantage of the identity
-$x^k-x^a=(x-a)g_k(x)$, where
+$x^k-x^a=(x-a)g_k(x)$, where $k$ is a nonnegative integer and 
 $$g_k(x):=x^{k-1}+ax^{k-2}+a^2x^{k-3}+\cdots+a^{k-2}x+a^{k-1}\in\mathbb{Z}[x].$$
+This exact identity can be used to prove the integer power rule via the defintion of derivative:
+$$\frac{d}{dx}(x^k)=kx^{k-1}.$$
 </details>
 
 (2\) Prove Lagrange's theorem that if $p$ is prime and
