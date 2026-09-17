@@ -65,7 +65,7 @@ lectures:
 
   - date: "September 16"
     meeting: "Lecture 13"
-    title: 'arithmetic in $\mathbb{Z}[\sqrt{d}]$ (cont.)'
+    title: 'Arithmetic in $\mathbb{Z}[\sqrt{d}]$ (cont.)'
     summary: >-
     topics: ["norm","units","primes"]
     links:
