@@ -3117,3 +3117,38 @@ body.quarto-dark #quarto-document-content,
 .lecture-topic mjx-container * {
   color: inherit !important;
 }
+/* Fix mixed prose + LaTeX inside lecture topic pills.
+   The topic pill itself must NOT be a flex container; otherwise whitespace
+   around MathJax nodes can disappear because text becomes anonymous flex items. */
+.lecture-topic {
+  display: inline-block !important;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+/* Keep ordinary text and inline math in the same inline formatting context. */
+.lecture-topic .course-text-fragment,
+.lecture-topic .course-math-fragment {
+  display: inline !important;
+  color: inherit !important;
+}
+
+.lecture-topic .course-text-fragment {
+  white-space: pre-wrap;
+}
+
+/* Make MathJax match the topic-pill typography and color. */
+.lecture-topic .math.inline,
+.lecture-topic mjx-container,
+.lecture-topic mjx-container *,
+.lecture-topic mjx-container svg {
+  color: inherit !important;
+}
+
+.lecture-topic mjx-container {
+  display: inline-block !important;
+  margin: 0 0.02em !important;
+  padding: 0 !important;
+  font-size: 1em !important;
+  vertical-align: -0.05em;
+}
