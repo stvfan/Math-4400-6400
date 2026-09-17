@@ -46,7 +46,7 @@ lectures:
 
   - date: "September 21"
     meeting: "Lecture 15"
-    title: 'Unique factorizations in $\mathbb{Z}[\sqrt{d}]$ for $d=-1,\pm2,3$: Part I'
+    title: 'Unique factorization in $\mathbb{Z}[\sqrt{d}]$ for $d=-1,\pm2,3$: Part I'
     summary: >-
     topics: ["division algorithm", "PID", "gcd"]
     links:
@@ -56,9 +56,9 @@ lectures:
 
   - date: "September 18"
     meeting: "Lecture 14"
-    title: 'Existence of prime factorizations and examples of nonunique factorizations in $\mathbb{Z}[\sqrt{d}]$'
+    title: 'Existence of prime factorization and examples of nonunique factorization in $\mathbb{Z}[\sqrt{d}]$'
     summary: >-
-    topics: ['prime factorizations in $\mathbb{Z}[\sqrt{d}]$']
+    topics: ['prime factorization in $\mathbb{Z}[\sqrt{d}]$']
     links:
       - label: "Notes"
         href: ""
