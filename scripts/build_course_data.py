@@ -8,6 +8,7 @@ page rather than a chain of nested includes.
 from __future__ import annotations
 
 from html import escape
+import re
 from pathlib import Path
 from typing import Any
 
@@ -28,6 +29,28 @@ def load_data() -> dict[str, Any]:
 
 def text(value: Any) -> str:
     return escape(str(value or ""), quote=False)
+
+
+_INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?!\$)(.+?)(?<!\\)\$")
+
+
+def math_text(value: Any) -> str:
+    """Escape ordinary text while preserving inline $...$ math for MathJax.
+
+    The generated course pages are emitted as raw HTML, so Pandoc does not
+    parse Markdown math inside them.  Wrap inline LaTeX explicitly in MathJax
+    delimiters while HTML-escaping both the surrounding prose and formula.
+    """
+    raw = str(value or "")
+    parts: list[str] = []
+    cursor = 0
+    for match in _INLINE_MATH_RE.finditer(raw):
+        parts.append(escape(raw[cursor:match.start()], quote=False))
+        latex = escape(match.group(1), quote=False)
+        parts.append(f'<span class="math inline">\\({latex}\\)</span>')
+        cursor = match.end()
+    parts.append(escape(raw[cursor:], quote=False))
+    return "".join(parts)
 
 
 def attr(value: Any) -> str:
@@ -176,7 +199,7 @@ def lecture_entry(item: dict[str, Any], compact: bool = False) -> str:
     topics_html = ""
     if topics:
         topic_tags = "".join(
-            f'<span class="lecture-topic">{text(topic)}</span>'
+            f'<span class="lecture-topic">{math_text(topic)}</span>'
             for topic in topics
         )
         topics_html = (
@@ -200,8 +223,8 @@ def lecture_entry(item: dict[str, Any], compact: bool = False) -> str:
     <span>{text(item.get('meeting'))}</span>
   </div>
   <div class="lecture-copy">
-    <h3>{text(item.get('title'))}</h3>
-    <p>{text(item.get('summary'))}</p>
+    <h3>{math_text(item.get('title'))}</h3>
+    <p>{math_text(item.get('summary'))}</p>
     {topics_html}
   </div>
   <div class="lecture-links">{links_html(item.get('links'))}</div>
@@ -252,8 +275,8 @@ def assignment_entry(item: dict[str, Any], *, from_index: bool = False) -> str:
     <span>{text(item.get('due'))}</span>
   </div>
   <div class="assignment-copy">
-    <h3>{text(item.get('title'))}</h3>
-    <p>{text(item.get('note'))}</p>
+    <h3>{math_text(item.get('title'))}</h3>
+    <p>{math_text(item.get('note'))}</p>
   </div>
   <div class="assignment-actions">
     <span class="status-badge status-{attr(item.get('status_style', 'upcoming'))}">{text(item.get('status'))}</span>
