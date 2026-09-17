@@ -3047,3 +3047,23 @@ body.quarto-dark #quarto-document-content,
   }
 }
 
+
+/* Mixed text + LaTeX inside lecture link labels.
+   Keep the whole label as one inline flex item so ordinary spaces survive,
+   and make MathJax inherit the button's text color. */
+.lecture-links .material-link-label {
+  display: inline;
+  color: inherit;
+  white-space: normal;
+}
+
+.lecture-links .material-link-label .math.inline,
+.lecture-links .material-link-label mjx-container,
+.lecture-links .material-link-label mjx-container * {
+  color: inherit !important;
+}
+
+.lecture-links .material-link-label mjx-container {
+  margin: 0 !important;
+  font-size: 1em !important;
+}
