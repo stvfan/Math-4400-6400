@@ -7,6 +7,8 @@ page rather than a chain of nested includes.
 """
 from __future__ import annotations
 
+# Course generator patch: lecture math + mixed text/math labels, v2.6.15
+
 from html import escape
 import re
 from pathlib import Path
@@ -35,21 +37,31 @@ _INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?!\$)(.+?)(?<!\\)\$")
 
 
 def math_text(value: Any) -> str:
-    """Escape ordinary text while preserving inline $...$ math for MathJax.
+    """Render mixed ordinary text and inline ``$...$`` LaTeX safely.
 
-    The generated course pages are emitted as raw HTML, so Pandoc does not
-    parse Markdown math inside them.  Wrap inline LaTeX explicitly in MathJax
-    delimiters while HTML-escaping both the surrounding prose and formula.
+    Ordinary words stay ordinary HTML text, so their spaces, font, and color
+    are controlled by the surrounding component.  Only the contents between
+    dollar signs are handed to MathJax.
     """
     raw = str(value or "")
     parts: list[str] = []
     cursor = 0
     for match in _INLINE_MATH_RE.finditer(raw):
-        parts.append(escape(raw[cursor:match.start()], quote=False))
+        prose = raw[cursor:match.start()]
+        if prose:
+            parts.append(
+                f'<span class="course-text-fragment">{escape(prose, quote=False)}</span>'
+            )
         latex = escape(match.group(1), quote=False)
-        parts.append(f'<span class="math inline">\\({latex}\\)</span>')
+        parts.append(
+            f'<span class="course-math-fragment math inline">\\({latex}\\)</span>'
+        )
         cursor = match.end()
-    parts.append(escape(raw[cursor:], quote=False))
+    prose = raw[cursor:]
+    if prose:
+        parts.append(
+            f'<span class="course-text-fragment">{escape(prose, quote=False)}</span>'
+        )
     return "".join(parts)
 
 
