@@ -46,7 +46,7 @@ lectures:
 
   - date: "September 21"
     meeting: "Lecture 15"
-    title: 'ℤ[√d] is a UFD for $d=-1,\pm2,3$'
+    title: 'a UFD for $d=-1,\pm2,3$'
     summary: >-
     topics: ["prime factorizations in ℤ[√d]"]
     links:
