@@ -44,6 +44,16 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "September 21"
+    meeting: "Lecture 15"
+    title: "ℤ[√d] is a UFD for $d=-1,\pm2,3$"
+    summary: >-
+    topics: ["prime factorizations in ℤ[√d]"]
+    links:
+      - label: "Notes"
+        href: ""
+
+
   - date: "September 18"
     meeting: "Lecture 14"
     title: "Existence of prime factorizations and examples of nonunique factorizations in ℤ[√d]"
