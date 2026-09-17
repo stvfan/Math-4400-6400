@@ -3048,89 +3048,49 @@ body.quarto-dark #quarto-document-content,
 }
 
 /* ==========================================================================
-   Version 2.6.20: stable mixed prose + MathJax in lecture labels and topic pills
-   Built from the current live stylesheet on 2026-09-17.
+   Version 2.6.21: simple, stable inline math in lecture labels and topic pills
    ========================================================================== */
 
-/* Keep ordinary prose and inline math in the same normal inline formatting
-   context.  Do NOT override MathJax's internal display rules. */
-.course-text-fragment,
-.course-math-fragment {
-  color: inherit;
-}
-
-.course-text-fragment {
-  display: inline;
-  white-space: pre-wrap;
-}
-
-.course-math-fragment {
-  display: inline;
-}
-
-/* Lecture topic pills */
-.lecture-topics > .lecture-topic {
+/* Do not make MathJax internals flex items and do not override their display.
+   The generator emits ordinary prose and \(...\) in one inline flow. */
+.lecture-topic {
   display: inline-block !important;
-  vertical-align: middle;
-  color: var(--course-muted) !important;
+  vertical-align: baseline;
   white-space: normal;
-  word-spacing: normal;
+  color: var(--course-muted);
 }
 
-.lecture-topics > .lecture-topic .course-text-fragment,
-.lecture-topics > .lecture-topic .course-math-fragment,
-.lecture-topics > .lecture-topic mjx-container,
-.lecture-topics > .lecture-topic mjx-container * {
+.lecture-topic mjx-container,
+.lecture-topic mjx-container * {
   color: inherit !important;
 }
 
-.lecture-topics > .lecture-topic .course-text-fragment {
-  white-space: pre-wrap;
-}
-
-/* Let MathJax keep its own internal display/layout model.  Only normalize
-   outer spacing and color. */
-.lecture-topics > .lecture-topic mjx-container {
-  margin: 0 0.03em !important;
-  padding: 0 !important;
+.lecture-topic mjx-container {
+  margin: 0 !important;
   font-size: 1em !important;
-  vertical-align: -0.04em;
 }
 
-/* Lecture-note link labels */
 .lecture-links .material-link-label {
   display: inline !important;
   color: inherit !important;
-  font: inherit;
-  line-height: inherit;
   white-space: normal;
-  word-spacing: normal;
 }
 
-.lecture-links .material-link-label .course-text-fragment,
-.lecture-links .material-link-label .course-math-fragment,
 .lecture-links .material-link-label mjx-container,
 .lecture-links .material-link-label mjx-container * {
   color: inherit !important;
 }
 
-.lecture-links .material-link-label .course-text-fragment {
-  white-space: pre-wrap;
-}
-
 .lecture-links .material-link-label mjx-container {
-  margin: 0 0.03em !important;
-  padding: 0 !important;
+  margin: 0 !important;
   font-size: 1em !important;
-  vertical-align: -0.04em;
 }
 
-/* Math appearing in lecture titles/summaries should simply inherit the text
-   color.  Again, do not force display values on MathJax internals. */
-.lecture-copy .course-math-fragment,
 .lecture-copy mjx-container,
-.lecture-copy mjx-container * {
+.lecture-copy mjx-container *,
+.assignment-copy mjx-container,
+.assignment-copy mjx-container * {
   color: inherit !important;
 }
 
-/* Marker: LIVE-BASED styles.css, v2.6.20, 2026-09-17 */
+/* Marker: LIVE-BASED simplified math CSS, v2.6.21, 2026-09-17 */
