@@ -7,7 +7,7 @@ page rather than a chain of nested includes.
 """
 from __future__ import annotations
 
-# Course generator patch: explicit prose/math fragments with flex-gap labels, v2.6.22
+# Course generator patch: separate flow math and compact-label math, v2.6.23
 
 from html import escape
 import re
@@ -37,12 +37,36 @@ _INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?!\$)(.+?)(?<!\\)\$")
 
 
 def math_text(value: Any) -> str:
-    """Render mixed prose and inline ``$...$`` LaTeX as explicit fragments.
+    """Render mixed prose and inline ``$...$`` LaTeX in normal text flow.
 
-    Prose and math are separate spans. Compact UI elements such as lecture
-    topic pills and link labels use CSS ``gap`` between these spans, so spacing
-    does not depend on collapsible HTML whitespace. MathJax remains free to
-    control the layout inside each math fragment.
+    This mode is for lecture/assignment titles, summaries, notes, and meeting
+    text.  Crucially, it preserves the spaces that occur before and after a
+    math fragment instead of stripping them.
+    """
+    raw = str(value or "")
+    parts: list[str] = []
+    cursor = 0
+    for match in _INLINE_MATH_RE.finditer(raw):
+        prose = raw[cursor:match.start()]
+        if prose:
+            parts.append(escape(prose, quote=False))
+        latex = escape(match.group(1), quote=False)
+        parts.append(
+            f'<span class="course-math-fragment">\\({latex}\\)</span>'
+        )
+        cursor = match.end()
+    prose = raw[cursor:]
+    if prose:
+        parts.append(escape(prose, quote=False))
+    return "".join(parts)
+
+
+def math_label(value: Any) -> str:
+    """Render mixed prose/math for compact flex labels and topic pills.
+
+    Here prose and math are explicit child spans and surrounding whitespace is
+    intentionally stripped; CSS ``gap`` supplies deterministic spacing between
+    fragments.
     """
     raw = str(value or "")
     parts: list[str] = []
@@ -87,7 +111,7 @@ def links_html(items: list[dict[str, Any]] | None, class_name: str = "material-l
         return ""
     return "".join(
         f'<a class="{class_name}" href="{attr(output_href(str(item.get("href", "#"))))}">'
-        f'<span class="material-link-label">{math_text(item.get("label", "Open"))}</span></a>'
+        f'<span class="material-link-label">{math_label(item.get("label", "Open"))}</span></a>'
         for item in items
     )
 
@@ -225,7 +249,7 @@ def lecture_entry(item: dict[str, Any], compact: bool = False) -> str:
     topics_html = ""
     if topics:
         topic_tags = "".join(
-            f'<span class="lecture-topic">{math_text(topic)}</span>'
+            f'<span class="lecture-topic">{math_label(topic)}</span>'
             for topic in topics
         )
         topics_html = (
