@@ -3117,16 +3117,17 @@ body.quarto-dark #quarto-document-content,
 .lecture-topic mjx-container * {
   color: inherit !important;
 }
-/* Fix mixed prose + LaTeX inside lecture topic pills.
-   The topic pill itself must NOT be a flex container; otherwise whitespace
-   around MathJax nodes can disappear because text becomes anonymous flex items. */
+
+/* ========================================================================== 
+   Version 2.6.16: mixed prose + LaTeX inside lecture topic pills
+   Reconstructed from the current live GitHub stylesheet on 2026-09-17.
+   ========================================================================== */
 .lecture-topic {
   display: inline-block !important;
   vertical-align: middle;
   white-space: normal;
 }
 
-/* Keep ordinary text and inline math in the same inline formatting context. */
 .lecture-topic .course-text-fragment,
 .lecture-topic .course-math-fragment {
   display: inline !important;
@@ -3137,7 +3138,6 @@ body.quarto-dark #quarto-document-content,
   white-space: pre-wrap;
 }
 
-/* Make MathJax match the topic-pill typography and color. */
 .lecture-topic .math.inline,
 .lecture-topic mjx-container,
 .lecture-topic mjx-container *,
@@ -3152,3 +3152,75 @@ body.quarto-dark #quarto-document-content,
   font-size: 1em !important;
   vertical-align: -0.05em;
 }
+
+/* ========================================================================== 
+   Version 2.6.18: final MathJax color/spacing normalization for lecture labels
+   ========================================================================== */
+
+/* Topic pills: keep prose and math in one normal inline formatting context. */
+.lecture-topics > .lecture-topic {
+  display: inline-block !important;
+  color: var(--course-muted) !important;
+  white-space: normal !important;
+  word-spacing: normal !important;
+}
+
+.lecture-topics > .lecture-topic > .course-text-fragment {
+  display: inline !important;
+  color: var(--course-muted) !important;
+  white-space: pre-wrap !important;
+  word-spacing: normal !important;
+}
+
+.lecture-topics > .lecture-topic > .course-math-fragment,
+.lecture-topics > .lecture-topic mjx-container,
+.lecture-topics > .lecture-topic mjx-container * {
+  display: inline !important;
+  color: var(--course-muted) !important;
+}
+
+.lecture-topics > .lecture-topic mjx-container {
+  margin: 0 0.05em !important;
+  padding: 0 !important;
+  font-size: 1em !important;
+  vertical-align: -0.04em !important;
+}
+
+/* MathJax may emit SVG/paths depending on output mode; force those to the pill color too. */
+.lecture-topics > .lecture-topic mjx-container svg,
+.lecture-topics > .lecture-topic mjx-container svg * {
+  color: var(--course-muted) !important;
+  fill: currentColor !important;
+  stroke: currentColor;
+}
+
+/* Lecture-link labels: same idea, but inherit the link/button color. */
+.lecture-links .material-link-label {
+  display: inline !important;
+  color: inherit !important;
+  white-space: normal !important;
+  word-spacing: normal !important;
+}
+
+.lecture-links .material-link-label > .course-text-fragment {
+  display: inline !important;
+  color: inherit !important;
+  white-space: pre-wrap !important;
+  word-spacing: normal !important;
+}
+
+.lecture-links .material-link-label > .course-math-fragment,
+.lecture-links .material-link-label mjx-container,
+.lecture-links .material-link-label mjx-container * {
+  display: inline !important;
+  color: inherit !important;
+}
+
+.lecture-links .material-link-label mjx-container svg,
+.lecture-links .material-link-label mjx-container svg * {
+  color: inherit !important;
+  fill: currentColor !important;
+  stroke: currentColor;
+}
+
+/* Marker: LIVE-BASED styles.css, v2.6.18, 2026-09-17 */
