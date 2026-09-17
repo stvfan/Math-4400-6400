@@ -7,7 +7,7 @@ page rather than a chain of nested includes.
 """
 from __future__ import annotations
 
-# Course generator patch: simple inline MathJax flow for labels, v2.6.21
+# Course generator patch: explicit prose/math fragments with flex-gap labels, v2.6.22
 
 from html import escape
 import re
@@ -37,23 +37,33 @@ _INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?!\$)(.+?)(?<!\\)\$")
 
 
 def math_text(value: Any) -> str:
-    """Render safe mixed prose and inline ``$...$`` LaTeX.
+    """Render mixed prose and inline ``$...$`` LaTeX as explicit fragments.
 
-    Keep ordinary prose as ordinary HTML text and emit only the math fragment as
-    MathJax delimiters. This avoids wrapper spans that can interfere with
-    whitespace and MathJax styling inside compact topic pills.
+    Prose and math are separate spans. Compact UI elements such as lecture
+    topic pills and link labels use CSS ``gap`` between these spans, so spacing
+    does not depend on collapsible HTML whitespace. MathJax remains free to
+    control the layout inside each math fragment.
     """
     raw = str(value or "")
     parts: list[str] = []
     cursor = 0
     for match in _INLINE_MATH_RE.finditer(raw):
-        parts.append(escape(raw[cursor:match.start()], quote=False))
+        prose = raw[cursor:match.start()].strip()
+        if prose:
+            parts.append(
+                f'<span class="course-text-fragment">{escape(prose, quote=False)}</span>'
+            )
         latex = escape(match.group(1), quote=False)
-        parts.append(f"\\({latex}\\)")
+        parts.append(
+            f'<span class="course-math-fragment">\\({latex}\\)</span>'
+        )
         cursor = match.end()
-    parts.append(escape(raw[cursor:], quote=False))
+    prose = raw[cursor:].strip()
+    if prose:
+        parts.append(
+            f'<span class="course-text-fragment">{escape(prose, quote=False)}</span>'
+        )
     return "".join(parts)
-
 
 def attr(value: Any) -> str:
     return escape(str(value or ""), quote=True)
