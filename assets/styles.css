@@ -3048,49 +3048,66 @@ body.quarto-dark #quarto-document-content,
 }
 
 /* ==========================================================================
-   Version 2.6.21: simple, stable inline math in lecture labels and topic pills
+   Version 2.6.22: deterministic mixed prose + LaTeX in compact labels
    ========================================================================== */
 
-/* Do not make MathJax internals flex items and do not override their display.
-   The generator emits ordinary prose and \(...\) in one inline flow. */
 .lecture-topic {
-  display: inline-block !important;
+  display: inline-flex !important;
+  align-items: baseline;
+  gap: 0.18em;
   vertical-align: baseline;
-  white-space: normal;
   color: var(--course-muted);
+  white-space: normal;
 }
 
-.lecture-topic mjx-container,
-.lecture-topic mjx-container * {
+.lecture-topic > .course-text-fragment,
+.lecture-topic > .course-math-fragment {
   color: inherit !important;
 }
 
-.lecture-topic mjx-container {
+.lecture-topic .course-math-fragment mjx-container,
+.lecture-topic .course-math-fragment mjx-container * {
+  color: inherit !important;
+}
+
+.lecture-topic .course-math-fragment mjx-container {
   margin: 0 !important;
   font-size: 1em !important;
 }
 
 .lecture-links .material-link-label {
-  display: inline !important;
+  display: inline-flex !important;
+  align-items: baseline;
+  gap: 0.18em;
   color: inherit !important;
   white-space: normal;
 }
 
-.lecture-links .material-link-label mjx-container,
-.lecture-links .material-link-label mjx-container * {
+.lecture-links .material-link-label > .course-text-fragment,
+.lecture-links .material-link-label > .course-math-fragment {
   color: inherit !important;
 }
 
-.lecture-links .material-link-label mjx-container {
+.lecture-links .material-link-label .course-math-fragment mjx-container,
+.lecture-links .material-link-label .course-math-fragment mjx-container * {
+  color: inherit !important;
+}
+
+.lecture-links .material-link-label .course-math-fragment mjx-container {
   margin: 0 !important;
   font-size: 1em !important;
 }
 
-.lecture-copy mjx-container,
-.lecture-copy mjx-container *,
-.assignment-copy mjx-container,
-.assignment-copy mjx-container * {
+.course-text-fragment,
+.course-math-fragment {
+  color: inherit;
+}
+
+.lecture-copy .course-math-fragment mjx-container,
+.lecture-copy .course-math-fragment mjx-container *,
+.assignment-copy .course-math-fragment mjx-container,
+.assignment-copy .course-math-fragment mjx-container * {
   color: inherit !important;
 }
 
-/* Marker: LIVE-BASED simplified math CSS, v2.6.21, 2026-09-17 */
+/* Marker: LIVE-BASED flex-gap math labels, v2.6.22, 2026-09-17 */
