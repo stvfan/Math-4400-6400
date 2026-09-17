@@ -7,7 +7,7 @@ page rather than a chain of nested includes.
 """
 from __future__ import annotations
 
-# Course generator patch: lecture math + mixed text/math labels, v2.6.15
+# Course generator patch: restored mixed text/math wrappers, v2.6.19
 
 from html import escape
 import re
