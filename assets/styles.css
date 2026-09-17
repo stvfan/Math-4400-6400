@@ -3067,3 +3067,53 @@ body.quarto-dark #quarto-document-content,
   margin: 0 !important;
   font-size: 1em !important;
 }
+
+
+/* Version 2.6.15: robust mixed prose + MathJax in lecture labels/titles. */
+.course-text-fragment,
+.course-math-fragment {
+  color: inherit;
+}
+
+/* A material-link is flex, so keep the complete mixed label inside ONE child;
+   its internal pieces then participate in normal inline text flow. */
+.lecture-links .material-link-label {
+  display: inline !important;
+  color: inherit !important;
+  font: inherit;
+  line-height: inherit;
+  white-space: normal;
+}
+
+.lecture-links .material-link-label .course-text-fragment,
+.lecture-links .material-link-label .course-math-fragment,
+.lecture-links .material-link-label mjx-container,
+.lecture-links .material-link-label mjx-container * {
+  color: inherit !important;
+}
+
+.lecture-links .material-link-label .course-text-fragment {
+  white-space: pre-wrap;
+}
+
+.lecture-links .material-link-label mjx-container {
+  display: inline-block !important;
+  margin: 0 0.02em !important;
+  padding: 0 !important;
+  font-size: 1em !important;
+  vertical-align: -0.05em;
+}
+
+.lecture-links .material-link-label mjx-container svg {
+  color: inherit !important;
+}
+
+/* Keep the same inherited color for math in lecture titles, summaries, and tags. */
+.lecture-copy .course-math-fragment,
+.lecture-copy mjx-container,
+.lecture-copy mjx-container *,
+.lecture-topic .course-math-fragment,
+.lecture-topic mjx-container,
+.lecture-topic mjx-container * {
+  color: inherit !important;
+}
