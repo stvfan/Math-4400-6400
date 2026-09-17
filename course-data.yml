@@ -46,9 +46,9 @@ lectures:
 
   - date: "September 21"
     meeting: "Lecture 15"
-    title: 'a UFD for $d=-1,\pm2,3$'
+    title: '$\mathbb{Z}[\sqrt{d}]$ is a UFD for $d=-1,\pm2,3$'
     summary: >-
-    topics: ["prime factorizations in ℤ[√d]"]
+    topics: ['prime factorizations in $\mathbb{Z}[\sqrt{d}]$']
     links:
       - label: "Notes"
         href: ""
@@ -56,16 +56,16 @@ lectures:
 
   - date: "September 18"
     meeting: "Lecture 14"
-    title: "Existence of prime factorizations and examples of nonunique factorizations in ℤ[√d]"
+    title: 'Existence of prime factorizations and examples of nonunique factorizations in $\mathbb{Z}[\sqrt{d}]$'
     summary: >-
-    topics: ["prime factorizations in ℤ[√d]"]
+    topics: ['prime factorizations in $\mathbb{Z}[\sqrt{d}]$']
     links:
       - label: "Notes"
         href: ""
 
   - date: "September 16"
     meeting: "Lecture 13"
-    title: "arithmetic in ℤ[√d] (cont.)"
+    title: 'arithmetic in $\mathbb{Z}[\sqrt{d}]$ (cont.)'
     summary: >-
     topics: ["norm","units","primes"]
     links:
@@ -74,9 +74,9 @@ lectures:
         
   - date: "September 14"
     meeting: "Lecture 12"
-    title: "Proof of the sum of two squares theorem (complete), arithmetic in ℤ[√d]"
+    title: 'Proof of the sum of two squares theorem (complete), arithmetic in $\mathbb{Z}[\sqrt{d}]$'
     summary: >-
-    topics: ["The ring ℤ[√d]","Gaussian integers","divisibility", "units", "primes and composites","norm", "unique factorization"]
+    topics: ['The ring $\mathbb{Z}[\sqrt{d}]$',"Gaussian integers","divisibility", "units", "primes and composites","norm", "unique factorization"]
     links:
       - label: "Notes"
         href: "notes/9_14_2026.pdf"
@@ -112,7 +112,7 @@ lectures:
     meeting: "Lecture 8"
     title: "Gauss's lemma (cont.)"
     summary: >-
-    topics: ["Gauss's lemma", "2 modulo p"]
+    topics: ["Gauss's lemma", '$2 \pmod{p}$']
     links:
       - label: "Notes"
         href: "notes/9_2_2026.pdf"
@@ -129,7 +129,7 @@ lectures:
     meeting: "Lecture 6"
     title: "Euler's criterion and its applications"
     summary: >-
-    topics: ["quadratic residues & nonresidues", "Euler's criterion", "Legrendre symbol", "-1 modulo p"]
+    topics: ["quadratic residues & nonresidues", "Euler's criterion", "Legrendre symbol", '$-1 \pmod{p}$']
     links:
       - label: "Notes"
         href: "notes/8_28_2026.pdf"
