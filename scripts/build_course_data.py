@@ -75,7 +75,7 @@ def links_html(items: list[dict[str, Any]] | None, class_name: str = "material-l
         return ""
     return "".join(
         f'<a class="{class_name}" href="{attr(output_href(str(item.get("href", "#"))))}">'
-        f'{math_text(item.get("label", "Open"))}</a>'
+        f'<span class="material-link-label">{math_text(item.get("label", "Open"))}</span></a>'
         for item in items
     )
 
