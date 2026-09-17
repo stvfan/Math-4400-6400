@@ -75,7 +75,7 @@ def links_html(items: list[dict[str, Any]] | None, class_name: str = "material-l
         return ""
     return "".join(
         f'<a class="{class_name}" href="{attr(output_href(str(item.get("href", "#"))))}">'
-        f'{text(item.get("label", "Open"))}</a>'
+        f'{math_text(item.get("label", "Open"))}</a>'
         for item in items
     )
 
@@ -96,8 +96,22 @@ def write(name: str, content: str) -> None:
 
 
 def write_page(path: Path, front_matter: str, content: str) -> None:
-    """Write a complete Quarto page containing one raw-HTML body block."""
-    path.write_text(front_matter.strip() + "\n\n" + raw_html_block(content), encoding="utf-8")
+    """Write a complete Quarto page and force-load MathJax for raw-HTML math.
+
+    The visible page body is emitted as raw HTML, so Quarto cannot discover
+    inline math inside it during Pandoc parsing.  A tiny hidden Markdown math
+    expression makes Quarto include its normal MathJax support; MathJax then
+    typesets the MathJax inline spans emitted by ``math_text`` in the raw HTML.
+    """
+    math_loader = (
+        '::: {.course-math-loader style="display:none" aria-hidden="true"}\n'
+        '$0$\n'
+        ':::\n\n'
+    )
+    path.write_text(
+        front_matter.strip() + "\n\n" + math_loader + raw_html_block(content),
+        encoding="utf-8",
+    )
 
 
 def build_hero(data: dict[str, Any]) -> str:
@@ -220,7 +234,7 @@ def lecture_entry(item: dict[str, Any], compact: bool = False) -> str:
 <article class="lecture-entry{compact_class}" data-log-entry data-search="{attr(search_text)}">
   <div class="lecture-date">
     <strong>{text(item.get('date'))}</strong>
-    <span>{text(item.get('meeting'))}</span>
+    <span>{math_text(item.get('meeting'))}</span>
   </div>
   <div class="lecture-copy">
     <h3>{math_text(item.get('title'))}</h3>
