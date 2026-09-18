@@ -46,7 +46,7 @@ lectures:
 
   - date: "September 21"
     meeting: "Lecture 15"
-    title: 'Unique factorization in $\mathbb{Z}[\sqrt{d}]$ for $d=-1,\pm2,3$: Part I'
+    title: 'Unique factorization in $\mathbb{Z}[\sqrt{d}]$ for $d=-1,\pm2,3$. I.'
     summary: >-
     topics: ["division algorithm", "PID", "gcd"]
     links:
@@ -61,7 +61,7 @@ lectures:
     topics: ['prime factorization in $\mathbb{Z}[\sqrt{d}]$']
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/9_18_2026.pdf"
 
   - date: "September 16"
     meeting: "Lecture 13"
