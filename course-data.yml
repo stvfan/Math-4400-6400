@@ -48,7 +48,7 @@ lectures:
     meeting: "Lecture 17"
     title: 'Unique factorization in $\mathbb{Z}[\sqrt{d}]$ for $d=-1,\pm2,3$. III.'
     summary: >-
-    topics: ["Bézout's lemma", "Euclid's lemma"]
+    topics: ["Bézout's lemma", "Euclid's lemma", "unique factorization"]
     links:
       - label: "Notes"
         href: ""
