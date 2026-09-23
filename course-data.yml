@@ -44,14 +44,23 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "September 25"
+    meeting: "Lecture 17"
+    title: 'Unique factorization in $\mathbb{Z}[\sqrt{d}]$ for $d=-1,\pm2,3$. III.'
+    summary: >-
+    topics: ["Bézout's lemma", "Euclid's lemma"]
+    links:
+      - label: "Notes"
+        href: ""
+
   - date: "September 23"
     meeting: "Lecture 16"
     title: 'Unique factorization in $\mathbb{Z}[\sqrt{d}]$ for $d=-1,\pm2,3$. II.'
     summary: >-
-    topics: ["division algorithm", "PID", "gcd", "Bézout's lemma", "Euclid's lemma"]
+    topics: ["division algorithm", "PID", "gcd", "Bézout's lemma"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/9_23_2026.pdf"
 
   - date: "September 21"
     meeting: "Lecture 15"
