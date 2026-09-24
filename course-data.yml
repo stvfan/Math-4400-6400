@@ -44,11 +44,21 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+
+  - date: "September 30"
+    meeting: "Lecture 18"
+    title: 'Primes in $\mathbb{Z}[i]$'
+    summary: >-
+    topics: ["primes", "units"]
+    links:
+      - label: "Notes"
+        href: ""
+
   - date: "September 25"
     meeting: "Lecture 17"
     title: 'Unique factorization in $\mathbb{Z}[\sqrt{d}]$ for $d=-1,\pm2,3$. III.'
     summary: >-
-    topics: ["Bézout's lemma", "Euclid's lemma", "unique factorization", "primes and units"]
+    topics: ["Bézout's lemma", "Euclid's lemma", "unique factorization", "primes", "units"]
     links:
       - label: "Notes"
         href: ""
