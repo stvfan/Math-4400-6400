@@ -47,9 +47,9 @@ lectures:
 
   - date: "September 30"
     meeting: "Lecture 18"
-    title: 'Primes in $\mathbb{Z}[i]$'
+    title: 'Primes and units in $\mathbb{Z}[i]$'
     summary: >-
-    topics: ["primes", "units"]
+    topics: ["primes", "units", "Gaussian integers"]
     links:
       - label: "Notes"
         href: ""
