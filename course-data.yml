@@ -61,7 +61,7 @@ lectures:
     topics: ["units", "primes", "Gaussian integers"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/9_28_2026.pdf"
 
   - date: "September 25"
     meeting: "Lecture 17"
