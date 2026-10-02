@@ -44,6 +44,24 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "October 7"
+    meeting: "Lecture 21"
+    title: 'Primes in $\mathbb{Z}[i]$ (cont.)'
+    summary: >-
+    topics: ["primes", "Gaussian integers"]
+    links:
+      - label: "Notes"
+        href: ""
+
+  - date: "October 5"
+    meeting: "Lecture 20"
+    title: 'Review'
+    summary: >-
+    topics: ['Unique factorization in $\mathbb{Z}$', "quadratic residues and quadratic reciprocity", 'prime factorization in $\mathbb{Z}[\sqrt{d}]$']
+    links:
+      - label: "Notes"
+        href: "notes/10_2_2026.pdf"
+
   - date: "October 2"
     meeting: "Lecture 19"
     title: 'Units and primes in $\mathbb{Z}[i]$ (cont.)'
@@ -51,7 +69,7 @@ lectures:
     topics: ["units", "primes", "Gaussian integers"]
     links:
       - label: "Notes"
-        href: "notes/9_30_2026.pdf"
+        href: "notes/10_2_2026.pdf"
 
   - date: "September 30"
     meeting: "Lecture 18 (Zoom)"
