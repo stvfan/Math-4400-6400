@@ -60,7 +60,7 @@ lectures:
     topics: ['Unique factorization in $\mathbb{Z}$', "quadratic residues and quadratic reciprocity", 'prime factorization in $\mathbb{Z}[\sqrt{d}]$']
     links:
       - label: "Notes"
-        href: "notes/10_2_2026.pdf"
+        href: "practice/Practice 1.pdf"
 
   - date: "October 2"
     meeting: "Lecture 19"
