@@ -61,15 +61,6 @@ lectures:
     links:
       - label: ""
         href: ""
-        
-  - date: "October 7"
-    meeting: "Lecture 21"
-    title: 'Primes in $\mathbb{Z}[i]$ (cont.)'
-    summary: >-
-    topics: ["primes", "Gaussian integers"]
-    links:
-      - label: "Notes"
-        href: "notes/10_7_2026.pdf"
 
   - date: "October 7"
     meeting: "Lecture 21"
