@@ -44,6 +44,24 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "October 12"
+    meeting: "Lecture 22"
+    title: 'Pythagorean triples and primes in $\mathbb{Z}[\sqrt{-2}]$'
+    summary: >-
+    topics: ["Pythagorean triples", "primes"]
+    links:
+      - label: "Notes"
+        href: ""
+
+  - date: "October 9"
+    meeting: "Midterm 1"
+    title: "Midterm 1"
+    summary: >-
+    topics: []
+    links:
+      - label: ""
+        href: ""
+        
   - date: "October 7"
     meeting: "Lecture 21"
     title: 'Primes in $\mathbb{Z}[i]$ (cont.)'
@@ -51,7 +69,16 @@ lectures:
     topics: ["primes", "Gaussian integers"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/10_7_2026.pdf"
+
+  - date: "October 7"
+    meeting: "Lecture 21"
+    title: 'Primes in $\mathbb{Z}[i]$ (cont.)'
+    summary: >-
+    topics: ["primes", "Gaussian integers"]
+    links:
+      - label: "Notes"
+        href: "notes/10_7_2026.pdf"
 
   - date: "October 5"
     meeting: "Lecture 20"
