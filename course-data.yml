@@ -46,7 +46,7 @@ lectures:
 
   - date: "October 14"
     meeting: "Lecture 22"
-    title: '$Primes in \mathbb{Z}[\sqrt{-2}]$'
+    title: 'Primes in $\mathbb{Z}[\sqrt{-2}]$'
     summary: >-
     topics: ["primes", "units", "Pell's equations"]
     links:
