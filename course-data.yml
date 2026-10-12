@@ -48,7 +48,7 @@ lectures:
     meeting: "Lecture 22"
     title: 'Primes and units in $\mathbb{Z}[\sqrt{\pm 2}]$'
     summary: >-
-    topics: ["primes", "units in ", "Pell's equations"]
+    topics: ["primes", "units", "Pell's equations"]
     links:
       - label: "Notes"
         href: ""
