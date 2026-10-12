@@ -46,12 +46,12 @@ lectures:
 
   - date: "October 14"
     meeting: "Lecture 22"
-    title: 'Primes in $\mathbb{Z}[\sqrt{-2}]$'
+    title: 'Primes and units in $\mathbb{Z}[\sqrt{\pm 2}]$'
     summary: >-
-    topics: ["primes", "units", "Pell's equations"]
+    topics: ["primes", "units in ", "Pell's equations"]
     links:
       - label: "Notes"
-        href: "notes/10_12_2026.pdf"
+        href: ""
 
   - date: "October 12"
     meeting: "Lecture 22"
