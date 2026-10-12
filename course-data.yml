@@ -44,14 +44,23 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
-  - date: "October 12"
+  - date: "October 14"
     meeting: "Lecture 22"
-    title: 'Pythagorean triples and primes in $\mathbb{Z}[\sqrt{-2}]$'
+    title: '$Primes in \mathbb{Z}[\sqrt{-2}]$'
     summary: >-
-    topics: ["Pythagorean triples", "primes"]
+    topics: ["primes", "units", "Pell's equations"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/10_12_2026.pdf"
+
+  - date: "October 12"
+    meeting: "Lecture 22"
+    title: "Pythagorean triples"
+    summary: >-
+    topics: ["Pythagorean triples"]
+    links:
+      - label: "Notes"
+        href: "notes/10_12_2026.pdf"
 
   - date: "October 9"
     meeting: "Midterm 1"
