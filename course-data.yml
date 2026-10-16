@@ -57,7 +57,7 @@ lectures:
     meeting: "Lecture 24"
     title: 'Units in $\mathbb{Z}[\sqrt{2}]$'
     summary: >-
-    topics: ["units", "Pell's equations", "continued fractions"]
+    topics: ["units", "Pell's equations"]
     links:
       - label: "Notes"
         href: "notes/10_16_2026.pdf"
