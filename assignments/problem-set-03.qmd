@@ -74,7 +74,7 @@ Consequently, the only negative values of $d$ for which $\mathbb{Z}[\sqrt{d}]$ i
 </div>
 
 <div class="problem">
-<span class="problem-number">6</span> **Units and Pell's equations.** Use the continued fraction expansion of $\sqrt{14}$ to find all units in $\mathbb{Z}[\sqrt{14}]$. Does any unit provide a solution to $x^2-14y^2=-1$?
+<span class="problem-number">6</span> **Units and Pell's equations.** Use the continued fraction expansion of $\sqrt{14}$ to find all the units in $\mathbb{Z}[\sqrt{14}]$. Does any unit provide a solution to $x^2-14y^2=-1$?
 </div>
 
 <div class="problem">
