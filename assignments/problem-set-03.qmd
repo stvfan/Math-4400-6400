@@ -36,18 +36,13 @@ a\equiv b\pmod 3.
 </div>
 
 <div class="problem">
-<span class="problem-number">2</span> **Norm and unique factorization.** Let $d$ be a nonsquare integer. Suppose that $\alpha,\beta\in\mathbb{Z}[\sqrt d]$ are not both equal to zero.
+<span class="problem-number">2</span> **Norm and conjugates.** Let $d$ and $m\ge1$ be integers. Given $\alpha\in\mathbb{Z}[\sqrt d]$, a *multiplicative inverse* of $\alpha$ modulo $m$ is an element $\beta\in R$ such that $m\mid (\alpha\beta-1)$. 
 
-(1\) Show that
-$$
-\gcd(N(\alpha),N(\beta))=1\implies \gcd(\alpha,\beta)=1.
-$$
-Give a counterexample in $\mathbb{Z}[i]$ showing that the converse is false.
+(1\) Prove that $\alpha$ has a multiplicative inverse modulo $m$ if and only if $\gcd(N(\alpha),m)=1$.
 
-(2\) Suppose that $\mathbb{Z}[\sqrt d]$ is a UFD and $\gcd(\alpha,\beta)=1$. Prove that
-$$
-\gcd(N(\alpha),N(\beta))=1\iff \gcd(\alpha,\overline{\beta})=1.
-$$
+(2\) Show that if $c\in\Z$ satisfies $cN(\alpha)\equiv1\pmod m$, then $c\bar{\alpha}$ is a multiplicative inverse of $\alpha$ modulo $m$.
+
+(3\) In $\mathbb Z[\sqrt5]$, find a multiplicative inverse of $3+\sqrt5$ modulo $7$.
 
 </div>
 
