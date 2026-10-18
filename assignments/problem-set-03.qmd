@@ -91,14 +91,33 @@ Complete the square.
 <div class="problem">
 <span class="problem-number">8</span> **Pell solutions as rational approximations.** Let $d>1$ be a nonsquare integer.
 
-(1\) Show that every solution $x,y>0$ to Pell's equation $x^2-dy^2=1$ satisfies
+(1\) Let $(x,y)=(a,b)$ be the fundamental solution to Pell's equation $x^2-dy^2=1$, and put $\omega=a+b\sqrt{d}$. Then 
+$$\varepsilon_n=x_n+y_n\sqrt{d}=\omega^n,\quad n\in\Z,$$ 
+with $\pm1$ attached, give all the solutions. Show that 
+$$
+x_{n+2}=ax_{n+1}-x_n\quad\text{and}\quad y_{n+2}=ay_{n+1}-y_n
+$$
+for all $n\in\Z$.
+<details class="hint"><summary>Hint</summary>
+First show that
+$$
+x_{n}=\frac{\omega^n+\bar{\omega}^{n}}{2}\quad\text{and}\quad y_{n}=\frac{\omega^n-\bar{\omega}^{n}}{2\sqrt{d}}
+$$
+for all $n\in\Z$. Then use these expressions to verify 
+$$
+x_{n+2}+x_n=ax_{n+1}\quad\text{and}\quad y_{n+2}+y_n=ay_{n+1}
+$$
+for all $n\in\Z$.
+</details>
+
+(2\) Show that every solution $x,y>0$ to Pell's equation $x^2-dy^2=1$ satisfies
 $$
 0<\frac{x}{y}-\sqrt d
 <\frac{1}{2\sqrt d\,y^2}.
 $$
 Consequently, since $x^2-dy^2=1$ has infinitely many positive solutions, there are infinitely many rational numbers $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, whose distance to $\sqrt{d}$ is less than $1/(2\sqrt{d}\,y^2)$. In particular, the sequence of these rational numbers, when arranged with increasing denominators, converges to $\sqrt{d}$.
 
-(2\) Based on part (1), find a rational number $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, such that
+(3\) Based on the preceding parts, find a rational number $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, such that
 $$
 0<\frac{x}{y}-\sqrt{3}<10^{-6}.
 $$
