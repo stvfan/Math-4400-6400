@@ -92,7 +92,7 @@ Complete the square.
 <span class="problem-number">8</span> **Pell solutions as rational approximations.** Let $d>1$ be a nonsquare integer.
 
 (1\) Let $(x,y)=(a,b)$ be the fundamental solution to Pell's equation $x^2-dy^2=1$, and put $\omega=a+b\sqrt{d}$. Then 
-$$\varepsilon_n=x_n+y_n\sqrt{d}=\omega^n,\quad n\in\Z,$$ 
+$$\varepsilon_n=x_n+y_n\sqrt{d}=\omega^n,\quad n\in\mathbb{Z},$$ 
 with $\pm1$ attached, give all the solutions. Show that 
 $$
 x_{n+2}=ax_{n+1}-x_n\quad\text{and}\quad y_{n+2}=ay_{n+1}-y_n
