@@ -127,7 +127,7 @@ You may use the fact that $(x,y)=(2,1)$ is the fundamental solution to to $x^2-3
 ## Optional challenge
 
 <div class="problem">
-<span class="problem-number">9</span> **A Diophantine equation.** Find all integer solutions to $x^2+2=y^3$.
+<span class="problem-number">9</span> **A Diophantine equation.** Find all integer solutions $(x,y)\in\mathbb{Z}^2$ to $x^2+2=y^3$.
 </div>
 
 </div>
