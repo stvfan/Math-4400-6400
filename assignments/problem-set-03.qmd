@@ -1,0 +1,118 @@
+---
+title: "Homework 3"
+subtitle: 'Arithmetic in $\mathbb{Z}[\sqrt{d}]$'
+description: ""
+toc: false
+---
+
+<div class="assignment-header">
+  <div><small>Assigned</small><strong>Oct. 19</strong></div>
+  <div><small>Due</small><strong>Nov. 2 · 12 p.m.</strong></div>
+  <div><small>Submit</small><strong>Boyd 302</strong></div>
+</div>
+
+::: {.assignment-page-actions}
+[Print or save as PDF](#){.course-button .course-button-secondary .js-print}
+[View solutions](){.course-button .course-button-primary .solution-button}
+:::
+
+<!-- ::: {.template-note}
+This sample emphasizes proof writing. Adjust the length, point values, and permitted collaboration to fit the course.
+::: -->
+
+## Instructions
+
+For each problem, please write a complete argument, not only intermediate calculations. Answers without justification may receive zero credit. Collaboration is encouraged, but you must write your own final solutions independently.
+
+<div class="problem">
+<span class="problem-number">1</span> **Divisibility.** Prove that
+\[
+1+\sqrt{-2}\mid a+b\sqrt{-2}
+\]
+in $\mathbb{Z}[\sqrt{-2}]$ if and only if
+\[
+a\equiv b\pmod 3.
+\]
+</div>
+
+<div class="problem">
+<span class="problem-number">2</span> **Norm and unique factorization.** Let $d$ be a nonsquare integer. Suppose that $\alpha,\beta\in\mathbb{Z}[\sqrt d]$ are not both equal to zero.
+
+(1\) Show that
+$$
+\gcd(N(\alpha),N(\beta))=1\implies \gcd(\alpha,\beta)=1.
+$$
+Give a counterexample in $\mathbb{Z}[i]$ showing that the converse is false.
+
+(2\) Suppose that $\mathbb{Z}[\sqrt d]$ is a UFD and $\gcd(\alpha,\beta)=1$. Prove that
+$$
+\gcd(N(\alpha),N(\beta))=1\iff \gcd(\alpha,\overline{\beta})=1.
+$$
+
+</div>
+
+<div class="problem">
+<span class="problem-number">3</span> **Euclidean algorithm in $\mathbb{Z}[i]$.** Use the Euclidean algorithm in $\mathbb{Z}[i]$ to find
+$$
+\gcd(5+3i,3+11i).
+$$
+Then express a gcd as a linear combination of $5+3i$ and $3+11i$.
+</div>
+
+<div class="problem">
+<span class="problem-number">4</span> **Prime factorization in $\mathbb{Z}[\sqrt{-2}]$.** Factor $165$ into primes in $\mathbb{Z}[\sqrt{-2}]$. In particular, verify that every factor in your factorization is prime.
+</div>
+
+<div class="problem">
+<span class="problem-number">5</span> **Nonunique factorization in $\mathbb{Z}[\sqrt{d}]$.** Let $d$ be a nonsquare integer. We show that $\mathbb{Z}[\sqrt{d}]$ is not a UFD for infinitely many positive and negative values of $d$.
+
+(1\) Prove that $2$ is a prime element in $\mathbb{Z}[\sqrt{d}]$ whenever $d\le-3$.
+
+(2\) Suppose that $d>0$ is divisible by a prime number $p\equiv5\pmod 8$. Prove that $2$ is again a prime element in $\mathbb{Z}[\sqrt{d}]$.
+
+(3\) Suppose that $d\le -3$ or $d>0$ is divisible by a prime number $p\equiv5\pmod 8$. Show that $\mathbb{Z}[\sqrt{d}]$ is not a UFD by considering the factorizations
+\begin{align*}
+ d&=2\cdot\frac{d}{2}=\sqrt{d}\cdot\sqrt{d},\qquad\qquad\qquad\qquad\text{when~}2\mid d,\\
+ 1-d&=2\cdot\frac{1-d}{2}=(1+\sqrt{d})(1-\sqrt{d}),\qquad\text{when~}2\nmid d.
+\end{align*}
+Consequently, the only negative values of $d$ for which $\mathbb{Z}[\sqrt{d}]$ is a UFD are $d=-1,-2$ discussed in class.
+</div>
+
+<div class="problem">
+<span class="problem-number">6</span> **Units and Pell's equations.** Use the continued fraction expansion of $\sqrt{14}$ to find all units in $\mathbb{Z}[\sqrt{14}]$. Does any unit provide a solution to $x^2-14y^2=-1$?
+</div>
+
+<div class="problem">
+<span class="problem-number">7</span> **Triangular numbers and Pell's equations.** A \textit{triangular number} is a positive integer of the form
+$$
+T_n=\frac{n(n+1)}{2},\qquad n\ge1.
+$$
+Let $k$ be a positive integer such that $2k$ is not a perfect square. Show that there are infinitely many triangular numbers $T_n$ that are $k$ times a perfect square.
+<details class="hint"><summary>Hint</summary>
+Complete the square.
+</details>
+</div>
+
+<div class="problem">
+<span class="problem-number">8</span> **Pell solutions as rational approximations.** Let $d>1$ be a nonsquare integer.
+
+(1\) Show that every solution $x,y>0$ to Pell's equation $x^2-dy^2=1$ satisfies
+\[
+0<\frac{x}{y}-\sqrt d
+<\frac{1}{2\sqrt d\,y^2}.
+\]
+Consequently, since Pell's equation $x^2-dy^2=1$ has infinitely many positive solutions, there are infinitely many rational numbers $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, whose distance to $\sqrt{d}$ is less than $1/(2\sqrt{d}\,y^2)$. In particular, the sequence of these rational numbers, when arranged with increasing denominators, converges to $\sqrt{d}$.
+
+(2\) Based on part (1), find a rational number $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, such that
+$$
+0<\frac{x}{y}-\sqrt{3}<10^{-6}.
+$$
+</div>
+
+## Optional challenge
+
+<div class="problem">
+<span class="problem-number">9</span> **A Diaphantine equation.** Find all integer solutions to $x^2+2=y^3$.
+</div>
+
+</div>
