@@ -121,6 +121,7 @@ Consequently, since $x^2-dy^2=1$ has infinitely many positive solutions, there a
 $$
 0<\frac{x}{y}-\sqrt{3}<10^{-6}.
 $$
+You may use the fact that $(x,y)=(2,1)$ is the fundamental solution to to $x^2-3y^2=1$.
 </div>
 
 ## Optional challenge
