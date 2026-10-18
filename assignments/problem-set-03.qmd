@@ -97,17 +97,17 @@ with $\pm1$ attached, give all the solutions. Show that
 $$
 x_{n+2}=ax_{n+1}-x_n\quad\text{and}\quad y_{n+2}=ay_{n+1}-y_n
 $$
-for all $n\in\Z$.
+for all $n\in\mathbb{Z}$.
 <details class="hint"><summary>Hint</summary>
 First show that
 $$
-x_{n}=\frac{\omega^n+\bar{\omega}^{n}}{2}\quad\text{and}\quad y_{n}=\frac{\omega^n-\bar{\omega}^{n}}{2\sqrt{d}}
+x_{n}=\frac{\omega^n+\overline{\omega}^{n}}{2}\quad\text{and}\quad y_{n}=\frac{\omega^n-\overline{\omega}^{n}}{2\sqrt{d}}
 $$
-for all $n\in\Z$. Then use these expressions to verify 
+for all $n\in\mathbb{Z}$. Then use these expressions to verify 
 $$
 x_{n+2}+x_n=ax_{n+1}\quad\text{and}\quad y_{n+2}+y_n=ay_{n+1}
 $$
-for all $n\in\Z$.
+for all $n\in\mathbb{Z}$.
 </details>
 
 (2\) Show that every solution $x,y>0$ to Pell's equation $x^2-dy^2=1$ satisfies
