@@ -55,7 +55,7 @@ What does the proof of the division algorithm in $\mathbb{Z}[i]$ tell us about t
 </div>
 
 <div class="problem">
-<span class="problem-number">4</span> **Prime factorization in $\mathbb{Z}[\sqrt{-2}]$.** Factor $165$ into primes in $\mathbb{Z}[\sqrt{-2}]$. 
+<span class="problem-number">4</span> **Prime factorization in $\mathbb{Z}[\sqrt{-2}]$.** Factor $165$ into primes in $\mathbb{Z}[\sqrt{-2}]$. In particular, explain why every factor in your factorization is prime.
 </div>
 
 <div class="problem">
