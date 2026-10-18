@@ -96,7 +96,7 @@ $$
 0<\frac{x}{y}-\sqrt d
 <\frac{1}{2\sqrt d\,y^2}.
 $$
-Consequently, since Pell's equation $x^2-dy^2=1$ has infinitely many positive solutions, there are infinitely many rational numbers $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, whose distance to $\sqrt{d}$ is less than $1/(2\sqrt{d}\,y^2)$. In particular, the sequence of these rational numbers, when arranged with increasing denominators, converges to $\sqrt{d}$.
+Consequently, since $x^2-dy^2=1$ has infinitely many positive solutions, there are infinitely many rational numbers $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, whose distance to $\sqrt{d}$ is less than $1/(2\sqrt{d}\,y^2)$. In particular, the sequence of these rational numbers, when arranged with increasing denominators, converges to $\sqrt{d}$.
 
 (2\) Based on part (1), find a rational number $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, such that
 $$
