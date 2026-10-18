@@ -49,6 +49,9 @@ $$
 \gcd(5+3i,3+11i).
 $$
 Then express a gcd as a linear combination of $5+3i$ and $3+11i$.
+<details class="hint"><summary>Hint</summary>
+What does the proof of the division algorithm in $\mathbb{Z}[i]$ tell us about the quotient and the remainder?
+</details>
 </div>
 
 <div class="problem">
