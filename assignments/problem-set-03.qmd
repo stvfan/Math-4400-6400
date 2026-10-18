@@ -59,7 +59,7 @@ What does the proof of the division algorithm in $\mathbb{Z}[i]$ tell us about t
 </div>
 
 <div class="problem">
-<span class="problem-number">5</span> **Nonunique factorization in $\mathbb{Z}[\sqrt{d}]$.** Let $d$ be a nonsquare integer. We show that $\mathbb{Z}[\sqrt{d}]$ is not a UFD for infinitely many positive and negative values of $d$.
+<span class="problem-number">5</span> **Nonunique factorization in $\mathbb{Z}[\sqrt{d}]$.** Suppose that $d\in\mathbb{Z}$ is not a perfect square. We show that $\mathbb{Z}[\sqrt{d}]$ is not a UFD for infinitely many positive and negative values of $d$.
 
 (1\) Prove that $2\in\mathbb{Z}[\sqrt{d}]$ is a prime whenever $d\le-3$.
 
