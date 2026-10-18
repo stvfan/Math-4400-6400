@@ -83,7 +83,7 @@ Consequently, the only negative values of $d$ for which $\mathbb{Z}[\sqrt{d}]$ i
 </div>
 
 <div class="problem">
-<span class="problem-number">7</span> **Triangular numbers and Pell's equations.** A \textit{triangular number} is a positive integer of the form
+<span class="problem-number">7</span> **Triangular numbers and Pell's equations.** A *triangular number* is a positive integer of the form
 $$
 T_n=\frac{n(n+1)}{2},\qquad n\ge1.
 $$
