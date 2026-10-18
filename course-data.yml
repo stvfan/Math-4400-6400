@@ -314,7 +314,7 @@ assignments:
       note: ""
       href: "assignments/problem-set-02.qmd"
     - number: "Homework 3"
-      title: "Euler's theorem, quadratic residues, and quadratic reciprocity"
+      title: 'Arithmetic in $\mathbb{Z}[\sqrt{d}]$'
       due: "Nov. 2, 12 p.m."
       status: "Assigned"
       status_style: "due"
