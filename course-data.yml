@@ -313,7 +313,7 @@ assignments:
       status_style: "due"
       note: ""
       href: "assignments/problem-set-02.qmd"
-       - number: "Homework 3"
+    - number: "Homework 3"
       title: "Euler's theorem, quadratic residues, and quadratic reciprocity"
       due: "Nov. 2, 12 p.m."
       status: "Assigned"
