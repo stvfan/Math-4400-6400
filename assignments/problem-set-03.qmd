@@ -26,21 +26,21 @@ For each problem, please write a complete argument, not only intermediate calcul
 
 <div class="problem">
 <span class="problem-number">1</span> **Divisibility.** Prove that
-\[
+$$
 1+\sqrt{-2}\mid a+b\sqrt{-2}
-\]
+$$
 in $\mathbb{Z}[\sqrt{-2}]$ if and only if
-\[
+$$
 a\equiv b\pmod 3.
-\]
+$$
 </div>
 
 <div class="problem">
-<span class="problem-number">2</span> **Norm and conjugates.** Let $d$ and $m\ge1$ be integers. Given $\alpha\in\mathbb{Z}[\sqrt d]$, a *multiplicative inverse* of $\alpha$ modulo $m$ is an element $\beta\in R$ such that $m\mid (\alpha\beta-1)$. 
+<span class="problem-number">2</span> **Norm and conjugates.** Let $d$ and $m\ge1$ be integers. Given $\alpha\in\mathbb{Z}[\sqrt d]$, a *multiplicative inverse* of $\alpha$ modulo $m$ is an element $\beta\in \mathbb{Z}[\sqrt d]$ such that $m\mid (\alpha\beta-1)$. 
 
 (1\) Prove that $\alpha$ has a multiplicative inverse modulo $m$ if and only if $\gcd(N(\alpha),m)=1$.
 
-(2\) Show that if $c\in\Z$ satisfies $cN(\alpha)\equiv1\pmod m$, then $c\bar{\alpha}$ is a multiplicative inverse of $\alpha$ modulo $m$.
+(2\) Show that if $c\in\mathbb{Z}$ satisfies $cN(\alpha)\equiv1\pmod m$, then $c\bar{\alpha}$ is a multiplicative inverse of $\alpha$ modulo $m$.
 
 (3\) In $\mathbb Z[\sqrt5]$, find a multiplicative inverse of $3+\sqrt5$ modulo $7$.
 
@@ -92,10 +92,10 @@ Complete the square.
 <span class="problem-number">8</span> **Pell solutions as rational approximations.** Let $d>1$ be a nonsquare integer.
 
 (1\) Show that every solution $x,y>0$ to Pell's equation $x^2-dy^2=1$ satisfies
-\[
+$$
 0<\frac{x}{y}-\sqrt d
 <\frac{1}{2\sqrt d\,y^2}.
-\]
+$$
 Consequently, since Pell's equation $x^2-dy^2=1$ has infinitely many positive solutions, there are infinitely many rational numbers $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, whose distance to $\sqrt{d}$ is less than $1/(2\sqrt{d}\,y^2)$. In particular, the sequence of these rational numbers, when arranged with increasing denominators, converges to $\sqrt{d}$.
 
 (2\) Based on part (1), find a rational number $x/y$, where $x,y>0$ and $\gcd(x,y)=1$, such that
