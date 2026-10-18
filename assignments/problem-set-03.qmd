@@ -99,7 +99,7 @@ x_{n+2}=ax_{n+1}-x_n\quad\text{and}\quad y_{n+2}=ay_{n+1}-y_n
 $$
 for all $n\in\mathbb{Z}$.
 <details class="hint"><summary>Hint</summary>
-First show that
+First express $x_n$ and $y_n$ as
 $$
 x_{n}=\frac{\omega^n+\overline{\omega}^{n}}{2}\quad\text{and}\quad y_{n}=\frac{\omega^n-\overline{\omega}^{n}}{2\sqrt{d}}
 $$
