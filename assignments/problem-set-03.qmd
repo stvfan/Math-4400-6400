@@ -37,7 +37,7 @@ in $\mathbb{Z}[\sqrt{-2}]$ if and only if $a\equiv b\pmod 3$.
 
 (1\) Prove that $\alpha$ has a multiplicative inverse modulo $m$ if and only if $\gcd(N(\alpha),m)=1$.
 
-(2\) Show that if $c\in\mathbb{Z}$ satisfies $cN(\alpha)\equiv1\pmod m$, then $c\bar{\alpha}$ is a multiplicative inverse of $\alpha$ modulo $m$.
+(2\) Show that if $c\in\mathbb{Z}$ satisfies $cN(\alpha)\equiv1\pmod m$, then $c\overline{\alpha}$ is a multiplicative inverse of $\alpha$ modulo $m$.
 
 (3\) In $\mathbb Z[\sqrt5]$, find a multiplicative inverse of $3+\sqrt5$ modulo $7$.
 
