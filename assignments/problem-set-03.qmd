@@ -33,7 +33,7 @@ in $\mathbb{Z}[\sqrt{-2}]$ if and only if $a\equiv b\pmod 3$.
 </div>
 
 <div class="problem">
-<span class="problem-number">2</span> **Norm and conjugates.** Let $d$ and $m\ge1$ be integers. Given $\alpha\in\mathbb{Z}[\sqrt d]$, a *multiplicative inverse* of $\alpha$ modulo $m$ is an element $\beta\in \mathbb{Z}[\sqrt d]$ such that $m\mid (\alpha\beta-1)$. 
+<span class="problem-number">2</span> **Norm and conjugates.** Let $d$ and $m\ge1$ be integers. For any $\alpha\in\mathbb{Z}[\sqrt d]$, a *multiplicative inverse* of $\alpha$ modulo $m$ is an element $\beta\in \mathbb{Z}[\sqrt d]$ such that $m\mid (\alpha\beta-1)$. 
 
 (1\) Prove that $\alpha$ has a multiplicative inverse modulo $m$ if and only if $\gcd(N(\alpha),m)=1$.
 
