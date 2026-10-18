@@ -93,19 +93,19 @@ Complete the square.
 
 (1\) Let $(x,y)=(a,b)$ be the fundamental solution to Pell's equation $x^2-dy^2=1$, and put $\omega=a+b\sqrt{d}$. Then 
 $$\varepsilon_n=x_n+y_n\sqrt{d}=\omega^n,\quad n\in\mathbb{Z},$$ 
-with $\pm1$ attached, give all the solutions. Show that 
+with $\pm1$ attached, give all the solutions. Estabilsh the recurrence relations
 $$
-x_{n+2}=ax_{n+1}-x_n\quad\text{and}\quad y_{n+2}=ay_{n+1}-y_n
+x_{n+2}=2ax_{n+1}-x_n\quad\text{and}\quad y_{n+2}=2ay_{n+1}-y_n
 $$
 for all $n\in\mathbb{Z}$.
 <details class="hint"><summary>Hint</summary>
-First express $x_n$ and $y_n$ as
+First show that $\omega^{-1}=\overline{\omega}$. Then express $x_n$ and $y_n$ as
 $$
 x_{n}=\frac{\omega^n+\overline{\omega}^{n}}{2}\quad\text{and}\quad y_{n}=\frac{\omega^n-\overline{\omega}^{n}}{2\sqrt{d}}
 $$
-for all $n\in\mathbb{Z}$. Then use these expressions to verify 
+for all $n\in\mathbb{Z}$. Use these to verify 
 $$
-x_{n+2}+x_n=ax_{n+1}\quad\text{and}\quad y_{n+2}+y_n=ay_{n+1}
+x_{n+2}+x_n=2ax_{n+1}\quad\text{and}\quad y_{n+2}+y_n=2ay_{n+1}
 $$
 for all $n\in\mathbb{Z}$.
 </details>
