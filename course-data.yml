@@ -45,7 +45,7 @@ textbook:
 lectures:
 
   - date: "October 23"
-    meeting: "Lecture 26"
+    meeting: "Lecture 27"
     title: "There are infinitely many primes: Euler's analytic proof"
     summary: >-
     topics: ["primes"]
