@@ -46,7 +46,7 @@ lectures:
 
   - date: "October 23"
     meeting: "Lecture 27"
-    title: "There are infinitely many primes: Euler's analytic proof"
+    title: "There are infinitely many primes II. Euler's analytic proof"
     summary: >-
     topics: ["primes"]
     links:
@@ -55,7 +55,7 @@ lectures:
 
   - date: "October 21"
     meeting: "Lecture 26"
-    title: "There are infinitely many primes: Euclid's idea"
+    title: "There are infinitely many primes I. Euclid's idea"
     summary: >-
     topics: ["continued fractions", "primes"]
     links:
