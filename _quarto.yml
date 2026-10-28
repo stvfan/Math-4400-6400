@@ -6,11 +6,11 @@ project:
     - '*.qmd'
     - notes/*.qmd
     - assignments/*.qmd
- resources:
-  - assets
-  - _templates
-  - course-data.yml
-  - exams
+  resources:
+    - assets
+    - _templates
+    - course-data.yml
+    - exams
 website:
   title: Number Theory
   description: A syllabus-style website template for an undergraduate number theory
