@@ -129,7 +129,7 @@ You may use the fact that $(x,y)=(2,1)$ is the fundamental solution to $x^2-3y^2
 <div class="problem">
 <span class="problem-number">9</span> **A Diophantine equation.** Find all integer solutions $(x,y)\in\mathbb{Z}^2$ to $x^2+2=y^3$.
 <details class="hint"><summary>Hint</summary>
-Working in $\mathbb{\sqrt{-2}}$, we can factorize the left-hand side as $$x^2+2=(x+\sqrt{-2})(x-\sqrt{-2})$$. Adapt our argument for finding all the Pythagorean triples.
+Working in $\mathbb{\sqrt{-2}}$, we can factorize the left-hand side as $$x^2+2=(x+\sqrt{-2})(x-\sqrt{-2}).$$ Adapt our argument for finding all the Pythagorean triples.
 </details>
 </div>
 
