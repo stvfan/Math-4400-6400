@@ -10,7 +10,7 @@ project:
     - assets
     - _templates
     - course-data.yml
-    - exams
+    - exams/**
 website:
   title: Number Theory
   description: A syllabus-style website template for an undergraduate number theory
