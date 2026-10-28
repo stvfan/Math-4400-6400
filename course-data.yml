@@ -46,7 +46,7 @@ lectures:
 
   - date: "October 28"
     meeting: "Lecture 29"
-    title: "Counting primes I. An upper bound"
+    title: "Counting primes I. A lower bound"
     summary: >-
     topics: ["primes"]
     links:
