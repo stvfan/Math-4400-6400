@@ -44,14 +44,23 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
-  - date: "October 28"
-    meeting: "Lecture 29"
-    title: "Counting primes I. A lower bound"
+  - date: "November 2"
+    meeting: "Lecture 30"
+    title: "Counting primes II. A lower bound"
     summary: >-
     topics: ["primes"]
     links:
       - label: "Notes"
         href: ""
+
+  - date: "October 28"
+    meeting: "Lecture 29"
+    title: "Counting primes I. Statistics"
+    summary: >-
+    topics: ["primes"]
+    links:
+      - label: "Notes"
+        href: "notes/10_28_2026.pdf"
 
 
   - date: "October 26"
