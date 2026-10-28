@@ -3,13 +3,14 @@ project:
   output-dir: _site
   pre-render: python scripts/build_course_data.py
   render:
-  - '*.qmd'
-  - notes/*.qmd
-  - assignments/*.qmd
+    - '*.qmd'
+    - notes/*.qmd
+    - assignments/*.qmd
   resources:
-  - assets
-  - _templates
-  - course-data.yml
+    - assets
+    - _templates
+    - course-data.yml
+    - exams
 website:
   title: Number Theory
   description: A syllabus-style website template for an undergraduate number theory
