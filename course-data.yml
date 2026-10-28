@@ -381,7 +381,7 @@ exams:
       date: "October 9"
       time: "12:00 p.m.–12:55 p.m."
       location: "Boyd 302"
-      solutions_href: "exams/Exam_1_Solutions.pdf"
+      solutions_href: "exams/exam_1_solutions.pdf"
       solutions_label: "View solutions"
 
     - title: "Midterm 2"
