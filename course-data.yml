@@ -371,7 +371,7 @@ assignments:
     - number: "Homework 3"
       title: 'Arithmetic in $\mathbb{Z}[\sqrt{d}]$'
       due: "Nov. 2, 12 p.m."
-      status: "Assigned"
+      status: "Closed"
       status_style: "due"
       note: ""
       href: "assignments/problem-set-03.qmd"
