@@ -44,6 +44,15 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "November 4"
+    meeting: "Lecture 31"
+    title: "Counting primes III. An upper bound"
+    summary: >-
+    topics: ["primes"]
+    links:
+      - label: "Notes"
+        href: ""
+
   - date: "November 2"
     meeting: "Lecture 30"
     title: "Counting primes II. A lower bound"
@@ -51,7 +60,7 @@ lectures:
     topics: ["primes"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/11_2_2026.pdf"
 
   - date: "October 28"
     meeting: "Lecture 29"
