@@ -44,14 +44,41 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "November 13"
+    meeting: "Midterm 2"
+    title: "Midterm 2"
+    summary: >-
+    topics: [""]
+    links:
+      - label: ""
+        href: ""
+
+  - date: "November 11"
+    meeting: "Lecture 34"
+    title: "Multiplicative functions I."
+    summary: >-
+    topics: ["multiplicative functions"]
+    links:
+      - label: "Notes"
+        href: ""
+
+  - date: "November 9"
+    meeting: "Lecture 33"
+    title: "Review 2"
+    summary: >-
+    topics: ["quadratic rings", "primes"]
+    links:
+      - label: "Notes"
+        href: ""
+
   - date: "November 6"
     meeting: "Lecture 32"
     title: "Counting primes IV. An upper bound (cont.)"
     summary: >-
-    topics: ["primes"]
+    topics: ["primes", "arithmetic functions"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/11_6_2026.pdf"
 
   - date: "November 4"
     meeting: "Lecture 31"
