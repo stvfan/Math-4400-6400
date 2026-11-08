@@ -66,10 +66,10 @@ lectures:
     meeting: "Lecture 33"
     title: "Review 2"
     summary: >-
-    topics: ["quadratic rings", "primes"]
+    topics: ["quadratic rings", "infinitude of primes"]
     links:
-      - label: "Notes"
-        href: ""
+      - label: "Problems"
+        href: "practice/Practice 2.pdf"
 
   - date: "November 6"
     meeting: "Lecture 32"
