@@ -44,6 +44,15 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "November 16"
+    meeting: "Lecture 35"
+    title: "Additive and multiplicative functions II."
+    summary: >-
+    topics: ["multiplicative functions"]
+    links:
+      - label: "Notes"
+        href: ""
+
   - date: "November 13"
     meeting: "Midterm 2"
     title: "Midterm 2"
@@ -55,12 +64,12 @@ lectures:
 
   - date: "November 11"
     meeting: "Lecture 34"
-    title: "Multiplicative functions I."
+    title: "Additive and multiplicative functions I."
     summary: >-
-    topics: ["multiplicative functions"]
+    topics: ["additive functions", "multiplicative functions"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/11_11_2026.pdf"
 
   - date: "November 9"
     meeting: "Lecture 33"
