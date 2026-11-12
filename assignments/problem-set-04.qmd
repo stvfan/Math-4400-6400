@@ -37,7 +37,7 @@ $F_n=2^{2^n}+1$.
 
 <div class="problem">
 <span class="problem-number">2</span> **Primes modulo 8.** We proved in class that there are infinitely many primes
-$p\equiv 5\pmod 8$. In this problem, we prove that there are infinitely many primes $p\equiv 3\pmod 8$
+$p\equiv 5\pmod 8$. The goal of this problem is to show that there are infinitely many primes $p\equiv 3\pmod 8$
 and $p\equiv 7\pmod 8$, while leaving the remaining case $p\equiv 1\pmod 8$ to the next problem.
 
 (1\) Let $a\in\mathbb Z$. Show that every odd prime
@@ -53,9 +53,9 @@ $p\mid a^2-2$ satisfies $p\equiv 1\text{ or }7\pmod8$.
 <span class="problem-number">3</span> **Primes $\equiv1\pmod{2^n}$.** Let $n\ge1$ be an integer.
 
 (1\) Euler's theorem asserts that given any integers $a\in\mathbb Z$ and $m\ge1$ with $\gcd(a,m)=1$, we have
-$$a^{\phi(m)}\equiv 1\pmod m$$. The \emph{order of }$a$ \emph{modulo }$m$, denoted by $\text{ord}_m(a)$, is
+$$a^{\phi(m)}\equiv 1\pmod m.$$ The \emph{order of }$a$ \emph{modulo }$m$, denoted by $\text{ord}_m(a)$, is
 the least positive integer $d$ such that $a^d\equiv 1\pmod m$. Thus, Euler's theorem implies that $\text{ord}_m(a)$
-exists and satisfies $1\le\text{ord}_m(a)\le\phi(m)$.Prove that if $k$ is any positive integer such that
+exists and satisfies $1\le\text{ord}_m(a)\le\phi(m)$. Prove that if $k$ is any positive integer such that
 $a^k\equiv1\pmod m$, then $\text{ord}_m(a)\mid k$.
 <details class="hint"><summary>Hint</summary>
 Use the division algorithm.
@@ -91,7 +91,7 @@ has a unique solution $x$ modulo $M=m_1\cdots m_k$. In particular, it has a uniq
 (1\) Use numbers of the form $x^2-a$ to show that there are infinitely many odd primes $p$ such that
 $a\text{ R }p$.
 <details class="hint"><summary>Hint</summary>
-Consider $n=((|a|+3)p_1\cdots p_k)^2-a$, where $p_1,\ldots,p_k$ are odd primes such that $a\text{ R }p_i$ for every $1\le i\le k$.
+Consider the number $n=((|a|+3)p_1\cdots p_k)^2-a$, where $p_1,\ldots,p_k$ are odd primes such that $a\text{ R }p_i$ for every $1\le i\le k$.
 </details>
 
 
