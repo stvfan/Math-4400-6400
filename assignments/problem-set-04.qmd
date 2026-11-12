@@ -169,7 +169,7 @@ $$
 \end{cases}
 $$
 
-(2\)Use M\"obius inversion and part (1) to prove that
+(2\) Use M\"{o}bius inversion and part (1) to prove that
 $$
 \lambda(n)=
 \sum_{d^2\mid n}\mu\left(\frac{n}{d^2}\right).
