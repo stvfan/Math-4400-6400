@@ -48,7 +48,7 @@ lectures:
     meeting: "Lecture 35"
     title: "Additive and multiplicative functions II."
     summary: >-
-    topics: ["multiplicative functions"]
+    topics: ["multiplicative functions", "Euler's totient function"]
     links:
       - label: "Notes"
         href: ""
@@ -420,6 +420,14 @@ assignments:
       status_style: "due"
       note: ""
       href: "assignments/problem-set-03.qmd"
+
+    - number: "Homework 4"
+      title: "Primes and arithmetic functions"
+      due: ""
+      status: "Forthcoming"
+      status_style: "due"
+      note: ""
+      href: ""
       
 exams:
   policy:
@@ -442,11 +450,15 @@ exams:
       date: "November 13"
       time: "12:00 p.m.–12:55 p.m."
       location: "Boyd 302"
+      solutions_href: ""
+      solutions_label: "View solutions"
+      
     - title: "Final exam"
       date: "December 7"
       time: "12:00 p.m.–3:00 p.m."
       location: "Boyd 302"
       note: "Cumulative"
+      
 grading:
   intro: "Final grades will be calculated from the following weighted components."
   items:
