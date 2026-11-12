@@ -152,7 +152,7 @@ G(n)=n\prod_{i=1}^{r}
 \left(1+a_i\left(1-\frac1{p_i}\right)\right).
 $$
 
-(3\)Compute $G(360)$ using the formula from part (2).
+(3\) Compute $G(360)$ using the formula from part (2).
 
 </div>
 
