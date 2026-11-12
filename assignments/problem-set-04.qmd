@@ -49,7 +49,7 @@ and that there are infinitely many primes $p\equiv 7\pmod 8$, while leaving the 
 </div>
 
 <div class="problem">
-<span class="problem-number">3</span> **Primes $\equiv1\pmod{2^n}$.** Let $n\ge1$ be an integer.
+<span class="problem-number">3</span> **Primes $\equiv1\pmod{2^n}$.** Let $n\ge1$ be an integer. We show that there are infinitely many primes $p\equiv1\pmod{2^n}$.
 
 (1\) Euler's theorem asserts that given any integers $a\in\mathbb Z$ and $m\ge1$ with $\gcd(a,m)=1$, we have
 $$a^{\phi(m)}\equiv 1\pmod m.$$ The *order of* $a$ *modulo* $m$, denoted by $\text{ord}_m(a)$, is
@@ -145,11 +145,11 @@ $$
 Group the integers $1\le k\le n$ according to the value of $\gcd(k,n)$.
 </details>
 
-(2\) Deduce that $G$ is multiplicative and that if $n=p_1^{a_1}\cdots p_k^{a_k}$ is its prime
+(2\) Deduce that $G$ is multiplicative and that if $n=p_1^{a_1}\cdots p_r^{a_r}$ is its prime
 factorization, then
 $$
-G(n)=n\prod_{j=1}^{k}
-\left(1+a_j\left(1-\frac1{p_j}\right)\right).
+G(n)=n\prod_{i=1}^{r}
+\left(1+a_i\left(1-\frac1{p_i}\right)\right).
 $$
 
 (3\)Compute $G(360)$ using the formula from part (2).
