@@ -48,7 +48,7 @@ lectures:
     meeting: "Lecture 35"
     title: "Additive and multiplicative functions II."
     summary: >-
-    topics: ["multiplicative functions", 'M\"{o}bius function', "Euler's totient function"]
+    topics: ["multiplicative functions", 'the M\"{o}bius function', "Euler's totient function"]
     links:
       - label: "Notes"
         href: ""
