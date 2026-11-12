@@ -191,7 +191,9 @@ $$\frac{1}{B}n\ln n<p_n<\frac{1}{A}n\ln n+\frac{1}{A}\ln\frac{2}{A},\qquad n\ge 
 You may use without proof the inequality
 $$\frac{x}{\ln x}>\sqrt{x},\qquad x>1.$$
 <details class="hint"><summary>Hint</summary>
-Working in $\mathbb{Z}[\sqrt{-2}]$, we can factorize the left-hand side as $$x^2+2=(x+\sqrt{-2})(x-\sqrt{-2}).$$ Adapt our argument for finding Pythagorean triples.
+For the lower bound, use $p_n>n$. For the upper bound, first apply
+$$\frac{x}{\ln x}>\sqrt{x}$$
+to get an upper bound for $p_n$.
 </details>
 
 (2\) Suppose that there are constants $0<C<D$ and an integer $N_0\ge\max\{2,D^2\}$ such that
