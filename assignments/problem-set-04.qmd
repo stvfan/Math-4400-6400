@@ -25,7 +25,7 @@ This sample emphasizes proof writing. Adjust the length, point values, and permi
 For each problem, please write a complete argument, not only intermediate calculations. Answers without justification may receive zero credit. Collaboration is encouraged, but you must write your own final solutions independently.
 
 <div class="problem">
-<span class="problem-number">1</span> **Primes and Fermat numbers.** For $n\ge0$, the $n$th \emph{Fermat number} is defined by
+<span class="problem-number">1</span> **Primes and Fermat numbers.** For $n\ge0$, the $n$th *Fermat number* is defined by
 $F_n=2^{2^n}+1$.
 
 (1\) Prove by induction that $F_0F_1\cdots F_{n-1}=F_n-2$ for every $n\ge1$.
