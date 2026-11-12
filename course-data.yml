@@ -427,7 +427,7 @@ assignments:
       status: "Forthcoming"
       status_style: "due"
       note: ""
-      href: "assignments/problem-set-04.qmd"
+      href: ""
       
 exams:
   policy:
