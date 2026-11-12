@@ -207,7 +207,7 @@ $$\lim\limits_{N\to\infty}\frac{\pi(N)}{N/\ln N}=1.$$
 Use parts (a) and (b) to prove that PNT is equivalent to
 $$\lim\limits_{n\to\infty}\frac{p_n}{n\ln n}=1.$$
 <details class="hint"><summary>Hint</summary>
-Use the $\varepsilon-N$ definition of limit.
+Use the $\varepsilon$-$N$ definition of limit.
 </details>
 </div>
 
