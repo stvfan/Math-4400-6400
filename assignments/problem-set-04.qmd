@@ -1,0 +1,210 @@
+---
+title: "Homework 3"
+subtitle: 'Primes and arithmetic functions'
+description: ""
+toc: false
+---
+
+<div class="assignment-header">
+  <div><small>Assigned</small><strong>Nov. 13</strong></div>
+  <div><small>Due</small><strong>Nov. 30 · 12 p.m.</strong></div>
+  <div><small>Submit</small><strong>Boyd 302</strong></div>
+</div>
+
+::: {.assignment-page-actions}
+[Print or save as PDF](#){.course-button .course-button-secondary .js-print}
+[View solutions](HW3 Solutions.pdf){.course-button .course-button-primary .solution-button}
+:::
+
+<!-- ::: {.template-note}
+This sample emphasizes proof writing. Adjust the length, point values, and permitted collaboration to fit the course.
+::: -->
+
+## Instructions
+
+For each problem, please write a complete argument, not only intermediate calculations. Answers without justification may receive zero credit. Collaboration is encouraged, but you must write your own final solutions independently.
+
+<div class="problem">
+<span class="problem-number">1</span> **Primes and Fermat numbers.** For $n\ge0$, the $n$th \emph{Fermat number} is defined by
+$F_n=2^{2^n}+1$.
+
+(1\) Prove by induction that $F_0F_1\cdots F_{n-1}=F_n-2$ for every $n\ge1$.
+
+(2\) Deduce from part (1) that any two distinct Fermat numbers are relatively prime.
+
+(3\) Based on part (2), give another proof that there are infinitely many primes.
+</div>
+
+<div class="problem">
+<span class="problem-number">2</span> **Primes modulo 8.** We proved in class that there are infinitely many primes
+$p\equiv 5\pmod 8$. In this problem, we prove that there are infinitely many primes $p\equiv 3\pmod 8$
+and $p\equiv 7\pmod 8$, while leaving the remaining case $p\equiv 1\pmod 8$ to the next problem.
+
+(1\) Let $a\in\mathbb Z$. Show that every odd prime
+$p\mid a^2-2$ satisfies $p\equiv 1\text{ or }7\pmod8$.
+
+(2\) Use part (1) to prove that there are infinitely many primes $p\equiv 7\pmod 8$.
+
+(3\) Describe how the proof can be modified to show that there are infinitely many primes $p\equiv 3\pmod 8$.
+
+</div>
+
+<div class="problem">
+<span class="problem-number">3</span> **Primes $\equiv1\pmod{2^n}$.** Let $n\ge1$ be an integer.
+
+(1\) Euler's theorem asserts that given any integers $a\in\Z$ and $m\ge1$ with $\gcd(a,m)=1$, we have
+$a^{\phi(m)}\equiv 1\pmod m$. The \emph{order of }$a$ \emph{modulo }$m$, denoted by $\text{ord}_m(a)$, is
+the least positive integer $d$ such that $a^d\equiv 1\pmod m$. Thus, Euler's theorem implies that $\text{ord}_m(a)$
+exists and satisfies $1\le\text{ord}_m(a)\le\phi(m)$.Prove that if $k$ is any positive integer such that
+$a^k\equiv1\pmod m$, then $\text{ord}_m(a)\mid k$.
+<details class="hint"><summary>Hint</summary>
+Use the division algorithm.
+</details>
+
+(2\) Deduce from part (1) that if $p$ is an odd prime dividing $a^{2^{n-1}}+1$ for some $a\in\Z$, then
+$\text{ord}_p(a)=2^n$ and $p\equiv1\pmod{2^n}$.
+
+(3\) Use part (2) to show that there are infinitely many primes $p\equiv1\pmod{2^n}$.
+
+</div>
+
+<div class="problem">
+<span class="problem-number">4</span> **Primes and quadratic residues.** Suppose that $a\in\Z$ is not a perfect square. We show that there are infinitely many odd primes $p$ such that
+$a\text{ R }p$ and that there are infinitely many odd primes $p$ such that
+$a\text{ N }p$. Note that the case when $a$ has no odd prime factor $q$ with $2\nmid e_q(a)$ boils down to $\pm2\pmod p$. This case follows from the infinitude of primes in residue classes modulo 8 that we have fully resolved. In parts (b) and (c) below, we are therefore allowed to assume that $a$ has an odd prime factor $q$ with $2\nmid e_q(a)$. In these two parts, we will also use the Chinese Remainder Theorem (CRT), which states that
+if $m_1,\ldots,m_k\ge1$ are pairwise relatively prime,
+namely $\gcd(m_i,m_j)=1$ for all $1\le i<j\le k$,
+and if $a_1,\ldots,a_k\in\Z$ are arbitrary,
+then the system of linear congruences
+$$
+\left\{
+\begin{alignedat}{2}
+x &\equiv a_1 && \pmod{m_1}\\
+x &\equiv a_2 && \pmod{m_2}\\
+&\ \ \vdots && \qquad\vdots\\
+x &\equiv a_k && \pmod{m_k}
+\end{alignedat}
+\right.
+$$
+has a unique solution $x$ modulo $M=m_1\cdots m_k$. In particular, it has a unique solution $0\le x<M$.
+
+(1\) Use numbers of the form $x^2-a$ to show that there are infinitely many odd primes $p$ such that
+$a\text{ R }p$.
+<details class="hint"><summary>Hint</summary>
+Consider $n=((|a|+3)p_1\cdots p_k)^2-a$, where $p_1,\ldots,p_k$ are odd primes such that $a\text{ R }p_i$ for every $1\le i\le k$.
+</details>
+
+
+(2\) Suppose that $a$ has an odd prime factor $q$ with $2\nmid e_q(a)$. Then we may write $a=\varepsilon 2^u q^{2v+1}b^2c$,
+where $\varepsilon=\pm1$, $u,v\ge0$, $b\ge1$ with $q\nmid b$, and $c\ge1$ is squarefree and odd with $q\nmid c$.
+Let $h$ be a quadratic nonresidue modulo $q$, and let $m\ge1$ be an integer with $\gcd(m,q)=1$.
+Since $\gcd(q,8bcm)=1$, CRT implies that
+$$
+\left\{
+\begin{aligned}
+x&\equiv h\pmod q\\
+x&\equiv 1\pmod{8bcm}
+\end{aligned}
+\right.
+$$
+has a unique solution $0\le x<8bcmq$. Note that $\gcd(x,2am)=1$. Let $n=x+8bcmq>1$. Use the properties of the Jacobi symbol from
+Problem 7 of Homework 2 to prove
+$$
+\left(\frac{a}{n}\right)=-1.
+$$
+
+(3\) As in part (2), suppose that $a$ has an odd prime factor $q$ with $2\nmid e_q(a)$. Assume that there were only finitely many odd primes
+$p_1,\ldots,p_k$ such that $a\text{ N }p_i$, where $1\le i\le k$. Take $m=p_1\cdots p_k\ge1$. Then $\gcd(m,q)=1$. Part (2) produces an odd integer $n>1$
+such that $n\equiv1\pmod m$ and
+$$
+\left(\frac{a}{n}\right)=-1.
+$$
+Show that $n$ has a prime factor $p\ne p_1,\ldots,p_k$ satisfying $a\text{ N }p$ and conclude that there are infinitely many
+odd primes $p$ such that $a\text{ N }p$.
+</div>
+
+<div class="problem">
+<span class="problem-number">5</span> **Parity of the divisor functions.** Recall that $\tau(n)=\sum_{d\mid n}1$ and
+$\sigma(n)=\sum_{d\mid n}d$ count the positive divisors and sum the positive divisors of $n$,respectively.
+
+(1\) Prove that $\tau(n)$ is odd if and only if $n$ is a perfect square.
+
+(2\) Prove that $\sigma(n)$ is odd if and only if $n$ is a perfect square or twice a perfect square.
+
+</div>
+
+<div class="problem">
+<span class="problem-number">6</span> **A sum of greatest common divisors.** For a positive integer $n$, define
+$$
+G(n)=\sum_{k=1}^{n}\gcd(k,n).
+$$
+(1\) Prove that
+$$
+G(n)=\sum_{d\mid n}d\,\phi\left(\frac nd\right).
+$$
+<details class="hint"><summary>Hint</summary>
+Group the integers $1\le k\le n$ according to the value of $\gcd(k,n)$.
+</details>
+
+(2\) Deduce that $G$ is multiplicative and that if $n=p_1^{a_1}\cdots p_k^{a_k}$ is its prime
+factorization, then
+$$
+G(n)=n\prod_{j=1}^{k}
+\left(1+a_j\left(1-\frac1{p_j}\right)\right).
+$$
+
+(3\)Compute $G(360)$ using the formula from part (2).
+
+</div>
+
+<div class="problem">
+<span class="problem-number">7</span> **Detecting squares with the Liouville function.** Let $\lambda(n)=(-1)^{\Omega(n)}$ be the
+*Liouville function*, where $\Omega(n)=\sum_{p}e_p(n)$. Then $\lambda(n)$ is completely multiplicative.
+
+(1\) Prove that
+$$
+\sum_{d\mid n}\lambda(d)=
+\begin{cases}
+1,&\text{if $n$ is a perfect square},\\
+0,&\text{otherwise}.
+\end{cases}
+$$
+
+(2\)Use M\"obius inversion and part (1) to prove that
+$$
+\lambda(n)=
+\sum_{d^2\mid n}\mu\left(\frac{n}{d^2}\right).
+$$
+</div>
+
+
+
+## Optional challenge
+
+<div class="problem">
+<span class="problem-number">9</span> **The $n$th prime.** Let $p_n$ denote the $n$th prime. For instance, $p_1=2$, $p_2=3$, $p_3=5$, $p_4=7$, and so on. As usual, let $\pi(N)$
+denote the number of primes not exceeding $N$. Then $\pi(p_n)=n$ and $p_{\pi(N)}=N$.
+
+(1\) Suppose that there are constants $0<A<B$ and an integer $N_0\ge2$ such that
+$$A\frac{N}{\ln N}<\pi(N)<B\frac{N}{\ln N},\qquad N\ge N_0.$$
+(We proved in class that this holds with $A=1/4$, $B=13/4$, and $N_0=2$.) Show that
+$$\frac{1}{B}n\ln n<p_n<\frac{1}{A}n\ln n+\frac{1}{A}\ln\frac{2}{A},\qquad n\ge \pi(N_0).$$
+You may use without proof the inequality
+$$\frac{x}{\ln x}>\sqrt{x},\qquad x>1.$$
+<details class="hint"><summary>Hint</summary>
+Working in $\mathbb{Z}[\sqrt{-2}]$, we can factorize the left-hand side as $$x^2+2=(x+\sqrt{-2})(x-\sqrt{-2}).$$ Adapt our argument for finding Pythagorean triples.
+</details>
+
+(2\) Suppose that there are constants $0<C<D$ and an integer $N_0\ge\max\{2,D^2\}$ such that
+$$Cn\ln n<p_n<Dn\ln n,\qquad n\ge \pi(N_0).$$
+Prove that
+$$\frac{1}{D}\cdot\frac{N}{\ln N}<\pi(N)<\frac{1}{C}\cdot\frac{N}{\ln N-\ln(\ln N)-\ln D},\qquad N\ge N_0.$$
+(The assumption $N_0\ge\max\{2,D^2\}$ ensures that $N_0\ge2$ and $\ln N-\ln(\ln N)-\ln D>0$ for all $N\ge N_0$.)
+
+(3\) Recall that the Prime Number Theorem (PNT) states that
+$$\lim\limits_{N\to\infty}\frac{\pi(N)}{N/\ln N}=1.$$
+Use parts (a) and (b) to prove that PNT is equivalent to
+$$\lim\limits_{n\to\infty}\frac{p_n}{n\ln n}=1.$$
+</div>
+
+</div>
