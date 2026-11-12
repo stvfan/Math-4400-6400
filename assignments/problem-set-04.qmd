@@ -38,10 +38,9 @@ $F_n=2^{2^n}+1$.
 <div class="problem">
 <span class="problem-number">2</span> **Primes modulo 8.** We proved in class that there are infinitely many primes
 $p\equiv 5\pmod 8$. The goal of this problem is to show that there are infinitely many primes $p\equiv 3\pmod 8$
-and $p\equiv 7\pmod 8$, while leaving the remaining case $p\equiv 1\pmod 8$ to the next problem.
+and that there are infinitely many primes $p\equiv 7\pmod 8$, while leaving the remaining case $p\equiv 1\pmod 8$ to the next problem.
 
-(1\) Let $a\in\mathbb Z$. Show that every odd prime
-$p\mid a^2-2$ satisfies $p\equiv 1\text{ or }7\pmod8$.
+(1\) Let $a\in\mathbb Z$. Show that every odd prime $p\mid a^2-2$ satisfies $p\equiv 1\text{ or }7\pmod8$.
 
 (2\) Use part (1) to prove that there are infinitely many primes $p\equiv 7\pmod 8$.
 
@@ -53,7 +52,7 @@ $p\mid a^2-2$ satisfies $p\equiv 1\text{ or }7\pmod8$.
 <span class="problem-number">3</span> **Primes $\equiv1\pmod{2^n}$.** Let $n\ge1$ be an integer.
 
 (1\) Euler's theorem asserts that given any integers $a\in\mathbb Z$ and $m\ge1$ with $\gcd(a,m)=1$, we have
-$$a^{\phi(m)}\equiv 1\pmod m.$$ The \emph{order of }$a$ \emph{modulo }$m$, denoted by $\text{ord}_m(a)$, is
+$$a^{\phi(m)}\equiv 1\pmod m.$$ The *order of* $a$ *modulo* $m$, denoted by $\text{ord}_m(a)$, is
 the least positive integer $d$ such that $a^d\equiv 1\pmod m$. Thus, Euler's theorem implies that $\text{ord}_m(a)$
 exists and satisfies $1\le\text{ord}_m(a)\le\phi(m)$. Prove that if $k$ is any positive integer such that
 $a^k\equiv1\pmod m$, then $\text{ord}_m(a)\mid k$.
@@ -95,9 +94,9 @@ Consider the number $n=((|a|+3)p_1\cdots p_k)^2-a$, where $p_1,\ldots,p_k$ are o
 </details>
 
 
-(2\) Suppose that $a$ has an odd prime factor $q$ with $2\nmid e_q(a)$. Then we may write $a=\varepsilon 2^u q^{2v+1}b^2c$,
+(2\) Suppose that $a$ has an odd prime factor $q$ with $2\nmid e_q(a)$. We may write $a=\varepsilon 2^u q^{2v+1}b^2c$,
 where $\varepsilon=\pm1$, $u,v\ge0$, $b\ge1$ with $q\nmid b$, and $c\ge1$ is squarefree and odd with $q\nmid c$.
-Let $h$ be a quadratic nonresidue modulo $q$, and let $m\ge1$ be an integer with $\gcd(m,q)=1$.
+Let $h$ be a quadratic nonresidue modulo $q$ and let $m\ge1$ be an integer with $\gcd(m,q)=1$.
 Since $\gcd(q,8bcm)=1$, CRT implies that
 $$
 \left\{
@@ -119,7 +118,7 @@ such that $n\equiv1\pmod m$ and
 $$
 \left(\frac{a}{n}\right)=-1.
 $$
-Show that $n$ has a prime factor $p\ne p_1,\ldots,p_k$ satisfying $a\text{ N }p$ and conclude that there are infinitely many
+Show that $n$ has a prime factor $p\ne p_1,\ldots,p_k$ satisfying $a\text{ N }p$ and conclude by contradiction that there are infinitely many
 odd primes $p$ such that $a\text{ N }p$.
 </div>
 
@@ -182,7 +181,7 @@ $$
 ## Optional challenge
 
 <div class="problem">
-<span class="problem-number">9</span> **The $n$th prime.** Let $p_n$ denote the $n$th prime. For instance, $p_1=2$, $p_2=3$, $p_3=5$, $p_4=7$, and so on. As usual, let $\pi(N)$
+<span class="problem-number">9</span> **The $\boldsymbol{n}$th prime.** Let $p_n$ denote the $n$th prime. For instance, $p_1=2$, $p_2=3$, $p_3=5$, $p_4=7$, and so on. As usual, let $\pi(N)$
 denote the number of primes not exceeding $N$. Then $\pi(p_n)=n$ and $p_{\pi(N)}=N$.
 
 (1\) Suppose that there are constants $0<A<B$ and an integer $N_0\ge2$ such that
