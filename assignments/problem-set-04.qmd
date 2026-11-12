@@ -61,7 +61,7 @@ $a^k\equiv1\pmod m$, then $\text{ord}_m(a)\mid k$.
 Use the division algorithm.
 </details>
 
-(2\) Deduce from part (1) that if $p$ is an odd prime dividing $a^{2^{n-1}}+1$ for some $a\in\Z$, then
+(2\) Deduce from part (1) that if $p$ is an odd prime dividing $a^{2^{n-1}}+1$ for some $a\in\mathbb Z$, then
 $\text{ord}_p(a)=2^n$ and $p\equiv1\pmod{2^n}$.
 
 (3\) Use part (2) to show that there are infinitely many primes $p\equiv1\pmod{2^n}$.
@@ -69,12 +69,12 @@ $\text{ord}_p(a)=2^n$ and $p\equiv1\pmod{2^n}$.
 </div>
 
 <div class="problem">
-<span class="problem-number">4</span> **Primes and quadratic residues.** Suppose that $a\in\Z$ is not a perfect square. We show that there are infinitely many odd primes $p$ such that
+<span class="problem-number">4</span> **Primes and quadratic residues.** Suppose that $a\in\mathbb Z$ is not a perfect square. We show that there are infinitely many odd primes $p$ such that
 $a\text{ R }p$ and that there are infinitely many odd primes $p$ such that
 $a\text{ N }p$. Note that the case when $a$ has no odd prime factor $q$ with $2\nmid e_q(a)$ boils down to $\pm2\pmod p$. This case follows from the infinitude of primes in residue classes modulo 8 that we have fully resolved. In parts (b) and (c) below, we are therefore allowed to assume that $a$ has an odd prime factor $q$ with $2\nmid e_q(a)$. In these two parts, we will also use the Chinese Remainder Theorem (CRT), which states that
 if $m_1,\ldots,m_k\ge1$ are pairwise relatively prime,
 namely $\gcd(m_i,m_j)=1$ for all $1\le i<j\le k$,
-and if $a_1,\ldots,a_k\in\Z$ are arbitrary,
+and if $a_1,\ldots,a_k\in\mathbb Z$ are arbitrary,
 then the system of linear congruences
 $$
 \left\{
