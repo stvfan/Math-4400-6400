@@ -182,7 +182,7 @@ $$
 
 <div class="problem">
 <span class="problem-number">8</span> **The $\boldsymbol{n}$th prime.** Let $p_n$ denote the $n$th prime. For instance, $p_1=2$, $p_2=3$, $p_3=5$, $p_4=7$, and so on. As usual, let $\pi(N)$
-denote the number of primes not exceeding $N$. Then $\pi(p_n)=n$ and $p_{\pi(N)}=N$.
+denote the number of primes not exceeding $N$. Then $\pi(p_n)=n$ and $p_{\pi(N)}$ is the greatest prime not exceeding $N$.
 
 
 (1\) Suppose that there are constants $0<A<B$ and an integer $N_0\ge53$ such that
