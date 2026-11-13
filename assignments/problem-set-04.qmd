@@ -190,7 +190,7 @@ denote the number of primes not exceeding $N$. Then $\pi(p_n)=n$ and $p_{\pi(N)}
 	    Show that 
 		$$\frac{1}{B}n\ln n<p_n<\frac{e^{f(n)}}{A}n\ln n\qquad n\ge \pi(N_0),$$
 		where
-		$$f(n)=-\ln A\cdot\frac{\ln(\ln n)}{\ln n}+2\ln\frac{n}{A}\cdot\left(\frac{\ln(\ln n)}{\ln n}\right)^2.$$
+		$$f(n)=-\ln A\cdot g(n)+2\ln\frac{n}{A}\cdot g(n)^2,\qquad g(n)=\frac{\ln(\ln n)}{\ln n}.$$
 		The assumption $N_0\ge53$ ensures that $\pi(N_0)\ge\pi(53)=16$. You may use without proof the inequality
 		$$\frac{1}{1-x}<1+x+2x^{2},\qquad x\in(0,1/2),$$ and the fact that 
 		$$g(x)=\frac{\ln(\ln x)}{\ln x}$$
