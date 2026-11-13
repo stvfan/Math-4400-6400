@@ -423,8 +423,8 @@ assignments:
 
     - number: "Homework 4"
       title: "Primes and arithmetic functions"
-      due: ""
-      status: "Forthcoming"
+      due: "Nov. 30, 12 p.m."
+      status: "Assigned"
       status_style: "due"
       note: ""
       href: "assignments/problem-set-04.qmd"
