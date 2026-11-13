@@ -197,8 +197,9 @@ denote the number of primes not exceeding $N$. Then $\pi(p_n)=n$ and $p_{\pi(N)}
 		\[g(x)=\frac{\ln(\ln x)}{\ln x}\]
 		is strictly decreasing on $[16,\infty)$ and attains global maximum $g(16)<1/2$.
 <details class="hint"><summary>Hint</summary>
-Note that $p_n>n$. To prove the upper bound, take $\ln$ to get
-$$A(1-g(p_n))\ln p_n=A(\ln p_n-\ln(\ln p_n))<\ln\pi(p_n)=\ln n.$$
+Observe that $p_n>n$. To prove the upper bound, take $\ln$ to get
+$$A(1-g(p_n))\ln p_n=A(\ln p_n-\ln(\ln p_n))<\ln\pi(p_n)=\ln n$$
+Then apply the properties of g(x) described above.
 </details>
 
 (2\) Suppose that there are constants $0<C<D$ and an integer $N_0\ge\max\{2,D^2\}$ such that
