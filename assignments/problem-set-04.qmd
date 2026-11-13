@@ -184,34 +184,34 @@ $$
 <span class="problem-number">8</span> **The $\boldsymbol{n}$th prime.** Let $p_n$ denote the $n$th prime. For instance, $p_1=2$, $p_2=3$, $p_3=5$, $p_4=7$, and so on. As usual, let $\pi(N)$
 denote the number of primes not exceeding $N$. Then $\pi(p_n)=n$ and $p_{\pi(N)}=N$.
 
-(1\) Suppose that there are constants $0<A<B$ and an integer $N_0\ge53$ such that
-   $$A\frac{N}{\ln N}<\pi(N)<B\frac{N}{\ln N},\qquad N\ge N_0.$$
-Show that 
-   $$\frac{1}{B}n\ln n<p_n<\frac{e^{f(n)}}{A}n\ln n\qquad n\ge \pi(N_0),$$
-where
-$$f(n)=-\ln A\cdot\frac{\ln(\ln n)}{\ln n}+2\ln\frac{n}{A}\cdot\left(\frac{\ln(\ln n)}{\ln n}\right)^2.$$
-The assumption $N_0\ge53$ ensures that $\pi(N_0)\ge\pi(53)=16$. You may use without proof the inequality
-$$\frac{1}{1-x}<1+x+2x^{2},\qquad x\in(0,1/2),$$	
-and the fact that 
-\[g(x)=\frac{\ln(\ln x)}{\ln x}\]
-is strictly decreasing on $[16,\infty)$ and attains global maximum $g(16)<1/2$.
+
+(1\) Suppose that there are constants $0<A<B$ and an integer $N_0\ge2$ such that
+$$A\frac{N}{\ln N}<\pi(N)<B\frac{N}{\ln N},\qquad N\ge N_0.$$
+(We proved in class that this holds with $A=1/4$, $B=13/4$, and $N_0=2$.) Show that
+$$\frac{1}{B}n\ln n<p_n<\frac{1}{A}n\ln n+\frac{1}{A}\ln\frac{2}{A},\qquad n\ge \pi(N_0).$$
+You may use without proof the inequality
+$$\frac{x}{\ln x}>\sqrt{x},\qquad x>1.$$
 <details class="hint"><summary>Hint</summary>
-Note that $p_n>n$. To prove the upper bound, take $\ln$ to get
-$$A(1-g(p_n))\ln p_n=A(\ln p_n-\ln(\ln p_n))<\ln\pi(p_n)=\ln n.$$
+For the lower bound, use $p_n>n$. For the upper bound, first apply
+$$\frac{x}{\ln x}>\sqrt{x}$$
+to obtain the crude upper bound $p_n<(n/A)^2$.
 </details>
 
 (2\) Suppose that there are constants $0<C<D$ and an integer $N_0\ge\max\{2,D^2\}$ such that
 $$Cn\ln n<p_n<Dn\ln n,\qquad n\ge \pi(N_0).$$
 Prove that
-$$\frac{1}{D}\cdot\frac{N}{\ln N}<\pi(N)<\frac{1}{C}\cdot\frac{N}{\ln N-\ln(\ln N)-\ln D},\qquad N\ge N_0.$$
-(The assumption $N_0\ge\max\{2,D^2\}$ ensures that $N_0\ge2$ and $\ln N-\ln(\ln N)-\ln D>0$ for all $N\ge N_0$.)
+$$\frac{1}{D}\cdot\frac{N}{\ln N}<\pi(N)<\frac{1}{Ch(N)}\frac{N}{\ln N},\qquad N\ge N_0,$$
+where
+$$h(N)=1-g(N)-\frac{\ln D}{\ln N}.$$
+The assumption $N_0\ge\max\{2,D^2\}$ ensures that $N_0\ge2$ and $\ln N-\ln(\ln N)-\ln D>0$ for all $N\ge N_0$.
 
 (3\) Recall that the Prime Number Theorem (PNT) states that
 $$\lim\limits_{N\to\infty}\frac{\pi(N)}{N/\ln N}=1.$$
 Use parts (a) and (b) to prove that PNT is equivalent to
 $$\lim\limits_{n\to\infty}\frac{p_n}{n\ln n}=1.$$
 <details class="hint"><summary>Hint</summary>
-Use the $\varepsilon$-$N$ definition of limit.
+Use the $\varepsilon$-$N$ definition of limit and observe that 
+$$\lim\limits_{x\to\infty}g(x)=0,\qquad\lim\limits_{n\to\infty}f(n)=0,\qquad\lim\limits_{N\to\infty}h(N)=1.$$
 </details>
 </div>
 
