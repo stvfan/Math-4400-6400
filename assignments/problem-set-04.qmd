@@ -204,7 +204,7 @@ Then apply the properties of g(x) and the suggested inequality.
 (2\)  Suppose that there are constants $0<C<D$ and an integer $N_0\ge\max\{3,D^4\}$ such that 
 $$Cn\ln n<p_n<Dn\ln n,\qquad n\ge \pi(N_0).$$
 Prove that
-$$\frac{1}{D}\cdot\frac{N-1}{\ln N}<\pi(N)<\frac{1}{Ch(N)}\cdot\frac{N}{\ln N},\qquad N\ge N_0,$$
+$$\frac{1}{D}\cdot\frac{N-1}{\ln N}<\pi(N)<\frac{1}{Ch(N)}\cdot\frac{N}{\ln N},\qquad N>N_0,$$
 where
 $$h(N)=1-g(N)-\left(\frac{2}{N}+\ln D\right)\frac{1}{\ln N}.$$
 The assumption $N_0\ge\max\{3,D^4\}$ ensures that $N_0\ge3$ and $h(N)>0$ for all $N\ge N_0$. You may use without proof the inequality
