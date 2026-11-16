@@ -90,7 +90,7 @@ has a unique solution $x$ modulo $M=m_1\cdots m_k$. In particular, it has a uniq
 (1\) Use numbers of the form $x^2-a$ to show that there are infinitely many odd primes $p$ such that
 $a\text{ R }p$.
 <details class="hint"><summary>Hint</summary>
-Consider the number $n=((|a|+3)p_1\cdots p_k)^2-a$, where $p_1,\ldots,p_k$ are odd primes such that $a\text{ R }p_i$ for every $1\le i\le k$.
+Consider the number $n=((|a|+1)p_1\cdots p_k)^2-a$, where $p_1,\ldots,p_k$ are odd primes such that $a\text{ R }p_i$ for every $1\le i\le k$.
 </details>
 
 
