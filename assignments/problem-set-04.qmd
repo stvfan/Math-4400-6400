@@ -139,7 +139,7 @@ G(n)=\sum_{k=1}^{n}\gcd(k,n).
 $$
 (1\) Prove that
 $$
-G(n)=\sum_{d\mid n}d\,\phi\left(\frac nd\right).
+  G(n)=\sum_{d\mid n}d\,\phi\left(\frac nd\right)=n\sum_{d\mid n}\frac{\phi(d)}{d}.
 $$
 <details class="hint"><summary>Hint</summary>
 Group the integers $1\le k\le n$ according to the value of $\gcd(k,n)$.
