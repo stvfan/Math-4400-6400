@@ -46,9 +46,9 @@ lectures:
 
   - date: "November 18"
     meeting: "Lecture 36"
-    title: "Dirichlet convolution and Möbius inversion."
+    title: "Divisor sums and Möbius inversion."
     summary: >-
-    topics: ["Dirichlet convolution", "multiplicative functions", "the Möbius function", "Möbius inversion"]
+    topics: ["Divisor sums", "multiplicative functions", "the Möbius function", "Möbius inversion"]
     links:
       - label: "Notes"
         href: ""
