@@ -44,14 +44,24 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "November 18"
+    meeting: "Lecture 36"
+    title: "Dirichlet convolution and Möbius inversion."
+    summary: >-
+    topics: ["Dirichlet convolution", "multiplicative functions", "the Möbius function", "Möbius inversion"]
+    links:
+      - label: "Notes"
+        href: ""
+
+
   - date: "November 16"
     meeting: "Lecture 35"
     title: "Additive and multiplicative functions II."
     summary: >-
-    topics: ["multiplicative functions", "the Möbius function", "Euler's totient function"]
+    topics: ["multiplicative functions", "Euler's totient function"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/11_16_2026.pdf"
 
   - date: "November 13"
     meeting: "Midterm 2"
