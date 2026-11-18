@@ -44,14 +44,24 @@ textbook:
 # Attach the corresponding lecture notes using the links list.
 lectures:
 
+  - date: "November 20"
+    meeting: "Lecture 37"
+    title: "Counting representations as sums of two squares"
+    summary: >-
+    topics: ["sum of two squares"]
+    links:
+      - label: "Notes"
+        href: ""
+
+
   - date: "November 18"
     meeting: "Lecture 36"
-    title: "Divisor sums and Möbius inversion."
+    title: "Divisor sums and Möbius inversion"
     summary: >-
     topics: ["Divisor sums", "multiplicative functions", "the Möbius function", "Möbius inversion"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/11_18_2026.pdf"
 
 
   - date: "November 16"
