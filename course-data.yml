@@ -48,7 +48,7 @@ lectures:
     meeting: "Lecture 37"
     title: "Counting representations as sums of two squares"
     summary: >-
-    topics: ["sum of two squares"]
+    topics: ["sum of two squares", "Gaussian integers", "multiplicative functions"]
     links:
       - label: "Notes"
         href: ""
