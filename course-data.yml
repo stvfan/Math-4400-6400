@@ -51,7 +51,7 @@ lectures:
     topics: ["sum of two squares", "Gaussian integers", "multiplicative functions"]
     links:
       - label: "Notes"
-        href: ""
+        href: "notes/11_20_2026.pdf"
 
 
   - date: "November 18"
