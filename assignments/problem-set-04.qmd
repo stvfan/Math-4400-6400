@@ -199,7 +199,7 @@ is strictly decreasing and satisfies $0<f(x)<1$ on $[16,\infty)$.
 <details class="hint"><summary>Hint</summary>
 For the lower bound for $p_n$, use $p_n>n$. To prove the upper bound for $p_n$, apply the given lower bound for $\pi(N)$ with $N=p_n$ to get
 $$
-\frac{A}{n}\,p_n<\frac nA\ln p_n.
+\frac{A}{n}\,p_n<\ln p_n.
 $$
 Taking $\ln$ of this gives
 $$(1-f(p_n))\ln p_n+\ln A=\ln p_n-\ln(\ln p_n)+\ln A<\ln\pi(p_n)=\ln n.$$
