@@ -197,7 +197,7 @@ The assumption $N_0\ge53$ ensures that $\pi(N_0)\ge\pi(53)=16$. You may use with
 $$f(x)=\frac{\ln(\ln x)}{\ln x}$$
 is strictly decreasing and satisfies $0<f(x)<1$ on $[16,\infty)$.
 <details class="hint"><summary>Hint</summary>
-For the lower bound for $p_n$, use $p_n>n$. To prove the upper bound for $p_n$, apply the given lower bound for $\pi(N)$ with $N=p_n$ to get
+For the lower bound for $p_n$, use $p_n>n$. To prove the upper bound for $p_n$, apply the given lower bound for $\pi(N)$ to get
 $$
 \frac{A}{n}\,p_n<\ln p_n.
 $$
@@ -217,7 +217,7 @@ $$
 \qquad\text{and}\qquad
 \pi(N)>\frac{N}{\ln N}.
 $$
-In the second case, take $\ln$ of $\pi(N)>N/\ln N$ and apply the assumed lower bound for $p_n$ with $n=\pi(N)$.
+In the second case, take $\ln$ of $\pi(N)>N/\ln N$ and apply the assumed lower bound for $p_n$.
 </details>
 
 (3\) Recall that the Prime Number Theorem (PNT) states that
