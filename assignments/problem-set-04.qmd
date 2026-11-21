@@ -217,7 +217,7 @@ $$
 \qquad\text{and}\qquad
 \pi(N)>\frac{N}{\ln N}.
 $$
-In the second case, take $\ln$ of this and apply the assumed lower bound for $p_n$ with $n=\pi(N)$.
+In the second case, take $\ln$ of the lower bound for $p_n$ with $n=\pi(N)$ and apply the assumed lower bound for $p_n$ with $n=\pi(N)$.
 </details>
 
 (3\) Recall that the Prime Number Theorem (PNT) states that
