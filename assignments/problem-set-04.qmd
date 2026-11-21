@@ -210,7 +210,7 @@ $$h(N)=1-g(N)-\left(\frac{2}{N}+\ln D\right)\frac{1}{\ln N}.$$
 The assumption $N_0\ge\max\{3,D^4\}$ ensures that $N_0\ge3$ and $h(N)>0$ for all $N\ge N_0$. You may use without proof the inequality
 $$\ln(x-1)>\ln x-\frac{2}{x},\qquad x\ge2.$$
 <details class="hint"><summary>Hint</summary>
-Use $p_{\pi(N)}\le N<p_{\pi(N)+1}$ to prove the lower bound first. Then use the lower bound to obtain the upper bound.
+Use $p_{\pi(N)+1}>N$ to prove the lower bound first. Then use the lower bound to obtain the upper bound.
 </details>
 
 (3\) Recall that the Prime Number Theorem (PNT) states that
