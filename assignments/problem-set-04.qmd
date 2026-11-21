@@ -222,7 +222,7 @@ In the second case, take $\ln$ of $\pi(N)>N/\ln N$ and apply the assumed lower b
 
 (3\) Recall that the Prime Number Theorem (PNT) states that
 $$\lim\limits_{N\to\infty}\frac{\pi(N)}{N/\ln N}=1.$$
-Use parts (a) and (b) to prove that PNT is equivalent to
+Use parts (1) and (2) to prove that PNT is equivalent to
 $$\lim\limits_{n\to\infty}\frac{p_n}{n\ln n}=1.$$
 <details class="hint"><summary>Hint</summary>
 Use the $\varepsilon$-$N_0$ definition of limit and observe that 
